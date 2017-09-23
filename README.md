@@ -1,2 +1,2 @@
-# dsd_a6
+# dsd_A6
 Repository for all DSD labs
