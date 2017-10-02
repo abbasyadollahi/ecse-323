@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 48 40 216 56)
+	(rect 42 24 210 40)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A[5..0]" (rect 5 0 39 12)(font "Arial" ))
+	(text "A[5..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 256 40 432 56)
+	(rect 250 24 426 40)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Amod13[3..0]" (rect 90 0 156 12)(font "Arial" ))
 	(pt 0 8)
@@ -52,7 +52,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 144 88 272 184)
+	(rect 138 72 266 168)
 	(text "gA6_adder8" (rect 5 0 75 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -95,7 +95,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 464 88 592 184)
+	(rect 458 72 586 168)
 	(text "gA6_adder6" (rect 5 0 75 14)(font "Arial" (font_size 8)))
 	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -138,7 +138,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 424 160 456 192)
+	(rect 418 144 450 176)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 21 26 33)(font "Arial" )(invisible))
 	(port
@@ -155,7 +155,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 464 232 592 328)
+	(rect 458 216 586 312)
 	(text "gA6_adder6" (rect 53 0 123 14)(font "Arial" (font_size 8)))
 	(text "inst4" (rect 97 80 120 92)(font "Arial" ))
 	(port
@@ -199,7 +199,7 @@ applicable agreement for further details.
 	(flipy)
 )
 (symbol
-	(rect 88 232 216 328)
+	(rect 82 216 210 312)
 	(text "gA6_adder6" (rect 53 0 123 14)(font "Arial" (font_size 8)))
 	(text "inst5" (rect 97 80 120 92)(font "Arial" ))
 	(port
@@ -243,7 +243,7 @@ applicable agreement for further details.
 	(flipy)
 )
 (symbol
-	(rect 424 224 456 256)
+	(rect 418 208 450 240)
 	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 3 -1 26 11)(font "Arial" )(invisible))
 	(port
@@ -261,7 +261,7 @@ applicable agreement for further details.
 	(flipx)
 )
 (symbol
-	(rect 48 224 80 256)
+	(rect 42 208 74 240)
 	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 3 -1 26 11)(font "Arial" )(invisible))
 	(port
@@ -279,7 +279,7 @@ applicable agreement for further details.
 	(flipx)
 )
 (symbol
-	(rect 224 312 256 328)
+	(rect 218 296 250 312)
 	(text "VCC" (rect 7 6 27 16)(font "Arial" (font_size 6)))
 	(text "inst9" (rect 3 -1 26 11)(font "Arial" )(invisible))
 	(port
@@ -295,7 +295,7 @@ applicable agreement for further details.
 	(flipx)
 )
 (symbol
-	(rect 104 80 136 112)
+	(rect 98 64 130 96)
 	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 -1 32 11)(font "Arial" )(invisible))
 	(port
@@ -313,7 +313,7 @@ applicable agreement for further details.
 	(flipx)
 )
 (symbol
-	(rect 600 304 632 336)
+	(rect 594 288 626 320)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 3 21 32 33)(font "Arial" )(invisible))
 	(port
@@ -330,7 +330,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 600 80 632 112)
+	(rect 594 64 626 96)
 	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
 	(text "inst13" (rect 3 -1 32 11)(font "Arial" )(invisible))
 	(port
@@ -348,7 +348,7 @@ applicable agreement for further details.
 	(flipx)
 )
 (symbol
-	(rect 528 32 560 64)
+	(rect 522 16 554 48)
 	(text "GND" (rect 16 8 26 29)(font "Arial" (font_size 6))(vertical))
 	(text "inst2" (rect 21 3 33 26)(font "Arial" )(vertical)(invisible))
 	(port
@@ -366,7 +366,7 @@ applicable agreement for further details.
 	(flipy_rotate90)
 )
 (symbol
-	(rect 272 248 400 320)
+	(rect 266 232 394 304)
 	(text "gA6_not6" (rect 68 0 123 14)(font "Arial" (font_size 8)))
 	(text "inst15" (rect 91 56 120 68)(font "Arial" ))
 	(port
@@ -389,161 +389,160 @@ applicable agreement for further details.
 	(flipy)
 )
 (connector
-	(text "Gnd" (rect 464 40 484 52)(font "Arial" ))
-	(pt 528 48)
-	(pt 496 48)
+	(text "Gnd" (rect 458 24 478 36)(font "Arial" ))
+	(pt 522 32)
+	(pt 490 32)
 )
 (connector
-	(pt 144 120)
-	(pt 120 120)
+	(pt 138 104)
+	(pt 114 104)
 )
 (connector
-	(pt 120 120)
-	(pt 120 112)
+	(pt 114 104)
+	(pt 114 96)
 )
 (connector
-	(pt 64 264)
-	(pt 64 256)
+	(pt 58 248)
+	(pt 58 240)
 )
 (connector
-	(pt 88 264)
-	(pt 64 264)
+	(pt 82 248)
+	(pt 58 248)
 )
 (connector
-	(text "<<__$DEF_ALIAS296>>" (rect 222 218 234 336)(font "Arial" )(vertical)(invisible))
-	(pt 240 264)
-	(pt 240 240)
+	(pt 234 248)
+	(pt 234 224)
 	(bus)
 )
 (connector
-	(pt 240 296)
-	(pt 240 312)
+	(pt 234 280)
+	(pt 234 296)
 )
 (connector
-	(pt 216 296)
-	(pt 240 296)
+	(pt 210 280)
+	(pt 234 280)
 )
 (connector
-	(pt 64 280)
-	(pt 64 312)
+	(pt 58 264)
+	(pt 58 296)
 	(bus)
 )
 (connector
-	(text "Amod13[5..0]" (rect 22 320 88 332)(font "Arial" ))
-	(pt 88 280)
-	(pt 64 280)
+	(text "Amod13[5..0]" (rect 16 304 82 316)(font "Arial" ))
+	(pt 82 264)
+	(pt 58 264)
 	(bus)
 )
 (connector
-	(text "S[7..0]" (rect 278 176 311 188)(font "Arial" ))
-	(pt 272 136)
-	(pt 296 136)
+	(text "S[7..0]" (rect 272 160 305 172)(font "Arial" ))
+	(pt 266 120)
+	(pt 290 120)
 	(bus)
 )
 (connector
-	(pt 296 136)
-	(pt 296 168)
+	(pt 290 120)
+	(pt 290 152)
 	(bus)
 )
 (connector
-	(text "Cout" (rect 283 80 306 92)(font "Arial" ))
-	(pt 272 120)
-	(pt 296 120)
+	(text "Cout" (rect 277 64 300 76)(font "Arial" ))
+	(pt 266 104)
+	(pt 290 104)
 )
 (connector
-	(pt 296 120)
-	(pt 296 96)
+	(pt 290 104)
+	(pt 290 80)
 )
 (connector
-	(text "Cout, S[7..6], Gnd, Gnd, Gnd" (rect 623 264 768 276)(font "Arial" ))
-	(pt 592 280)
-	(pt 672 280)
+	(text "Cout, S[7..6], Gnd, Gnd, Gnd" (rect 617 248 762 260)(font "Arial" ))
+	(pt 586 264)
+	(pt 666 264)
 	(bus)
 )
 (connector
-	(pt 464 264)
-	(pt 440 264)
+	(pt 458 248)
+	(pt 434 248)
 )
 (connector
-	(pt 440 264)
-	(pt 440 256)
+	(pt 434 248)
+	(pt 434 240)
 )
 (connector
-	(pt 616 296)
-	(pt 616 304)
+	(pt 610 280)
+	(pt 610 288)
 )
 (connector
-	(pt 592 296)
-	(pt 616 296)
+	(pt 586 280)
+	(pt 610 280)
 )
 (connector
-	(pt 592 264)
-	(pt 616 264)
+	(pt 586 248)
+	(pt 610 248)
 	(bus)
 )
 (connector
-	(text "Gnd, Gnd, Gnd, Cout, S[7..6]" (rect 314 144 459 156)(font "Arial" ))
-	(pt 360 136)
-	(pt 464 136)
+	(text "Gnd, Gnd, Gnd, Cout, S[7..6]" (rect 308 128 453 140)(font "Arial" ))
+	(pt 354 120)
+	(pt 458 120)
 	(bus)
 )
 (connector
-	(text "Gnd, Cout, S[7..6], Gnd, Gnd" (rect 310 104 455 116)(font "Arial" ))
-	(pt 360 120)
-	(pt 464 120)
+	(text "Gnd, Cout, S[7..6], Gnd, Gnd" (rect 304 88 449 100)(font "Arial" ))
+	(pt 354 104)
+	(pt 458 104)
 	(bus)
 )
 (connector
-	(pt 440 152)
-	(pt 440 160)
+	(pt 434 136)
+	(pt 434 144)
 )
 (connector
-	(pt 464 152)
-	(pt 440 152)
+	(pt 458 136)
+	(pt 434 136)
 )
 (connector
-	(pt 616 264)
-	(pt 616 136)
+	(pt 610 248)
+	(pt 610 120)
 	(bus)
 )
 (connector
-	(pt 592 136)
-	(pt 616 136)
+	(pt 586 120)
+	(pt 610 120)
 	(bus)
 )
 (connector
-	(pt 616 120)
-	(pt 616 112)
+	(pt 610 104)
+	(pt 610 96)
 )
 (connector
-	(pt 592 120)
-	(pt 616 120)
+	(pt 586 104)
+	(pt 610 104)
 )
 (connector
-	(text "A[5..0], Gnd, Gnd" (rect 40 120 127 132)(font "Arial" ))
-	(pt 96 136)
-	(pt 144 136)
+	(text "A[5..0], Gnd, Gnd" (rect 34 104 121 116)(font "Arial" ))
+	(pt 90 120)
+	(pt 138 120)
 	(bus)
 )
 (connector
-	(text "Gnd, Gnd, A[5..0]" (rect 43 160 130 172)(font "Arial" ))
-	(pt 144 152)
-	(pt 96 152)
+	(text "Gnd, Gnd, A[5..0]" (rect 37 144 124 156)(font "Arial" ))
+	(pt 138 136)
+	(pt 90 136)
 	(bus)
 )
 (connector
-	(pt 216 280)
-	(pt 272 280)
+	(pt 210 264)
+	(pt 266 264)
 	(bus)
 )
 (connector
-	(pt 400 280)
-	(pt 464 280)
+	(pt 394 264)
+	(pt 458 264)
 	(bus)
 )
 (connector
-	(text "A[5..0]" (rect 222 224 255 236)(font "Arial" ))
-	(pt 216 264)
-	(pt 240 264)
+	(text "A[5..0]" (rect 216 208 249 220)(font "Arial" ))
+	(pt 210 248)
+	(pt 234 248)
 	(bus)
 )

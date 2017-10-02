@@ -4,82 +4,82 @@ K3
 cModel Technology
 Z0 dC:\home\abbas\dsd_A6\lab1\simulation\qsim
 vgA6_lab1
-Z1 I[ze_LjMj5[iFUfAIB7;@D1
-Z2 VoBR=;2OeQn1:>J5]_Pkzz2
-Z3 dC:\home\abbas\dsd_A6\lab1\simulation\qsim
-Z4 w1506974112
-Z5 8gA6_lab1.vo
-Z6 FgA6_lab1.vo
+Z1 !s100 e]o<4j4n]YDzL:>BUS8h@2
+Z2 Ia0lin@8bRh8Dd<L1oQTZT1
+Z3 V0`3ke7<V`eMdhGYY6hZ2@3
+Z4 dC:\home\abbas\dsd_A6\lab1\simulation\qsim
+Z5 w1506975952
+Z6 8gA6_lab1.vo
+Z7 FgA6_lab1.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
-Z9 ng@a6_lab1
+Z9 !s90 -work|work|gA6_lab1.vo|
+Z10 o-work work -O0
+Z11 ng@a6_lab1
 !i10b 1
-Z10 !s100 WMQ5VIMd<kI;Sfg6B0Q]<3
 !s85 0
-Z11 !s108 1506974117.902000
-Z12 !s107 gA6_lab1.vo|
-Z13 !s90 -work|work|gA6_lab1.vo|
+Z12 !s108 1506975953.430000
+Z13 !s107 gA6_lab1.vo|
 !s101 -O0
 vgA6_lab1_vlg_check_tst
 !i10b 1
-!s100 mNBfgKaVMnR0GngGVMI@51
-Ig446WoBoIQJ]oWihRAgiN0
-V7V@WU9jUd;?9mh7OmJOS50
-R3
-Z14 w1506974111
-Z15 8gA6_lab1.vt
-Z16 FgA6_lab1.vt
-L0 57
-R7
+Z14 !s100 nBSo6@1kC62cT::0nD]lf0
+Z15 IClJf]WCXDi_F<l6@n0QTo2
+Z16 VRleiGRePm>E3_f^:3]Ijd2
+R4
+Z17 w1506975951
+Z18 8gA6_lab1.vt
+Z19 FgA6_lab1.vt
+L0 61
+R8
 r1
 !s85 0
 31
-Z17 !s108 1506974118.480000
-Z18 !s107 gA6_lab1.vt|
-Z19 !s90 -work|work|gA6_lab1.vt|
+Z20 !s108 1506975953.649000
+Z21 !s107 gA6_lab1.vt|
+Z22 !s90 -work|work|gA6_lab1.vt|
 !s101 -O0
-R8
-ng@a6_lab1_vlg_check_tst
+R10
+Z23 ng@a6_lab1_vlg_check_tst
 vgA6_lab1_vlg_sample_tst
 !i10b 1
-!s100 2_1iG4bB4eEKzR^RYABo=1
-IN_DEd3X>0^Oe[Mfmj90M:3
-Vi4`j9B[VWSLgFg1>an`YI0
-R3
-R14
-R15
-R16
-L0 29
-R7
-r1
-!s85 0
-31
+Z24 !s100 ZCVFJIS6gC1fi^B1][76`1
+Z25 I0gcQ07jY3XRiHg8T]SGQg3
+Z26 V6VnXYhQ=m]6W9DITUCN@g2
+R4
 R17
 R18
 R19
-!s101 -O0
+L0 29
 R8
-ng@a6_lab1_vlg_sample_tst
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 ng@a6_lab1_vlg_sample_tst
 vgA6_lab1_vlg_vec_tst
 !i10b 1
-!s100 67c0cSk1F3X43bKVa;WbB1
-I6oBG^=GDFd@@IDcW<B8Xm1
-V@8Z00L3^gS?F3g8UOccW@2
-R3
-R14
-R15
-R16
-L0 205
-R7
-r1
-!s85 0
-31
+!s100 IMia3XGK@P?Nm:6LXfG3P0
+Id>Z7bUM2B_lWn51;[GozM1
+Z28 V@8Z00L3^gS?F3g8UOccW@2
+R4
 R17
 R18
 R19
-!s101 -O0
+Z29 L0 241
 R8
-ng@a6_lab1_vlg_vec_tst
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 ng@a6_lab1_vlg_vec_tst
