@@ -5,6 +5,7 @@ source_file = 1, C:/home/abbas/dsd_A6/lab1/gA6_lab1.vwf
 source_file = 1, C:/home/abbas/dsd_A6/lab1/gA6_adder.bdf
 source_file = 1, C:/home/abbas/dsd_A6/lab1/gA6_adder8.bdf
 source_file = 1, C:/home/abbas/dsd_A6/lab1/gA6_adder6.bdf
+source_file = 1, C:/home/abbas/dsd_A6/lab1/gA6_Modulo_13.bdf
 source_file = 1, C:/home/abbas/dsd_A6/lab1/db/gA6_lab1.cbx.xml
 design_name = gA6_lab1
 instance = comp, \B[6]~I\, B[6], gA6_lab1, 1
