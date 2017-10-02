@@ -1,5 +1,1 @@
-set tool_name "ModelSim-Altera (VHDL)"
-set corner_file_list {
-	{{"Slow Model"} {gA6_lab1.vho gA6_lab1_vhd.sdo}}
-	{{"Fast Model"} {gA6_lab1_fast.vho gA6_lab1_vhd_fast.sdo}}
-}
+set tool_name "ModelSim-Altera (Verilog)"

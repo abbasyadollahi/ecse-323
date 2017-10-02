@@ -1,5 +1,5 @@
 Analysis & Synthesis report for gA6_lab1
-Sat Sep 30 14:58:08 2017
+Mon Oct 02 15:54:02 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 30 14:58:08 2017      ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 02 15:54:02 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA6_lab1                                   ;
 ; Top-level Entity Name              ; gA6_lab1                                   ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 5                                          ;
-;     Total combinational functions  ; 5                                          ;
+; Total logic elements               ; 13                                         ;
+;     Total combinational functions  ; 13                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 15                                         ;
+; Total pins                         ; 10                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -154,54 +154,66 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path            ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
-; gA6_lab1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/home/abbas/dsd_A6/lab1/gA6_lab1.bdf  ;         ;
-; gA6_comp7.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/home/abbas/dsd_A6/lab1/gA6_comp7.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------+---------+
+; gA6_lab1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/home/abbas/dsd_A6/lab1/gA6_lab1.bdf      ;         ;
+; gA6_adder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/home/abbas/dsd_A6/lab1/gA6_adder.bdf     ;         ;
+; gA6_adder8.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/home/abbas/dsd_A6/lab1/gA6_adder8.bdf    ;         ;
+; gA6_adder6.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/home/abbas/dsd_A6/lab1/gA6_adder6.bdf    ;         ;
+; gA6_Modulo_13.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/home/abbas/dsd_A6/lab1/gA6_Modulo_13.bdf ;         ;
+; gA6_not6.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/home/abbas/dsd_A6/lab1/gA6_not6.bdf      ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 5                       ;
-;                                             ;                         ;
-; Total combinational functions               ; 5                       ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 4                       ;
-;     -- 3 input functions                    ; 0                       ;
-;     -- <=2 input functions                  ; 1                       ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 5                       ;
-;     -- arithmetic mode                      ; 0                       ;
-;                                             ;                         ;
-; Total registers                             ; 0                       ;
-;     -- Dedicated logic registers            ; 0                       ;
-;     -- I/O registers                        ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 15                      ;
-; Embedded Multiplier 9-bit elements          ; 0                       ;
-; Maximum fan-out node                        ; gA6_comp7:inst|inst11~0 ;
-; Maximum fan-out                             ; 1                       ;
-; Total fan-out                               ; 19                      ;
-; Average fan-out                             ; 0.95                    ;
-+---------------------------------------------+-------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 13    ;
+;                                             ;       ;
+; Total combinational functions               ; 13    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 10    ;
+;     -- 3 input functions                    ; 1     ;
+;     -- <=2 input functions                  ; 2     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 13    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 10    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; A[5]  ;
+; Maximum fan-out                             ; 6     ;
+; Total fan-out                               ; 51    ;
+; Average fan-out                             ; 2.22  ;
++---------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; |gA6_lab1                  ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |gA6_lab1                ;              ;
-;    |gA6_comp7:inst|        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_comp7:inst ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+; |gA6_lab1                  ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |gA6_lab1                                                     ;              ;
+;    |gA6_modulo_13:inst|    ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst                                  ;              ;
+;       |gA6_adder6:inst5|   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5                 ;              ;
+;          |gA6_adder:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst1 ;              ;
+;          |gA6_adder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst2 ;              ;
+;          |gA6_adder:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst3 ;              ;
+;          |gA6_adder:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst  ;              ;
+;       |gA6_adder8:inst|    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder8:inst                  ;              ;
+;          |gA6_adder:inst6| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder8:inst|gA6_adder:inst6  ;              ;
+;          |gA6_adder:inst7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder8:inst|gA6_adder:inst7  ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -235,7 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Sep 30 14:58:03 2017
+    Info: Processing started: Mon Oct 02 15:54:01 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gA6_lab1 -c gA6_lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ga6_lab1.bdf
@@ -249,19 +261,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file ga6_add
 Info (12021): Found 1 design units, including 1 entities, in source file ga6_adder6.bdf
     Info (12023): Found entity 1: gA6_adder6
 Info (12021): Found 1 design units, including 1 entities, in source file ga6_modulo_13.bdf
-    Info (12023): Found entity 1: gA6_Modulo_13
+    Info (12023): Found entity 1: gA6_modulo_13
+Info (12021): Found 1 design units, including 1 entities, in source file ga6_not6.bdf
+    Info (12023): Found entity 1: gA6_not6
 Info (12127): Elaborating entity "gA6_lab1" for the top level hierarchy
-Info (12128): Elaborating entity "gA6_comp7" for hierarchy "gA6_comp7:inst"
+Info (12128): Elaborating entity "gA6_modulo_13" for hierarchy "gA6_modulo_13:inst"
+Warning (275008): Primitive "GND" of instance "inst13" not used
+Warning (275008): Primitive "GND" of instance "inst7" not used
+Warning (275008): Primitive "GND" of instance "inst8" not used
+Info (12128): Elaborating entity "gA6_adder6" for hierarchy "gA6_modulo_13:inst|gA6_adder6:inst5"
+Info (12128): Elaborating entity "gA6_adder" for hierarchy "gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst5"
+Info (12128): Elaborating entity "gA6_not6" for hierarchy "gA6_modulo_13:inst|gA6_not6:inst15"
+Info (12128): Elaborating entity "gA6_adder8" for hierarchy "gA6_modulo_13:inst|gA6_adder8:inst"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 13 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 491 megabytes
-    Info: Processing ended: Sat Sep 30 14:58:08 2017
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Mon Oct 02 15:54:02 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
