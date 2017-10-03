@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/02/2017 16:25:51"
+// Generated on "10/02/2017 17:06:08"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    gA6_lab1
 // 
@@ -73,10 +73,8 @@ reg [3:0] Amod13_expected;
 reg  AeqB_prev;
 reg [3:0] Amod13_prev;
 
-reg  AeqB_expected_prev;
 reg [3:0] Amod13_expected_prev;
 
-reg  last_AeqB_exp;
 reg [3:0] last_Amod13_exp;
 
 reg trigger;
@@ -107,7 +105,6 @@ end
 
 always @(trigger)
 begin
-	AeqB_expected_prev = AeqB_expected;
 	Amod13_expected_prev = Amod13_expected;
 end
 
@@ -116,32 +113,21 @@ end
 initial
 begin
 	Amod13_expected[3] = 1'bX;
-	Amod13_expected[3] = #999000 1'b0;
 end 
 // expected Amod13[ 2 ]
 initial
 begin
 	Amod13_expected[2] = 1'bX;
-	Amod13_expected[2] = #999000 1'b0;
 end 
 // expected Amod13[ 1 ]
 initial
 begin
 	Amod13_expected[1] = 1'bX;
-	Amod13_expected[1] = #999000 1'b0;
 end 
 // expected Amod13[ 0 ]
 initial
 begin
 	Amod13_expected[0] = 1'bX;
-	Amod13_expected[0] = #999000 1'b0;
-end 
-
-// expected AeqB
-initial
-begin
-	AeqB_expected = 1'bX;
-	AeqB_expected = #999000 1'b0;
 end 
 // generate trigger
 always @(AeqB_expected or AeqB or Amod13_expected or Amod13)
@@ -157,19 +143,6 @@ begin
 	$display("| expected AeqB = %b | expected Amod13 = %b | ",AeqB_expected_prev,Amod13_expected_prev);
 	$display("| real AeqB = %b | real Amod13 = %b | ",AeqB_prev,Amod13_prev);
 `endif
-	if (
-		( AeqB_expected_prev !== 1'bx ) && ( AeqB_prev !== AeqB_expected_prev )
-		&& ((AeqB_expected_prev !== last_AeqB_exp) ||
-			on_first_change[1])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port AeqB :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", AeqB_expected_prev);
-		$display ("     Real value = %b", AeqB_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[1] = 1'b0;
-		last_AeqB_exp = AeqB_expected_prev;
-	end
 	if (
 		( Amod13_expected_prev[0] !== 1'bx ) && ( Amod13_prev[0] !== Amod13_expected_prev[0] )
 		&& ((Amod13_expected_prev[0] !== last_Amod13_exp[0]) ||
@@ -229,7 +202,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#65536000;
+#640000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -260,171 +233,46 @@ gA6_lab1 i1 (
 	.C(C)
 );
 // A[ 5 ]
-initial
+always
 begin
-	repeat(102)
-	begin
-		A[5] = 1'b0;
-		A[5] = #320000 1'b1;
-		# 320000;
-	end
 	A[5] = 1'b0;
+	A[5] = #320000 1'b1;
+	#320000;
 end 
 // A[ 4 ]
-initial
+always
 begin
-	repeat(204)
-	begin
-		A[4] = 1'b0;
-		A[4] = #160000 1'b1;
-		# 160000;
-	end
 	A[4] = 1'b0;
 	A[4] = #160000 1'b1;
+	#160000;
 end 
 // A[ 3 ]
-initial
+always
 begin
-	repeat(409)
-	begin
-		A[3] = 1'b0;
-		A[3] = #80000 1'b1;
-		# 80000;
-	end
 	A[3] = 1'b0;
 	A[3] = #80000 1'b1;
+	#80000;
 end 
 // A[ 2 ]
-initial
+always
 begin
-	repeat(819)
-	begin
-		A[2] = 1'b0;
-		A[2] = #40000 1'b1;
-		# 40000;
-	end
 	A[2] = 1'b0;
+	A[2] = #40000 1'b1;
+	#40000;
 end 
 // A[ 1 ]
-initial
+always
 begin
-	repeat(1638)
-	begin
-		A[1] = 1'b0;
-		A[1] = #20000 1'b1;
-		# 20000;
-	end
 	A[1] = 1'b0;
+	A[1] = #20000 1'b1;
+	#20000;
 end 
 // A[ 0 ]
-initial
+always
 begin
-	repeat(3276)
-	begin
-		A[0] = 1'b0;
-		A[0] = #10000 1'b1;
-		# 10000;
-	end
 	A[0] = 1'b0;
 	A[0] = #10000 1'b1;
-end 
-// C[ 6 ]
-always
-begin
-	C[6] = 1'b0;
-	C[6] = #256000 1'b1;
-	#256000;
-end 
-// C[ 5 ]
-always
-begin
-	C[5] = 1'b0;
-	C[5] = #128000 1'b1;
-	#128000;
-end 
-// C[ 4 ]
-always
-begin
-	C[4] = 1'b0;
-	C[4] = #64000 1'b1;
-	#64000;
-end 
-// C[ 3 ]
-always
-begin
-	C[3] = 1'b0;
-	C[3] = #32000 1'b1;
-	#32000;
-end 
-// C[ 2 ]
-always
-begin
-	C[2] = 1'b0;
-	C[2] = #16000 1'b1;
-	#16000;
-end 
-// C[ 1 ]
-always
-begin
-	C[1] = 1'b0;
-	C[1] = #8000 1'b1;
-	#8000;
-end 
-// C[ 0 ]
-always
-begin
-	C[0] = 1'b0;
-	C[0] = #4000 1'b1;
-	#4000;
-end 
-// B[ 6 ]
-always
-begin
-	B[6] = 1'b0;
-	B[6] = #32768000 1'b1;
-	#32768000;
-end 
-// B[ 5 ]
-always
-begin
-	B[5] = 1'b0;
-	B[5] = #16384000 1'b1;
-	#16384000;
-end 
-// B[ 4 ]
-always
-begin
-	B[4] = 1'b0;
-	B[4] = #8192000 1'b1;
-	#8192000;
-end 
-// B[ 3 ]
-always
-begin
-	B[3] = 1'b0;
-	B[3] = #4096000 1'b1;
-	#4096000;
-end 
-// B[ 2 ]
-always
-begin
-	B[2] = 1'b0;
-	B[2] = #2048000 1'b1;
-	#2048000;
-end 
-// B[ 1 ]
-always
-begin
-	B[1] = 1'b0;
-	B[1] = #1024000 1'b1;
-	#1024000;
-end 
-// B[ 0 ]
-always
-begin
-	B[0] = 1'b0;
-	B[0] = #512000 1'b1;
-	#512000;
+	#10000;
 end 
 
 gA6_lab1_vlg_sample_tst tb_sample (
