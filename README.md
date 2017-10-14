@@ -1,3 +1,3 @@
 # dsd_A6
-Repository for all DSD labs
+All files related to DSD labs.
 Team A6
