@@ -20,12 +20,9 @@ entity gA6_pop_enable is
 end gA6_pop_enable;
 
 architecture lookup of gA6_pop_enable is
-	--signal x				: std_logic_vector(5 downto 0);
-	--signal crc_of_x	: std_logic_vector(51 downto 0);
-
 	begin
 
-	lookup_table : lpm_rom	-- Use the altera rom library macrocell
+	lookup_table : lpm_rom		-- Use the altera rom library macrocell
 	generic map(
 		lpm_width => 52,			-- The width of the word stored in each ROM location
 		lpm_widthad => 6,			-- Sets the width of the ROM address bus

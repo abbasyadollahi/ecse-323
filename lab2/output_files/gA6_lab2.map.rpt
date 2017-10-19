@@ -1,5 +1,5 @@
 Analysis & Synthesis report for gA6_lab2
-Thu Oct 19 15:50:24 2017
+Thu Oct 19 17:47:06 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -49,16 +49,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 19 15:50:24 2017      ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 19 17:47:06 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA6_lab2                                   ;
 ; Top-level Entity Name              ; gA6_lab2                                   ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 43                                         ;
-;     Total combinational functions  ; 43                                         ;
+; Total logic elements               ; 60                                         ;
+;     Total combinational functions  ; 60                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 105                                        ;
+; Total pins                         ; 135                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 3,328                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -171,6 +171,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; gA6_adder32.vhd                  ; yes             ; User Wizard-Generated File             ; C:/home/abbas/dsd_A6/lab2/gA6_adder32.vhd                              ;         ;
 ; gA6_lab2.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/home/abbas/dsd_A6/lab2/gA6_lab2.bdf                                 ;         ;
 ; gA6_pop_enable.vhd               ; yes             ; User VHDL File                         ; C:/home/abbas/dsd_A6/lab2/gA6_pop_enable.vhd                           ;         ;
+; gA6_7_segment_decoder.vhd        ; yes             ; User VHDL File                         ; C:/home/abbas/dsd_A6/lab2/gA6_7_segment_decoder.vhd                    ;         ;
 ; lpm_rom.tdf                      ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_rom.tdf             ;         ;
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altrom.inc              ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
@@ -185,7 +186,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altram.inc              ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altdpram.inc            ;         ;
 ; db/altsyncram_f911.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab2/db/altsyncram_f911.tdf                       ;         ;
-; gA6_popup_rom_data.mif           ; yes             ; Auto-Found Memory Initialization File  ; C:/home/abbas/dsd_A6/lab2/gA6_popup_rom_data.mif                       ;         ;
+; ga6_popup_rom_data.mif           ; yes             ; Auto-Found Memory Initialization File  ; C:/home/abbas/dsd_A6/lab2/ga6_popup_rom_data.mif                       ;         ;
 ; lpm_add_sub.tdf                  ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
 ; addcore.inc                      ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/addcore.inc             ;         ;
 ; look_add.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/look_add.inc            ;         ;
@@ -201,29 +202,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 43    ;
+; Estimated Total logic elements              ; 60    ;
 ;                                             ;       ;
-; Total combinational functions               ; 43    ;
+; Total combinational functions               ; 60    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 16    ;
+;     -- 4 input functions                    ; 13    ;
+;     -- 3 input functions                    ; 20    ;
 ;     -- <=2 input functions                  ; 27    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 2     ;
+;     -- normal mode                          ; 19    ;
 ;     -- arithmetic mode                      ; 41    ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 105   ;
+; I/O pins                                    ; 135   ;
 ; Total memory bits                           ; 3328  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 52    ;
-; Total fan-out                               ; 546   ;
-; Average fan-out                             ; 2.73  ;
+; Total fan-out                               ; 617   ;
+; Average fan-out                             ; 2.50  ;
 +---------------------------------------------+-------+
 
 
@@ -232,7 +233,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
-; |gA6_lab2                                       ; 43 (0)            ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 105  ; 0            ; |gA6_lab2                                                                                                           ;              ;
+; |gA6_lab2                                       ; 60 (0)            ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 135  ; 0            ; |gA6_lab2                                                                                                           ;              ;
+;    |gA6_7_segment_decoder:inst2|                ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab2|gA6_7_segment_decoder:inst2                                                                               ;              ;
 ;    |gA6_RANDU:inst|                             ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab2|gA6_RANDU:inst                                                                                            ;              ;
 ;       |gA6_adder32:first_adder|                 ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab2|gA6_RANDU:inst|gA6_adder32:first_adder                                                                    ;              ;
 ;          |lpm_add_sub:LPM_ADD_SUB_component|    ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab2|gA6_RANDU:inst|gA6_adder32:first_adder|lpm_add_sub:LPM_ADD_SUB_component                                  ;              ;
@@ -398,7 +400,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -408,7 +410,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Thu Oct 19 15:50:20 2017
+    Info: Processing started: Thu Oct 19 17:47:03 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gA6_lab2 -c gA6_lab2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ga6_rand.vhd
@@ -422,6 +424,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file ga6_lab
 Info (12021): Found 2 design units, including 1 entities, in source file ga6_pop_enable.vhd
     Info (12022): Found design unit 1: gA6_pop_enable-lookup
     Info (12023): Found entity 1: gA6_pop_enable
+Warning (12019): Can't analyze file -- file gA6_segment_decoder.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file ga6_7_segment_decoder.vhd
+    Info (12022): Found design unit 1: gA6_7_segment_decoder-behavior
+    Info (12023): Found entity 1: gA6_7_segment_decoder
 Info (12127): Elaborating entity "gA6_lab2" for the top level hierarchy
 Info (12128): Elaborating entity "gA6_pop_enable" for hierarchy "gA6_pop_enable:inst1"
 Info (12128): Elaborating entity "LPM_ROM" for hierarchy "gA6_pop_enable:inst1|LPM_ROM:lookup_table"
@@ -446,6 +452,7 @@ Info (12128): Elaborating entity "altsyncram_f911" for hierarchy "gA6_pop_enable
 Info (12128): Elaborating entity "gA6_RANDU" for hierarchy "gA6_RANDU:inst"
 Warning (10036): Verilog HDL or VHDL warning at gA6_RAND.vhd(36): object "cout_1" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at gA6_RAND.vhd(36): object "cout_2" assigned a value but never read
+Warning (10873): Using initial value X (don't care) for net "rand[31..30]" at gA6_RAND.vhd(19)
 Info (12128): Elaborating entity "gA6_adder32" for hierarchy "gA6_RANDU:inst|gA6_adder32:first_adder"
 Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "gA6_RANDU:inst|gA6_adder32:first_adder|lpm_add_sub:LPM_ADD_SUB_component"
 Info (12130): Elaborated megafunction instantiation "gA6_RANDU:inst|gA6_adder32:first_adder|lpm_add_sub:LPM_ADD_SUB_component"
@@ -458,6 +465,7 @@ Info (12133): Instantiated megafunction "gA6_RANDU:inst|gA6_adder32:first_adder|
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_efi.tdf
     Info (12023): Found entity 1: add_sub_efi
 Info (12128): Elaborating entity "add_sub_efi" for hierarchy "gA6_RANDU:inst|gA6_adder32:first_adder|lpm_add_sub:LPM_ADD_SUB_component|add_sub_efi:auto_generated"
+Info (12128): Elaborating entity "gA6_7_segment_decoder" for hierarchy "gA6_7_segment_decoder:inst2"
 Warning (13044): Always-enabled tri-state buffer(s) removed
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "gA6_pop_enable:inst1|lpm_rom:lookup_table|otri[51]" to the node "P_EN[51]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "gA6_pop_enable:inst1|lpm_rom:lookup_table|otri[50]" to the node "P_EN[50]" into a wire
@@ -511,17 +519,37 @@ Warning (13044): Always-enabled tri-state buffer(s) removed
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "gA6_pop_enable:inst1|lpm_rom:lookup_table|otri[2]" to the node "P_EN[2]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "gA6_pop_enable:inst1|lpm_rom:lookup_table|otri[1]" to the node "P_EN[1]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "gA6_pop_enable:inst1|lpm_rom:lookup_table|otri[0]" to the node "P_EN[0]" into a wire
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "rand[31]" is stuck at GND
+    Warning (13410): Pin "rand[30]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 200 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 23 input pins
-    Info (21059): Implemented 82 output pins
-    Info (21061): Implemented 43 logic cells
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "seed[31]"
+    Warning (15610): No output dependent on input pin "seed[30]"
+    Warning (15610): No output dependent on input pin "seed[29]"
+    Warning (15610): No output dependent on input pin "seed[28]"
+    Warning (15610): No output dependent on input pin "seed[27]"
+    Warning (15610): No output dependent on input pin "seed[26]"
+    Warning (15610): No output dependent on input pin "seed[25]"
+    Warning (15610): No output dependent on input pin "seed[24]"
+    Warning (15610): No output dependent on input pin "seed[23]"
+    Warning (15610): No output dependent on input pin "seed[22]"
+    Warning (15610): No output dependent on input pin "seed[21]"
+    Warning (15610): No output dependent on input pin "seed[20]"
+    Warning (15610): No output dependent on input pin "seed[19]"
+    Warning (15610): No output dependent on input pin "seed[18]"
+    Warning (15610): No output dependent on input pin "seed[17]"
+    Warning (15610): No output dependent on input pin "seed[16]"
+Info (21057): Implemented 247 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 44 input pins
+    Info (21059): Implemented 91 output pins
+    Info (21061): Implemented 60 logic cells
     Info (21064): Implemented 52 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 537 megabytes
-    Info: Processing ended: Thu Oct 19 15:50:24 2017
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 78 warnings
+    Info: Peak virtual memory: 545 megabytes
+    Info: Processing ended: Thu Oct 19 17:47:06 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

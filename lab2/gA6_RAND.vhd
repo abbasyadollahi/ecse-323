@@ -15,8 +15,8 @@ use ieee.std_logic_1164.all;
 
 entity gA6_RANDU is
 	port(
-		seed	: in std_logic_vector(15 downto 0);
-		rand	: out std_logic_vector(29 downto 0)
+		seed	: in std_logic_vector(31 downto 0);
+		rand	: out std_logic_vector(31 downto 0)
 	);
 end gA6_RANDU;
 
@@ -25,18 +25,18 @@ architecture behavior of gA6_RANDU is
 	component gA6_adder32 
 	port(
 		cin		: in std_logic; 
-		dataa		: in std_logic_vector (31 downto 0);
-		datab		: in std_logic_vector (31 downto 0);
+		dataa		: in std_logic_vector(31 downto 0);
+		datab		: in std_logic_vector(31 downto 0);
 		cout		: out std_logic;
-		result	: out std_logic_vector (31 downto 0)
+		result	: out std_logic_vector(31 downto 0)
 	);
 	end component;
 	
 	signal cin_1, cin_2			: std_logic;
 	signal cout_1, cout_2		: std_logic;
-	signal dataa_1, dataa_2		: std_logic_vector (31 downto 0)	:= (others => '0');
-	signal datab_1, datab_2		: std_logic_vector (31 downto 0)	:= (others => '0');
-	signal result_1, result_2	: std_logic_vector (31 downto 0)	:= (others => '0');
+	signal dataa_1, dataa_2		: std_logic_vector(31 downto 0)	:= (others => '0');
+	signal datab_1, datab_2		: std_logic_vector(31 downto 0)	:= (others => '0');
+	signal result_1, result_2	: std_logic_vector(31 downto 0)	:= (others => '0');
 
 	begin
 
@@ -51,8 +51,8 @@ architecture behavior of gA6_RANDU is
 	);
 	
 	cin_1 <= '0';
-	dataa_1(31 downto 16) <= seed;
-	datab_1(16 downto 1) <= seed;
+	dataa_1(31 downto 16) <= seed(15 downto 0);
+	datab_1(16 downto 1) <= seed(15 downto 0);
 	
 	-- Port mapping 2
 	second_adder : gA6_adder32
@@ -66,7 +66,7 @@ architecture behavior of gA6_RANDU is
 	
 	cin_2 <= '0';
 	dataa_2(31 downto 0) <= result_1;
-	datab_2(15 downto 0) <= seed;
-	rand <= result_2(29 downto 0);
+	datab_2(15 downto 0) <= seed(15  downto 0);
+	rand(29 downto 0) <= result_2(29 downto 0);
 	
 end behavior;

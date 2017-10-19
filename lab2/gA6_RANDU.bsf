@@ -26,15 +26,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "seed[15..0]" (rect 0 0 42 12)(font "Arial" ))
-		(text "seed[15..0]" (rect 21 27 63 39)(font "Arial" ))
+		(text "seed[31..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "seed[31..0]" (rect 21 27 63 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 184 32)
 		(output)
-		(text "rand[29..0]" (rect 0 0 42 12)(font "Arial" ))
-		(text "rand[29..0]" (rect 121 27 163 39)(font "Arial" ))
+		(text "rand[31..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "rand[31..0]" (rect 122 27 163 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(drawing
