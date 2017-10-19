@@ -2,4 +2,12 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.814
+TNS   : -45.167
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.423
+TNS   : -35.532
+
 ------------------------------------------------------------

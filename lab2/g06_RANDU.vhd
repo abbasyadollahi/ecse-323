@@ -8,14 +8,16 @@
 --         He Qian Wang (he.q.wang@mail.mcgill.ca)
 -- Date: Oct/18/2017
 
-library ieee; -- Allows use of the std_logic_vector type
 library lpm; -- Allows use of 32-bit adder
-use ieee.std_logic_1164.all;
+library ieee; -- Allows use of the std_logic_vector type
 use lpm.lpm_components.all;
+use ieee.std_logic_1164.all;
 
 entity g06_RANDU is
-  port(seed		: in std_logic_vector(15 downto 0);
-       rand		: out std_logic_vector(29 downto 0));
+	port(
+		seed	: in std_logic_vector(15 downto 0);
+		rand	: out std_logic_vector(29 downto 0)
+	);
 end g06_RANDU;
 
 
@@ -65,6 +67,6 @@ architecture behavior of g06_RANDU is
 	cin_2 <= '0';
 	dataa_2(31 downto 0) <= result_1;
 	datab_2(15 downto 0) <= seed;
-	rand <= result_2 (29 downto 0);
+	rand <= result_2(29 downto 0);
 	
 end behavior;
