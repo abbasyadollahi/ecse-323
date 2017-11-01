@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 184 112)
-	(text "gA6_Modulo_13" (rect 5 0 97 14)(font "Arial" (font_size 8)))
+	(text "gA6_modulo_13" (rect 5 0 97 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 168 48)
 		(output)
-		(text "Afloor13[2..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
-		(text "Afloor13[2..0]" (rect 70 43 147 57)(font "Arial" (font_size 8)))
+		(text "Afloor13[3..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "Afloor13[3..0]" (rect 70 43 147 57)(font "Arial" (font_size 8)))
 		(line (pt 168 48)(pt 152 48)(line_width 3))
 	)
 	(drawing

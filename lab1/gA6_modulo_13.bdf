@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(output)
 	(rect 248 56 424 72)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "Afloor13[2..0]" (rect 90 0 157 12)(font "Arial" ))
+	(text "Afloor13[3..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -364,7 +364,7 @@ applicable agreement for further details.
 	(flipx)
 )
 (symbol
-	(rect 114 56 146 88)
+	(rect 106 56 138 88)
 	(text "GND" (rect 16 8 26 29)(font "Arial" (font_size 6))(vertical))
 	(text "inst2" (rect 21 3 33 26)(font "Arial" )(vertical)(invisible))
 	(port
@@ -568,13 +568,13 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Cout, S[7..6]" (rect 250 80 313 92)(font "Arial" ))
-	(pt 240 96)
-	(pt 312 96)
-	(bus)
+	(text "Gnd" (rect 42 64 62 76)(font "Arial" ))
+	(pt 74 72)
+	(pt 106 72)
 )
 (connector
-	(text "Gnd" (rect 50 64 70 76)(font "Arial" ))
-	(pt 82 72)
-	(pt 114 72)
+	(text "Gnd, Cout, S[7..6]" (rect 250 80 340 92)(font "Arial" ))
+	(pt 328 96)
+	(pt 240 96)
+	(bus)
 )
