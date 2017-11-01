@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/01/2017 15:29:35"
+// Generated on "11/01/2017 17:00:05"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    gA6_lab3
 // 
@@ -138,73 +138,87 @@ end
 initial
 begin
 	num_expected[5] = 1'bX;
+	num_expected[5] = #999000 1'b0;
 end 
 // expected num[ 4 ]
 initial
 begin
 	num_expected[4] = 1'bX;
+	num_expected[4] = #999000 1'b0;
 end 
 // expected num[ 3 ]
 initial
 begin
 	num_expected[3] = 1'bX;
+	num_expected[3] = #999000 1'b0;
 end 
 // expected num[ 2 ]
 initial
 begin
 	num_expected[2] = 1'bX;
+	num_expected[2] = #999000 1'b0;
 end 
 // expected num[ 1 ]
 initial
 begin
 	num_expected[1] = 1'bX;
+	num_expected[1] = #999000 1'b0;
 end 
 // expected num[ 0 ]
 initial
 begin
 	num_expected[0] = 1'bX;
+	num_expected[0] = #999000 1'b0;
 end 
 // expected value[ 5 ]
 initial
 begin
 	value_expected[5] = 1'bX;
+	value_expected[5] = #999000 1'b0;
 end 
 // expected value[ 4 ]
 initial
 begin
 	value_expected[4] = 1'bX;
+	value_expected[4] = #999000 1'b0;
 end 
 // expected value[ 3 ]
 initial
 begin
 	value_expected[3] = 1'bX;
+	value_expected[3] = #999000 1'b0;
 end 
 // expected value[ 2 ]
 initial
 begin
 	value_expected[2] = 1'bX;
+	value_expected[2] = #999000 1'b0;
 end 
 // expected value[ 1 ]
 initial
 begin
 	value_expected[1] = 1'bX;
+	value_expected[1] = #999000 1'b0;
 end 
 // expected value[ 0 ]
 initial
 begin
 	value_expected[0] = 1'bX;
+	value_expected[0] = #999000 1'b0;
 end 
 
 // expected full
 initial
 begin
 	full_expected = 1'bX;
+	full_expected = #999000 1'b0;
 end 
 
 // expected empty
 initial
 begin
 	empty_expected = 1'bX;
+	empty_expected = #999000 1'b0;
 end 
 // generate trigger
 always @(empty_expected or empty or full_expected or full or num_expected or num or value_expected or value)
@@ -409,7 +423,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#1000000;
+#2000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -454,91 +468,157 @@ gA6_lab3 i1 (
 always
 begin
 	clk = 1'b0;
-	clk = #20000 1'b1;
-	#20000;
+	clk = #10000 1'b1;
+	#10000;
 end 
 // data[ 5 ]
 initial
 begin
 	data[5] = 1'b0;
+	# 290000;
+	repeat(2)
+	begin
+		data[5] = 1'b1;
+		data[5] = #320000 1'b0;
+		# 320000;
+	end
+	data[5] = 1'b1;
+	data[5] = #320000 1'b0;
 end 
 // data[ 4 ]
 initial
 begin
 	data[4] = 1'b0;
+	# 130000;
+	repeat(5)
+	begin
+		data[4] = 1'b1;
+		data[4] = #160000 1'b0;
+		# 160000;
+	end
+	data[4] = 1'b1;
+	data[4] = #160000 1'b0;
 end 
 // data[ 3 ]
 initial
 begin
 	data[3] = 1'b0;
-	data[3] = #300000 1'b1;
+	# 50000;
+	repeat(12)
+	begin
+		data[3] = 1'b1;
+		data[3] = #80000 1'b0;
+		# 80000;
+	end
+	data[3] = 1'b1;
 end 
 // data[ 2 ]
 initial
 begin
+	data[2] = 1'b0;
+	# 10000;
+	repeat(24)
+	begin
+		data[2] = 1'b1;
+		data[2] = #40000 1'b0;
+		# 40000;
+	end
 	data[2] = 1'b1;
-	data[2] = #300000 1'b0;
-	data[2] = #400000 1'b1;
+	data[2] = #40000 1'b0;
 end 
 // data[ 1 ]
 initial
 begin
-	data[1] = 1'b0;
-	# 100000;
-	repeat(2)
-	begin
-		data[1] = 1'b1;
-		data[1] = #200000 1'b0;
-		# 200000;
-	end
 	data[1] = 1'b1;
+	# 10000;
+	repeat(49)
+	begin
+		data[1] = 1'b0;
+		data[1] = #20000 1'b1;
+		# 20000;
+	end
+	data[1] = 1'b0;
+	data[1] = #20000 1'b1;
 end 
 // data[ 0 ]
 always
 begin
 	data[0] = 1'b1;
-	data[0] = #100000 1'b0;
-	#100000;
+	data[0] = #10000 1'b0;
+	#10000;
 end 
 // addr[ 5 ]
 initial
 begin
 	addr[5] = 1'b0;
+	addr[5] = #1650000 1'b1;
 end 
 // addr[ 4 ]
 initial
 begin
 	addr[4] = 1'b0;
+	addr[4] = #900000 1'b1;
+	addr[4] = #750000 1'b0;
 end 
 // addr[ 3 ]
 initial
 begin
 	addr[3] = 1'b0;
+	addr[3] = #450000 1'b1;
+	addr[3] = #450000 1'b0;
+	addr[3] = #300000 1'b1;
+	addr[3] = #450000 1'b0;
 end 
 // addr[ 2 ]
 initial
 begin
 	addr[2] = 1'b0;
+	addr[2] = #300000 1'b1;
+	addr[2] = #150000 1'b0;
+	addr[2] = #150000 1'b1;
+	addr[2] = #300000 1'b0;
+	addr[2] = #150000 1'b1;
+	addr[2] = #150000 1'b0;
+	addr[2] = #300000 1'b1;
+	addr[2] = #150000 1'b0;
+	addr[2] = #150000 1'b1;
 end 
 // addr[ 1 ]
 initial
 begin
 	addr[1] = 1'b0;
+	# 150000;
+	repeat(3)
+	begin
+		addr[1] = 1'b1;
+		addr[1] = #300000 1'b0;
+		# 300000;
+	end
+	addr[1] = 1'b1;
 end 
 // addr[ 0 ]
 initial
 begin
+	repeat(6)
+	begin
+		addr[0] = 1'b0;
+		addr[0] = #150000 1'b1;
+		# 150000;
+	end
 	addr[0] = 1'b0;
+	addr[0] = #150000 1'b1;
 end 
 // mode[ 1 ]
 initial
 begin
-	mode[1] = 1'b1;
+	mode[1] = 1'b0;
+	mode[1] = #1000000 1'b1;
 end 
 // mode[ 0 ]
 initial
 begin
 	mode[0] = 1'b0;
+	mode[0] = #1000000 1'b1;
 end 
 
 // enable
@@ -553,6 +633,7 @@ end
 initial
 begin
 	rst = 1'b0;
+	rst = #1800000 1'b1;
 end 
 
 gA6_lab3_vlg_sample_tst tb_sample (

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for gA6_lab3
-Wed Nov 01 16:23:19 2017
+Wed Nov 01 16:53:16 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -153,7 +153,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 01 16:23:19 2017      ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 01 16:53:16 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA6_lab3                                   ;
 ; Top-level Entity Name              ; gA6_lab3                                   ;
@@ -325,9 +325,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;       ;
 ; Total combinational functions               ; 638   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 292   ;
+;     -- 4 input functions                    ; 240   ;
 ;     -- 3 input functions                    ; 337   ;
-;     -- <=2 input functions                  ; 9     ;
+;     -- <=2 input functions                  ; 61    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
 ;     -- normal mode                          ; 633   ;
@@ -342,8 +342,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 370   ;
-; Total fan-out                               ; 4334  ;
-; Average fan-out                             ; 4.17  ;
+; Total fan-out                               ; 4230  ;
+; Average fan-out                             ; 4.07  ;
 +---------------------------------------------+-------+
 
 
@@ -353,7 +353,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; |gA6_lab3                                          ; 638 (1)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 31   ; 0            ; |gA6_lab3                                                                                                                              ;              ;
-;    |gA6_stack52:inst|                              ; 637 (5)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst                                                                                                             ;              ;
+;    |gA6_stack52:inst|                              ; 637 (4)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst                                                                                                             ;              ;
 ;       |busmux:inst100|                             ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|busmux:inst100                                                                                              ;              ;
 ;          |lpm_mux:$00000|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|busmux:inst100|lpm_mux:$00000                                                                               ;              ;
 ;             |mux_qmc:auto_generated|               ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|busmux:inst100|lpm_mux:$00000|mux_qmc:auto_generated                                                        ;              ;
@@ -510,16 +510,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |busmux:inst98|                              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|busmux:inst98                                                                                               ;              ;
 ;          |lpm_mux:$00000|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|busmux:inst98|lpm_mux:$00000                                                                                ;              ;
 ;             |mux_qmc:auto_generated|               ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|busmux:inst98|lpm_mux:$00000|mux_qmc:auto_generated                                                         ;              ;
-;       |gA6_ff_enable52:inst124|                    ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|gA6_ff_enable52:inst124                                                                                     ;              ;
+;       |gA6_ff_enable52:inst124|                    ; 53 (53)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|gA6_ff_enable52:inst124                                                                                     ;              ;
 ;       |gA6_pop_enable:inst104|                     ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|gA6_pop_enable:inst104                                                                                      ;              ;
 ;          |lpm_rom:lookup_table|                    ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|gA6_pop_enable:inst104|lpm_rom:lookup_table                                                                 ;              ;
 ;             |altrom:srom|                          ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|gA6_pop_enable:inst104|lpm_rom:lookup_table|altrom:srom                                                     ;              ;
 ;                |altsyncram:rom_block|              ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|gA6_pop_enable:inst104|lpm_rom:lookup_table|altrom:srom|altsyncram:rom_block                                ;              ;
 ;                   |altsyncram_f911:auto_generated| ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|gA6_pop_enable:inst104|lpm_rom:lookup_table|altrom:srom|altsyncram:rom_block|altsyncram_f911:auto_generated ;              ;
-;       |lpm_compare:inst119|                        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_compare:inst119                                                                                         ;              ;
-;          |cmpr_4nh:auto_generated|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_compare:inst119|cmpr_4nh:auto_generated                                                                 ;              ;
-;       |lpm_compare:inst120|                        ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_compare:inst120                                                                                         ;              ;
-;          |cmpr_86h:auto_generated|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_compare:inst120|cmpr_86h:auto_generated                                                                 ;              ;
+;       |lpm_compare:inst119|                        ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_compare:inst119                                                                                         ;              ;
+;          |cmpr_4nh:auto_generated|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_compare:inst119|cmpr_4nh:auto_generated                                                                 ;              ;
+;       |lpm_compare:inst120|                        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_compare:inst120                                                                                         ;              ;
+;          |cmpr_86h:auto_generated|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_compare:inst120|cmpr_86h:auto_generated                                                                 ;              ;
 ;       |lpm_counter:inst115|                        ; 14 (0)            ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_counter:inst115                                                                                         ;              ;
 ;          |cntr_p2i:auto_generated|                 ; 14 (14)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated                                                                 ;              ;
 ;       |lpm_ff:inst101|                             ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_stack52:inst|lpm_ff:inst101                                                                                              ;              ;
@@ -2260,7 +2260,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 01 16:23:08 2017
+    Info: Processing started: Wed Nov 01 16:53:08 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gA6_lab3 -c gA6_lab3
 Warning (125092): Tcl Script File lpm_counter0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE lpm_counter0.qip
@@ -3154,9 +3154,9 @@ Info (21057): Implemented 721 device resources after synthesis - the final resou
     Info (21061): Implemented 638 logic cells
     Info (21064): Implemented 52 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 323 warnings
-    Info: Peak virtual memory: 601 megabytes
-    Info: Processing ended: Wed Nov 01 16:23:19 2017
-    Info: Elapsed time: 00:00:11
+    Info: Peak virtual memory: 613 megabytes
+    Info: Processing ended: Wed Nov 01 16:53:16 2017
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:08
 
 
