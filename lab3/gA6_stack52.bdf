@@ -12603,16 +12603,6 @@ applicable agreement for further details.
 	(pt 96 160)
 )
 (connector
-	(text "pop" (rect 69 208 86 220)(font "Arial" ))
-	(pt 64 224)
-	(pt 96 224)
-)
-(connector
-	(text "push" (rect 71 272 94 284)(font "Arial" ))
-	(pt 64 288)
-	(pt 96 288)
-)
-(connector
 	(text "init" (rect 71 336 85 348)(font "Arial" ))
 	(pt 64 352)
 	(pt 96 352)
@@ -15101,6 +15091,16 @@ applicable agreement for further details.
 	(pt -96 760)
 	(pt -64 760)
 	(bus)
+)
+(connector
+	(text "pop" (rect 71 272 88 284)(font "Arial" ))
+	(pt 64 288)
+	(pt 96 288)
+)
+(connector
+	(text "push" (rect 69 208 92 220)(font "Arial" ))
+	(pt 64 224)
+	(pt 96 224)
 )
 (junction (pt 784 552))
 (junction (pt 784 1000))

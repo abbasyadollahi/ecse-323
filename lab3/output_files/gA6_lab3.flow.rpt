@@ -1,5 +1,5 @@
 Flow report for gA6_lab3
-Tue Oct 31 23:23:11 2017
+Tue Oct 31 23:31:12 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Oct 31 23:23:11 2017      ;
+; Flow Status                        ; Successful - Tue Oct 31 23:31:12 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA6_lab3                                   ;
 ; Top-level Entity Name              ; gA6_lab3                                   ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C20F484C7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 641 / 18,752 ( 3 % )                       ;
+; Total logic elements               ; 640 / 18,752 ( 3 % )                       ;
 ;     Total combinational functions  ; 634 / 18,752 ( 3 % )                       ;
 ;     Dedicated logic registers      ; 318 / 18,752 ( 2 % )                       ;
 ; Total registers                    ; 318                                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/31/2017 23:21:50 ;
+; Start date & time ; 10/31/2017 23:30:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; gA6_lab3            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 88491850560622.150950650906892 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 88491850560622.150950703201896 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
@@ -97,14 +97,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:28     ; 1.0                     ; 613 MB              ; 00:00:10                           ;
-; Fitter                    ; 00:00:18     ; 1.0                     ; 769 MB              ; 00:00:12                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 613 MB              ; 00:00:08                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 765 MB              ; 00:00:09                           ;
 ; Assembler                 ; 00:00:03     ; 1.0                     ; 471 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 479 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 479 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 441 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 451 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 451 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 451 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:55     ; --                      ; --                  ; 00:00:28                           ;
+; Total                     ; 00:00:26     ; --                      ; --                  ; 00:00:23                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
