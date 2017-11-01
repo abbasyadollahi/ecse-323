@@ -104,6 +104,7 @@ mode[1] => inst109.IN2
 mode[1] => inst111.IN0
 enable => inst108.IN1
 enable => inst107.IN1
+enable => inst118.IN1
 enable => inst109.IN1
 enable => inst106.IN1
 enable => gA6_ff_enable52:inst124.enable

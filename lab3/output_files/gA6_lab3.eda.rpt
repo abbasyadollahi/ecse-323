@@ -1,5 +1,5 @@
 EDA Netlist Writer report for gA6_lab3
-Tue Oct 31 23:06:15 2017
+Tue Oct 31 23:23:11 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 31 23:06:15 2017 ;
+; EDA Netlist Writer Status ; Successful - Tue Oct 31 23:23:11 2017 ;
 ; Revision Name             ; gA6_lab3                              ;
 ; Top-level Entity Name     ; gA6_lab3                              ;
 ; Family                    ; Cyclone II                            ;
@@ -80,7 +80,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 31 23:06:14 2017
+    Info: Processing started: Tue Oct 31 23:23:10 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog gA6_lab3 -c gA6_lab3
 Warning (125092): Tcl Script File lpm_counter0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE lpm_counter0.qip
@@ -89,8 +89,8 @@ Warning (125092): Tcl Script File lpm_counter1.qip not found
 Info (204019): Generated file gA6_lab3.vo in folder "C:/home/abbas/dsd_A6/lab3/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 451 megabytes
-    Info: Processing ended: Tue Oct 31 23:06:15 2017
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Tue Oct 31 23:23:12 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
