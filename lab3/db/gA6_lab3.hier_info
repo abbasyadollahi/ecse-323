@@ -187,30 +187,30 @@ value0 <= lpm_mux0:inst125.result[0]
 
 
 |gA6_lab3|gA6_stack52:inst|LPM_COMPARE:inst120
-dataa[0] => cmpr_4nh:auto_generated.dataa[0]
-dataa[1] => cmpr_4nh:auto_generated.dataa[1]
-dataa[2] => cmpr_4nh:auto_generated.dataa[2]
-dataa[3] => cmpr_4nh:auto_generated.dataa[3]
-dataa[4] => cmpr_4nh:auto_generated.dataa[4]
-dataa[5] => cmpr_4nh:auto_generated.dataa[5]
-datab[0] => cmpr_4nh:auto_generated.datab[0]
-datab[1] => cmpr_4nh:auto_generated.datab[1]
-datab[2] => cmpr_4nh:auto_generated.datab[2]
-datab[3] => cmpr_4nh:auto_generated.datab[3]
-datab[4] => cmpr_4nh:auto_generated.datab[4]
-datab[5] => cmpr_4nh:auto_generated.datab[5]
+dataa[0] => cmpr_86h:auto_generated.dataa[0]
+dataa[1] => cmpr_86h:auto_generated.dataa[1]
+dataa[2] => cmpr_86h:auto_generated.dataa[2]
+dataa[3] => cmpr_86h:auto_generated.dataa[3]
+dataa[4] => cmpr_86h:auto_generated.dataa[4]
+dataa[5] => cmpr_86h:auto_generated.dataa[5]
+datab[0] => ~NO_FANOUT~
+datab[1] => ~NO_FANOUT~
+datab[2] => ~NO_FANOUT~
+datab[3] => ~NO_FANOUT~
+datab[4] => ~NO_FANOUT~
+datab[5] => ~NO_FANOUT~
 clock => ~NO_FANOUT~
 aclr => ~NO_FANOUT~
 clken => ~NO_FANOUT~
 alb <= <GND>
-aeb <= cmpr_4nh:auto_generated.aeb
+aeb <= cmpr_86h:auto_generated.aeb
 agb <= <GND>
 aleb <= <GND>
 aneb <= <GND>
 ageb <= <GND>
 
 
-|gA6_lab3|gA6_stack52:inst|LPM_COMPARE:inst120|cmpr_4nh:auto_generated
+|gA6_lab3|gA6_stack52:inst|LPM_COMPARE:inst120|cmpr_86h:auto_generated
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -218,12 +218,6 @@ dataa[2] => data_wire[1].IN0
 dataa[3] => data_wire[1].IN0
 dataa[4] => data_wire[2].IN0
 dataa[5] => data_wire[2].IN0
-datab[0] => data_wire[0].IN1
-datab[1] => data_wire[0].IN1
-datab[2] => data_wire[1].IN1
-datab[3] => data_wire[1].IN1
-datab[4] => data_wire[2].IN1
-datab[5] => data_wire[2].IN1
 
 
 |gA6_lab3|gA6_stack52:inst|LPM_COUNTER:inst115

@@ -77,7 +77,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_stack52:inst|LPM_FF:inst87|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_fa4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_stack52:inst|LPM_FF:inst96|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_f94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_stack52:inst|BUSMUX:inst20|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_stack52:inst|LPM_COMPARE:inst120" CBX_FILE_NAME="cmpr_4nh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_stack52:inst|LPM_COMPARE:inst120" CBX_FILE_NAME="cmpr_86h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_stack52:inst|LPM_FF:inst79|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_c94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_stack52:inst|LPM_FF:inst|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_h84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_stack52:inst|BUSMUX:inst102|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>

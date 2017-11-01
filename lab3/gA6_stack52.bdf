@@ -9541,6 +9541,40 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 64 552 273 636))
 )
+(symbol
+	(rect 592 168 624 200)
+	(text "GND" (rect 6 8 16 29)(font "Arial" (font_size 6))(vertical))
+	(text "inst105" (rect -1 3 11 38)(font "Arial" )(vertical)(invisible))
+	(port
+		(pt 32 16)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 20 18 32 23)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 24 16)(pt 32 16))
+	)
+	(drawing
+		(line (pt 24 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 24))
+		(line (pt 24 8)(pt 24 24))
+	)
+	(rotate270)
+)
+(symbol
+	(rect 744 168 760 200)
+	(text "VCC" (rect 6 7 16 27)(font "Arial" (font_size 6))(vertical))
+	(text "inst114" (rect -1 3 11 38)(font "Arial" )(vertical)(invisible))
+	(port
+		(pt 0 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect -3 19 9 24)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 0 16)(pt 8 16))
+	)
+	(drawing
+		(line (pt 8 8)(pt 8 24))
+	)
+	(rotate270)
+)
 (connector
 	(pt 544 536)
 	(pt 584 536)
@@ -14007,12 +14041,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "0, 0, 0, 0, 0, 0" (rect 379 11743 391 11813)(font "Arial" )(vertical))
-	(pt 400 11752)
-	(pt 400 11808)
-	(bus)
-)
-(connector
 	(text "clk" (rect -120 536 -106 548)(font "Arial" ))
 	(pt -96 544)
 	(pt -72 544)
@@ -14070,12 +14098,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "1, 1, 0, 0, 1, 1" (rect -163 704 -93 716)(font "Arial" ))
-	(pt -96 712)
-	(pt -64 712)
-	(bus)
-)
-(connector
 	(text "empty" (rect 98 808 129 820)(font "Arial" ))
 	(pt 64 816)
 	(pt 88 816)
@@ -14084,12 +14106,6 @@ applicable agreement for further details.
 	(text "num[5..0]" (rect -145 824 -98 836)(font "Arial" ))
 	(pt -96 832)
 	(pt -64 832)
-	(bus)
-)
-(connector
-	(text "0, 0, 0, 0, 0, 0" (rect -166 840 -96 852)(font "Arial" ))
-	(pt -96 848)
-	(pt -64 848)
 	(bus)
 )
 (connector
@@ -14981,6 +14997,34 @@ applicable agreement for further details.
 	(text "value17[5..0]" (rect 1000 616 1064 628)(font "Arial" ))
 	(pt 992 632)
 	(pt 1056 632)
+	(bus)
+)
+(connector
+	(text "G" (rect 656 176 664 188)(font "Arial" ))
+	(pt 624 184)
+	(pt 648 184)
+)
+(connector
+	(text "V" (rect 706 176 714 188)(font "Arial" ))
+	(pt 744 184)
+	(pt 720 184)
+)
+(connector
+	(text "V, V, G, G, V, V" (rect -171 704 -90 716)(font "Arial" ))
+	(pt -96 712)
+	(pt -64 712)
+	(bus)
+)
+(connector
+	(text "G, G, G, G, G, G" (rect -174 840 -90 852)(font "Arial" ))
+	(pt -96 848)
+	(pt -64 848)
+	(bus)
+)
+(connector
+	(text "G, G, G, G, G, G" (rect 379 11735 391 11819)(font "Arial" )(vertical))
+	(pt 400 11752)
+	(pt 400 11808)
 	(bus)
 )
 (junction (pt 784 552))
