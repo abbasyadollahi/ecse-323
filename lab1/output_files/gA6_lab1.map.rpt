@@ -1,5 +1,5 @@
 Analysis & Synthesis report for gA6_lab1
-Mon Oct 02 16:17:49 2017
+Wed Nov 01 16:18:04 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 02 16:17:49 2017      ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 01 16:18:04 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA6_lab1                                   ;
 ; Top-level Entity Name              ; gA6_lab1                                   ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 18                                         ;
-;     Total combinational functions  ; 18                                         ;
+; Total logic elements               ; 19                                         ;
+;     Total combinational functions  ; 19                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 25                                         ;
+; Total pins                         ; 28                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -174,28 +174,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 18    ;
+; Estimated Total logic elements              ; 19    ;
 ;                                             ;       ;
-; Total combinational functions               ; 18    ;
+; Total combinational functions               ; 19    ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 14    ;
 ;     -- 3 input functions                    ; 1     ;
-;     -- <=2 input functions                  ; 3     ;
+;     -- <=2 input functions                  ; 4     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 18    ;
+;     -- normal mode                          ; 19    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 25    ;
+; I/O pins                                    ; 28    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; A[5]  ;
-; Maximum fan-out                             ; 6     ;
-; Total fan-out                               ; 70    ;
-; Average fan-out                             ; 1.63  ;
+; Maximum fan-out                             ; 7     ;
+; Total fan-out                               ; 75    ;
+; Average fan-out                             ; 1.60  ;
 +---------------------------------------------+-------+
 
 
@@ -204,17 +204,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
-; |gA6_lab1                  ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |gA6_lab1                                                     ;              ;
+; |gA6_lab1                  ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |gA6_lab1                                                     ;              ;
 ;    |gA6_comp7:inst1|       ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_comp7:inst1                                     ;              ;
-;    |gA6_modulo_13:inst|    ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst                                  ;              ;
+;    |gA6_modulo_13:inst|    ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst                                  ;              ;
 ;       |gA6_adder6:inst5|   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5                 ;              ;
 ;          |gA6_adder:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst1 ;              ;
 ;          |gA6_adder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst2 ;              ;
 ;          |gA6_adder:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst3 ;              ;
 ;          |gA6_adder:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst  ;              ;
-;       |gA6_adder8:inst|    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder8:inst                  ;              ;
+;       |gA6_adder8:inst|    ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder8:inst                  ;              ;
 ;          |gA6_adder:inst6| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder8:inst|gA6_adder:inst6  ;              ;
-;          |gA6_adder:inst7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder8:inst|gA6_adder:inst7  ;              ;
+;          |gA6_adder:inst7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab1|gA6_modulo_13:inst|gA6_adder8:inst|gA6_adder:inst7  ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -249,7 +249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Oct 02 16:17:47 2017
+    Info: Processing started: Wed Nov 01 16:18:01 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gA6_lab1 -c gA6_lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ga6_lab1.bdf
@@ -272,20 +272,20 @@ Info (12128): Elaborating entity "gA6_modulo_13" for hierarchy "gA6_modulo_13:in
 Warning (275008): Primitive "GND" of instance "inst13" not used
 Warning (275008): Primitive "GND" of instance "inst7" not used
 Warning (275008): Primitive "GND" of instance "inst8" not used
-Info (12128): Elaborating entity "gA6_adder6" for hierarchy "gA6_modulo_13:inst|gA6_adder6:inst5"
-Info (12128): Elaborating entity "gA6_adder" for hierarchy "gA6_modulo_13:inst|gA6_adder6:inst5|gA6_adder:inst5"
-Info (12128): Elaborating entity "gA6_not6" for hierarchy "gA6_modulo_13:inst|gA6_not6:inst15"
 Info (12128): Elaborating entity "gA6_adder8" for hierarchy "gA6_modulo_13:inst|gA6_adder8:inst"
+Info (12128): Elaborating entity "gA6_adder" for hierarchy "gA6_modulo_13:inst|gA6_adder8:inst|gA6_adder:inst7"
+Info (12128): Elaborating entity "gA6_adder6" for hierarchy "gA6_modulo_13:inst|gA6_adder6:inst5"
+Info (12128): Elaborating entity "gA6_not6" for hierarchy "gA6_modulo_13:inst|gA6_not6:inst15"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 43 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 18 logic cells
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 19 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 491 megabytes
-    Info: Processing ended: Mon Oct 02 16:17:49 2017
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 524 megabytes
+    Info: Processing ended: Wed Nov 01 16:18:04 2017
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 

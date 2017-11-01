@@ -3,6 +3,7 @@ use verilog.vl_types.all;
 entity gA6_lab1_vlg_check_tst is
     port(
         AeqB            : in     vl_logic;
+        Afloor13        : in     vl_logic_vector(2 downto 0);
         Amod13          : in     vl_logic_vector(3 downto 0);
         sampler_rx      : in     vl_logic
     );

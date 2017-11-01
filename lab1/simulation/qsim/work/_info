@@ -4,82 +4,82 @@ K3
 cModel Technology
 Z0 dC:\home\abbas\dsd_A6\lab1\simulation\qsim
 vgA6_lab1
-Z1 !s100 e]o<4j4n]YDzL:>BUS8h@2
-Z2 Ia0lin@8bRh8Dd<L1oQTZT1
-Z3 V0`3ke7<V`eMdhGYY6hZ2@3
-Z4 dC:\home\abbas\dsd_A6\lab1\simulation\qsim
-Z5 w1507940956
-Z6 8gA6_lab1.vo
-Z7 FgA6_lab1.vo
+Z1 I7:BhQZD8RU0m9A;^R27kj1
+Z2 V>IPgb_Yo[z^C=P?FT@hgZ0
+Z3 dC:\home\abbas\dsd_A6\lab1\simulation\qsim
+Z4 w1509567602
+Z5 8gA6_lab1.vo
+Z6 FgA6_lab1.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|gA6_lab1.vo|
-Z10 o-work work -O0
-Z11 ng@a6_lab1
+Z8 !s90 -work|work|gA6_lab1.vo|
+Z9 o-work work -O0
+Z10 ng@a6_lab1
 !i10b 1
+Z11 !s100 I1SRD<I?Lchjgf4gollKP2
 !s85 0
-Z12 !s108 1507940957.046000
+Z12 !s108 1509567604.464000
 Z13 !s107 gA6_lab1.vo|
 !s101 -O0
 vgA6_lab1_vlg_check_tst
 !i10b 1
-!s100 `DXUzQOJA>cQk^QDlneNi2
-IaR?=]R^;=BU^XEV@PjFkd0
-Z14 VRleiGRePm>E3_f^:3]Ijd2
+!s100 nTKV9bCMJL^H6GA0QoZVT1
+I8CI^k1jim0gmLQ3K]DTH63
+VWdSXBCinj7j:Di@]h1d_o2
+R3
 R4
-Z15 w1507940955
-Z16 8gA6_lab1.vt
-Z17 FgA6_lab1.vt
+Z14 8gA6_lab1.vt
+Z15 FgA6_lab1.vt
 L0 61
-R8
+R7
 r1
 !s85 0
 31
-Z18 !s108 1507940957.247000
-Z19 !s107 gA6_lab1.vt|
-Z20 !s90 -work|work|gA6_lab1.vt|
+Z16 !s108 1509567604.714000
+Z17 !s107 gA6_lab1.vt|
+Z18 !s90 -work|work|gA6_lab1.vt|
 !s101 -O0
-R10
-Z21 ng@a6_lab1_vlg_check_tst
+R9
+Z19 ng@a6_lab1_vlg_check_tst
 vgA6_lab1_vlg_sample_tst
 !i10b 1
-Z22 !s100 ZCVFJIS6gC1fi^B1][76`1
-Z23 I0gcQ07jY3XRiHg8T]SGQg3
-Z24 V6VnXYhQ=m]6W9DITUCN@g2
+Z20 !s100 ZCVFJIS6gC1fi^B1][76`1
+Z21 I0gcQ07jY3XRiHg8T]SGQg3
+Z22 V6VnXYhQ=m]6W9DITUCN@g2
+R3
 R4
+R14
 R15
-R16
-R17
 L0 29
-R8
+R7
 r1
 !s85 0
 31
+R16
+R17
 R18
-R19
-R20
 !s101 -O0
-R10
-Z25 ng@a6_lab1_vlg_sample_tst
+R9
+Z23 ng@a6_lab1_vlg_sample_tst
 vgA6_lab1_vlg_vec_tst
 !i10b 1
-!s100 mAQHJIPDmIP]<X7D6g4Ld1
-I4QOJ_[LGbLBXl]z85[4n@0
-Z26 V@8Z00L3^gS?F3g8UOccW@2
+!s100 ==0oUR0?K;a2O@YRalW7P0
+IX^:kSdB]i6d@kLb6_L@ZL1
+Z24 V@8Z00L3^gS?F3g8UOccW@2
+R3
 R4
+R14
 R15
-R16
-R17
-L0 214
-R8
+L0 276
+R7
 r1
 !s85 0
 31
+R16
+R17
 R18
-R19
-R20
 !s101 -O0
-R10
-Z27 ng@a6_lab1_vlg_vec_tst
+R9
+Z25 ng@a6_lab1_vlg_vec_tst
