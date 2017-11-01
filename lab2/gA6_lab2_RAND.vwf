@@ -1048,7 +1048,7 @@ TRANSITION_LIST("seed[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
 	}
 }
 
@@ -1066,7 +1066,7 @@ TRANSITION_LIST("seed[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
 	}
 }
 
@@ -1237,7 +1237,7 @@ TRANSITION_LIST("seed[20]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
 	}
 }
 
@@ -1246,7 +1246,7 @@ TRANSITION_LIST("seed[19]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
 	}
 }
 
@@ -1264,7 +1264,7 @@ TRANSITION_LIST("seed[17]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
 	}
 }
 
@@ -1273,7 +1273,7 @@ TRANSITION_LIST("seed[16]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
 	}
 }
 

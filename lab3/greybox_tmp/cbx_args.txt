@@ -1,0 +1,12 @@
+LPM_DIRECTION=UNUSED
+LPM_PORT_UPDOWN=PORT_USED
+LPM_TYPE=LPM_COUNTER
+LPM_WIDTH=6
+DEVICE_FAMILY="Cyclone II"
+clk_en
+clock
+cnt_en
+sclr
+sset
+updown
+q

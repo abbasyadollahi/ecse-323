@@ -1025,7 +1025,7 @@ rand[26] <= gA6_adder32:second_adder.result[26]
 rand[27] <= gA6_adder32:second_adder.result[27]
 rand[28] <= gA6_adder32:second_adder.result[28]
 rand[29] <= gA6_adder32:second_adder.result[29]
-rand[30] <= <GND>
+rand[30] <= gA6_adder32:second_adder.result[30]
 rand[31] <= <GND>
 
 

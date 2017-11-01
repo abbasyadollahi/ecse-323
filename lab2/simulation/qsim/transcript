@@ -31,5 +31,5 @@
 # Loading work.gA6_lab2_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : gA6_lab2.vt(723)
-#    Time: 50 ns  Iteration: 0  Instance: /gA6_lab2_vlg_vec_tst/tb_out
+# ** Note: $finish    : gA6_lab2.vt(273)
+#    Time: 320 ns  Iteration: 0  Instance: /gA6_lab2_vlg_vec_tst/tb_out

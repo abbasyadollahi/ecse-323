@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 96 32 264 48)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "seed[31..0]" (rect 5 0 61 12)(font "Arial" ))
+	(text "seed[31..0]" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -169,7 +169,7 @@ applicable agreement for further details.
 		(pt 176 32)
 		(output)
 		(text "P_EN[51..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "P_EN[51..0]" (rect 105 27 155 39)(font "Arial" ))
+		(text "P_EN[51..0]" (rect 105 27 165 39)(font "Arial" ))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(drawing
@@ -198,7 +198,7 @@ applicable agreement for further details.
 		(pt 216 32)
 		(output)
 		(text "segments_out[6..0]" (rect 0 0 95 12)(font "Arial" ))
-		(text "segments_out[6..0]" (rect 115 27 195 39)(font "Arial" ))
+		(text "segments_out[6..0]" (rect 115 27 210 39)(font "Arial" ))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(drawing

@@ -3,7 +3,7 @@ $comment
 		vcd file gA6_lab2.msim.vcd -direction
 $end
 $date
-	Thu Oct 19 17:52:53 2017
+	Thu Oct 26 17:41:10 2017
 $end
 $version
 	ModelSim Version 10.1d
@@ -131,251 +131,255 @@ $var wire 1 5! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~19 $en
 $var wire 1 6! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~21 $end
 $var wire 1 7! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~23 $end
 $var wire 1 8! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~25 $end
-$var wire 1 9! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~26_combout $end
-$var wire 1 :! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~24_combout $end
-$var wire 1 ;! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~22_combout $end
-$var wire 1 <! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~20_combout $end
-$var wire 1 =! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~18_combout $end
-$var wire 1 >! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~14_combout $end
-$var wire 1 ?! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~12_combout $end
-$var wire 1 @! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~10_combout $end
-$var wire 1 A! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~8_combout $end
-$var wire 1 B! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~0_combout $end
-$var wire 1 C! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~1 $end
-$var wire 1 D! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~3 $end
-$var wire 1 E! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~5 $end
-$var wire 1 F! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~7 $end
-$var wire 1 G! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~9 $end
-$var wire 1 H! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~11 $end
-$var wire 1 I! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~13 $end
-$var wire 1 J! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~15 $end
-$var wire 1 K! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~17 $end
-$var wire 1 L! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~19 $end
-$var wire 1 M! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~21 $end
-$var wire 1 N! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~23 $end
-$var wire 1 O! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~25 $end
-$var wire 1 P! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~27 $end
-$var wire 1 Q! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~29 $end
-$var wire 1 R! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~31 $end
-$var wire 1 S! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~33 $end
-$var wire 1 T! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~35 $end
-$var wire 1 U! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~37 $end
-$var wire 1 V! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~39 $end
-$var wire 1 W! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~41 $end
-$var wire 1 X! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~43 $end
-$var wire 1 Y! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~45 $end
-$var wire 1 Z! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~47 $end
-$var wire 1 [! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~49 $end
-$var wire 1 \! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~51 $end
-$var wire 1 ]! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~53 $end
-$var wire 1 ^! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~55 $end
-$var wire 1 _! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~56_combout $end
-$var wire 1 `! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~54_combout $end
-$var wire 1 a! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~52_combout $end
-$var wire 1 b! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~50_combout $end
-$var wire 1 c! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~48_combout $end
-$var wire 1 d! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~16_combout $end
-$var wire 1 e! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~46_combout $end
-$var wire 1 f! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~44_combout $end
-$var wire 1 g! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~42_combout $end
-$var wire 1 h! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~40_combout $end
-$var wire 1 i! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~38_combout $end
-$var wire 1 j! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~6_combout $end
-$var wire 1 k! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~36_combout $end
-$var wire 1 l! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~4_combout $end
-$var wire 1 m! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~34_combout $end
-$var wire 1 n! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~2_combout $end
-$var wire 1 o! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~32_combout $end
-$var wire 1 p! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~30_combout $end
-$var wire 1 q! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~28_combout $end
-$var wire 1 r! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~26_combout $end
-$var wire 1 s! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~24_combout $end
-$var wire 1 t! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~22_combout $end
-$var wire 1 u! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~20_combout $end
-$var wire 1 v! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~18_combout $end
-$var wire 1 w! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~16_combout $end
-$var wire 1 x! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~14_combout $end
-$var wire 1 y! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~12_combout $end
-$var wire 1 z! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~10_combout $end
-$var wire 1 {! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~8_combout $end
-$var wire 1 |! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~6_combout $end
-$var wire 1 }! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~4_combout $end
-$var wire 1 ~! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~2_combout $end
-$var wire 1 !" inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~0_combout $end
-$var wire 1 "" mode~combout $end
-$var wire 1 #" inst2|Mux0~1_combout $end
-$var wire 1 $" inst2|Mux0~0_combout $end
-$var wire 1 %" inst2|Mux0~2_combout $end
-$var wire 1 &" inst2|Mux1~1_combout $end
-$var wire 1 '" inst2|Mux1~0_combout $end
-$var wire 1 (" inst2|Mux1~2_combout $end
-$var wire 1 )" inst2|Mux2~0_combout $end
-$var wire 1 *" inst2|Mux2~1_combout $end
-$var wire 1 +" inst2|Mux3~1_combout $end
-$var wire 1 ," inst2|Mux3~0_combout $end
-$var wire 1 -" inst2|Mux3~2_combout $end
-$var wire 1 ." inst2|Mux4~0_combout $end
-$var wire 1 /" inst2|Mux4~1_combout $end
-$var wire 1 0" inst2|Mux5~0_combout $end
-$var wire 1 1" inst2|Mux5~1_combout $end
-$var wire 1 2" inst2|Mux6~0_combout $end
-$var wire 1 3" inst2|Mux6~1_combout $end
-$var wire 1 4" seed~combout [31] $end
-$var wire 1 5" seed~combout [30] $end
-$var wire 1 6" seed~combout [29] $end
-$var wire 1 7" seed~combout [28] $end
-$var wire 1 8" seed~combout [27] $end
-$var wire 1 9" seed~combout [26] $end
-$var wire 1 :" seed~combout [25] $end
-$var wire 1 ;" seed~combout [24] $end
-$var wire 1 <" seed~combout [23] $end
-$var wire 1 =" seed~combout [22] $end
-$var wire 1 >" seed~combout [21] $end
-$var wire 1 ?" seed~combout [20] $end
-$var wire 1 @" seed~combout [19] $end
-$var wire 1 A" seed~combout [18] $end
-$var wire 1 B" seed~combout [17] $end
-$var wire 1 C" seed~combout [16] $end
-$var wire 1 D" seed~combout [15] $end
-$var wire 1 E" seed~combout [14] $end
-$var wire 1 F" seed~combout [13] $end
-$var wire 1 G" seed~combout [12] $end
-$var wire 1 H" seed~combout [11] $end
-$var wire 1 I" seed~combout [10] $end
-$var wire 1 J" seed~combout [9] $end
-$var wire 1 K" seed~combout [8] $end
-$var wire 1 L" seed~combout [7] $end
-$var wire 1 M" seed~combout [6] $end
-$var wire 1 N" seed~combout [5] $end
-$var wire 1 O" seed~combout [4] $end
-$var wire 1 P" seed~combout [3] $end
-$var wire 1 Q" seed~combout [2] $end
-$var wire 1 R" seed~combout [1] $end
-$var wire 1 S" seed~combout [0] $end
-$var wire 1 T" code~combout [3] $end
-$var wire 1 U" code~combout [2] $end
-$var wire 1 V" code~combout [1] $end
-$var wire 1 W" code~combout [0] $end
-$var wire 1 X" N~combout [5] $end
-$var wire 1 Y" N~combout [4] $end
-$var wire 1 Z" N~combout [3] $end
-$var wire 1 [" N~combout [2] $end
-$var wire 1 \" N~combout [1] $end
-$var wire 1 ]" N~combout [0] $end
-$var wire 1 ^" inst1|lookup_table|srom|rom_block|auto_generated|q_a [51] $end
-$var wire 1 _" inst1|lookup_table|srom|rom_block|auto_generated|q_a [50] $end
-$var wire 1 `" inst1|lookup_table|srom|rom_block|auto_generated|q_a [49] $end
-$var wire 1 a" inst1|lookup_table|srom|rom_block|auto_generated|q_a [48] $end
-$var wire 1 b" inst1|lookup_table|srom|rom_block|auto_generated|q_a [47] $end
-$var wire 1 c" inst1|lookup_table|srom|rom_block|auto_generated|q_a [46] $end
-$var wire 1 d" inst1|lookup_table|srom|rom_block|auto_generated|q_a [45] $end
-$var wire 1 e" inst1|lookup_table|srom|rom_block|auto_generated|q_a [44] $end
-$var wire 1 f" inst1|lookup_table|srom|rom_block|auto_generated|q_a [43] $end
-$var wire 1 g" inst1|lookup_table|srom|rom_block|auto_generated|q_a [42] $end
-$var wire 1 h" inst1|lookup_table|srom|rom_block|auto_generated|q_a [41] $end
-$var wire 1 i" inst1|lookup_table|srom|rom_block|auto_generated|q_a [40] $end
-$var wire 1 j" inst1|lookup_table|srom|rom_block|auto_generated|q_a [39] $end
-$var wire 1 k" inst1|lookup_table|srom|rom_block|auto_generated|q_a [38] $end
-$var wire 1 l" inst1|lookup_table|srom|rom_block|auto_generated|q_a [37] $end
-$var wire 1 m" inst1|lookup_table|srom|rom_block|auto_generated|q_a [36] $end
-$var wire 1 n" inst1|lookup_table|srom|rom_block|auto_generated|q_a [35] $end
-$var wire 1 o" inst1|lookup_table|srom|rom_block|auto_generated|q_a [34] $end
-$var wire 1 p" inst1|lookup_table|srom|rom_block|auto_generated|q_a [33] $end
-$var wire 1 q" inst1|lookup_table|srom|rom_block|auto_generated|q_a [32] $end
-$var wire 1 r" inst1|lookup_table|srom|rom_block|auto_generated|q_a [31] $end
-$var wire 1 s" inst1|lookup_table|srom|rom_block|auto_generated|q_a [30] $end
-$var wire 1 t" inst1|lookup_table|srom|rom_block|auto_generated|q_a [29] $end
-$var wire 1 u" inst1|lookup_table|srom|rom_block|auto_generated|q_a [28] $end
-$var wire 1 v" inst1|lookup_table|srom|rom_block|auto_generated|q_a [27] $end
-$var wire 1 w" inst1|lookup_table|srom|rom_block|auto_generated|q_a [26] $end
-$var wire 1 x" inst1|lookup_table|srom|rom_block|auto_generated|q_a [25] $end
-$var wire 1 y" inst1|lookup_table|srom|rom_block|auto_generated|q_a [24] $end
-$var wire 1 z" inst1|lookup_table|srom|rom_block|auto_generated|q_a [23] $end
-$var wire 1 {" inst1|lookup_table|srom|rom_block|auto_generated|q_a [22] $end
-$var wire 1 |" inst1|lookup_table|srom|rom_block|auto_generated|q_a [21] $end
-$var wire 1 }" inst1|lookup_table|srom|rom_block|auto_generated|q_a [20] $end
-$var wire 1 ~" inst1|lookup_table|srom|rom_block|auto_generated|q_a [19] $end
-$var wire 1 !# inst1|lookup_table|srom|rom_block|auto_generated|q_a [18] $end
-$var wire 1 "# inst1|lookup_table|srom|rom_block|auto_generated|q_a [17] $end
-$var wire 1 ## inst1|lookup_table|srom|rom_block|auto_generated|q_a [16] $end
-$var wire 1 $# inst1|lookup_table|srom|rom_block|auto_generated|q_a [15] $end
-$var wire 1 %# inst1|lookup_table|srom|rom_block|auto_generated|q_a [14] $end
-$var wire 1 &# inst1|lookup_table|srom|rom_block|auto_generated|q_a [13] $end
-$var wire 1 '# inst1|lookup_table|srom|rom_block|auto_generated|q_a [12] $end
-$var wire 1 (# inst1|lookup_table|srom|rom_block|auto_generated|q_a [11] $end
-$var wire 1 )# inst1|lookup_table|srom|rom_block|auto_generated|q_a [10] $end
-$var wire 1 *# inst1|lookup_table|srom|rom_block|auto_generated|q_a [9] $end
-$var wire 1 +# inst1|lookup_table|srom|rom_block|auto_generated|q_a [8] $end
-$var wire 1 ,# inst1|lookup_table|srom|rom_block|auto_generated|q_a [7] $end
-$var wire 1 -# inst1|lookup_table|srom|rom_block|auto_generated|q_a [6] $end
-$var wire 1 .# inst1|lookup_table|srom|rom_block|auto_generated|q_a [5] $end
-$var wire 1 /# inst1|lookup_table|srom|rom_block|auto_generated|q_a [4] $end
-$var wire 1 0# inst1|lookup_table|srom|rom_block|auto_generated|q_a [3] $end
-$var wire 1 1# inst1|lookup_table|srom|rom_block|auto_generated|q_a [2] $end
-$var wire 1 2# inst1|lookup_table|srom|rom_block|auto_generated|q_a [1] $end
-$var wire 1 3# inst1|lookup_table|srom|rom_block|auto_generated|q_a [0] $end
-$var wire 1 4# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [35] $end
-$var wire 1 5# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [34] $end
-$var wire 1 6# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [33] $end
-$var wire 1 7# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [32] $end
-$var wire 1 8# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [31] $end
-$var wire 1 9# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [30] $end
-$var wire 1 :# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [29] $end
-$var wire 1 ;# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [28] $end
-$var wire 1 <# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [27] $end
-$var wire 1 =# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [26] $end
-$var wire 1 ># inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [25] $end
-$var wire 1 ?# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [24] $end
-$var wire 1 @# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [23] $end
-$var wire 1 A# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [22] $end
-$var wire 1 B# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [21] $end
-$var wire 1 C# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [20] $end
-$var wire 1 D# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [19] $end
-$var wire 1 E# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [18] $end
-$var wire 1 F# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [17] $end
-$var wire 1 G# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [16] $end
-$var wire 1 H# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [15] $end
-$var wire 1 I# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [14] $end
-$var wire 1 J# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [13] $end
-$var wire 1 K# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [12] $end
-$var wire 1 L# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [11] $end
-$var wire 1 M# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [10] $end
-$var wire 1 N# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [9] $end
-$var wire 1 O# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [8] $end
-$var wire 1 P# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [7] $end
-$var wire 1 Q# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [6] $end
-$var wire 1 R# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [5] $end
-$var wire 1 S# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [4] $end
-$var wire 1 T# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [3] $end
-$var wire 1 U# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [2] $end
-$var wire 1 V# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [1] $end
-$var wire 1 W# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [0] $end
-$var wire 1 X# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [15] $end
-$var wire 1 Y# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [14] $end
-$var wire 1 Z# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [13] $end
-$var wire 1 [# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [12] $end
-$var wire 1 \# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [11] $end
-$var wire 1 ]# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [10] $end
-$var wire 1 ^# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [9] $end
-$var wire 1 _# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [8] $end
-$var wire 1 `# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [7] $end
-$var wire 1 a# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [6] $end
-$var wire 1 b# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [5] $end
-$var wire 1 c# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [4] $end
-$var wire 1 d# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [3] $end
-$var wire 1 e# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [2] $end
-$var wire 1 f# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [1] $end
-$var wire 1 g# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
+$var wire 1 9! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~27 $end
+$var wire 1 :! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~28_combout $end
+$var wire 1 ;! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~24_combout $end
+$var wire 1 <! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~22_combout $end
+$var wire 1 =! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~20_combout $end
+$var wire 1 >! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~18_combout $end
+$var wire 1 ?! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~14_combout $end
+$var wire 1 @! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~12_combout $end
+$var wire 1 A! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~10_combout $end
+$var wire 1 B! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~8_combout $end
+$var wire 1 C! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~0_combout $end
+$var wire 1 D! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~1 $end
+$var wire 1 E! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~3 $end
+$var wire 1 F! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~5 $end
+$var wire 1 G! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~7 $end
+$var wire 1 H! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~9 $end
+$var wire 1 I! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~11 $end
+$var wire 1 J! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~13 $end
+$var wire 1 K! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~15 $end
+$var wire 1 L! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~17 $end
+$var wire 1 M! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~19 $end
+$var wire 1 N! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~21 $end
+$var wire 1 O! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~23 $end
+$var wire 1 P! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~25 $end
+$var wire 1 Q! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~27 $end
+$var wire 1 R! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~29 $end
+$var wire 1 S! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~31 $end
+$var wire 1 T! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~33 $end
+$var wire 1 U! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~35 $end
+$var wire 1 V! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~37 $end
+$var wire 1 W! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~39 $end
+$var wire 1 X! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~41 $end
+$var wire 1 Y! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~43 $end
+$var wire 1 Z! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~45 $end
+$var wire 1 [! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~47 $end
+$var wire 1 \! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~49 $end
+$var wire 1 ]! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~51 $end
+$var wire 1 ^! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~53 $end
+$var wire 1 _! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~55 $end
+$var wire 1 `! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~57 $end
+$var wire 1 a! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~58_combout $end
+$var wire 1 b! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~26_combout $end
+$var wire 1 c! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~56_combout $end
+$var wire 1 d! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~54_combout $end
+$var wire 1 e! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~52_combout $end
+$var wire 1 f! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~50_combout $end
+$var wire 1 g! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~48_combout $end
+$var wire 1 h! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~16_combout $end
+$var wire 1 i! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~46_combout $end
+$var wire 1 j! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~44_combout $end
+$var wire 1 k! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~42_combout $end
+$var wire 1 l! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~40_combout $end
+$var wire 1 m! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~38_combout $end
+$var wire 1 n! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~6_combout $end
+$var wire 1 o! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~36_combout $end
+$var wire 1 p! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~4_combout $end
+$var wire 1 q! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~34_combout $end
+$var wire 1 r! inst|first_adder|LPM_ADD_SUB_component|auto_generated|op_1~2_combout $end
+$var wire 1 s! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~32_combout $end
+$var wire 1 t! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~30_combout $end
+$var wire 1 u! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~28_combout $end
+$var wire 1 v! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~26_combout $end
+$var wire 1 w! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~24_combout $end
+$var wire 1 x! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~22_combout $end
+$var wire 1 y! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~20_combout $end
+$var wire 1 z! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~18_combout $end
+$var wire 1 {! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~16_combout $end
+$var wire 1 |! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~14_combout $end
+$var wire 1 }! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~12_combout $end
+$var wire 1 ~! inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~10_combout $end
+$var wire 1 !" inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~8_combout $end
+$var wire 1 "" inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~6_combout $end
+$var wire 1 #" inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~4_combout $end
+$var wire 1 $" inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~2_combout $end
+$var wire 1 %" inst|second_adder|LPM_ADD_SUB_component|auto_generated|op_1~0_combout $end
+$var wire 1 &" mode~combout $end
+$var wire 1 '" inst2|Mux0~1_combout $end
+$var wire 1 (" inst2|Mux0~0_combout $end
+$var wire 1 )" inst2|Mux0~2_combout $end
+$var wire 1 *" inst2|Mux1~1_combout $end
+$var wire 1 +" inst2|Mux1~0_combout $end
+$var wire 1 ," inst2|Mux1~2_combout $end
+$var wire 1 -" inst2|Mux2~0_combout $end
+$var wire 1 ." inst2|Mux2~1_combout $end
+$var wire 1 /" inst2|Mux3~1_combout $end
+$var wire 1 0" inst2|Mux3~0_combout $end
+$var wire 1 1" inst2|Mux3~2_combout $end
+$var wire 1 2" inst2|Mux4~0_combout $end
+$var wire 1 3" inst2|Mux4~1_combout $end
+$var wire 1 4" inst2|Mux5~0_combout $end
+$var wire 1 5" inst2|Mux5~1_combout $end
+$var wire 1 6" inst2|Mux6~0_combout $end
+$var wire 1 7" inst2|Mux6~1_combout $end
+$var wire 1 8" seed~combout [31] $end
+$var wire 1 9" seed~combout [30] $end
+$var wire 1 :" seed~combout [29] $end
+$var wire 1 ;" seed~combout [28] $end
+$var wire 1 <" seed~combout [27] $end
+$var wire 1 =" seed~combout [26] $end
+$var wire 1 >" seed~combout [25] $end
+$var wire 1 ?" seed~combout [24] $end
+$var wire 1 @" seed~combout [23] $end
+$var wire 1 A" seed~combout [22] $end
+$var wire 1 B" seed~combout [21] $end
+$var wire 1 C" seed~combout [20] $end
+$var wire 1 D" seed~combout [19] $end
+$var wire 1 E" seed~combout [18] $end
+$var wire 1 F" seed~combout [17] $end
+$var wire 1 G" seed~combout [16] $end
+$var wire 1 H" seed~combout [15] $end
+$var wire 1 I" seed~combout [14] $end
+$var wire 1 J" seed~combout [13] $end
+$var wire 1 K" seed~combout [12] $end
+$var wire 1 L" seed~combout [11] $end
+$var wire 1 M" seed~combout [10] $end
+$var wire 1 N" seed~combout [9] $end
+$var wire 1 O" seed~combout [8] $end
+$var wire 1 P" seed~combout [7] $end
+$var wire 1 Q" seed~combout [6] $end
+$var wire 1 R" seed~combout [5] $end
+$var wire 1 S" seed~combout [4] $end
+$var wire 1 T" seed~combout [3] $end
+$var wire 1 U" seed~combout [2] $end
+$var wire 1 V" seed~combout [1] $end
+$var wire 1 W" seed~combout [0] $end
+$var wire 1 X" code~combout [3] $end
+$var wire 1 Y" code~combout [2] $end
+$var wire 1 Z" code~combout [1] $end
+$var wire 1 [" code~combout [0] $end
+$var wire 1 \" N~combout [5] $end
+$var wire 1 ]" N~combout [4] $end
+$var wire 1 ^" N~combout [3] $end
+$var wire 1 _" N~combout [2] $end
+$var wire 1 `" N~combout [1] $end
+$var wire 1 a" N~combout [0] $end
+$var wire 1 b" inst1|lookup_table|srom|rom_block|auto_generated|q_a [51] $end
+$var wire 1 c" inst1|lookup_table|srom|rom_block|auto_generated|q_a [50] $end
+$var wire 1 d" inst1|lookup_table|srom|rom_block|auto_generated|q_a [49] $end
+$var wire 1 e" inst1|lookup_table|srom|rom_block|auto_generated|q_a [48] $end
+$var wire 1 f" inst1|lookup_table|srom|rom_block|auto_generated|q_a [47] $end
+$var wire 1 g" inst1|lookup_table|srom|rom_block|auto_generated|q_a [46] $end
+$var wire 1 h" inst1|lookup_table|srom|rom_block|auto_generated|q_a [45] $end
+$var wire 1 i" inst1|lookup_table|srom|rom_block|auto_generated|q_a [44] $end
+$var wire 1 j" inst1|lookup_table|srom|rom_block|auto_generated|q_a [43] $end
+$var wire 1 k" inst1|lookup_table|srom|rom_block|auto_generated|q_a [42] $end
+$var wire 1 l" inst1|lookup_table|srom|rom_block|auto_generated|q_a [41] $end
+$var wire 1 m" inst1|lookup_table|srom|rom_block|auto_generated|q_a [40] $end
+$var wire 1 n" inst1|lookup_table|srom|rom_block|auto_generated|q_a [39] $end
+$var wire 1 o" inst1|lookup_table|srom|rom_block|auto_generated|q_a [38] $end
+$var wire 1 p" inst1|lookup_table|srom|rom_block|auto_generated|q_a [37] $end
+$var wire 1 q" inst1|lookup_table|srom|rom_block|auto_generated|q_a [36] $end
+$var wire 1 r" inst1|lookup_table|srom|rom_block|auto_generated|q_a [35] $end
+$var wire 1 s" inst1|lookup_table|srom|rom_block|auto_generated|q_a [34] $end
+$var wire 1 t" inst1|lookup_table|srom|rom_block|auto_generated|q_a [33] $end
+$var wire 1 u" inst1|lookup_table|srom|rom_block|auto_generated|q_a [32] $end
+$var wire 1 v" inst1|lookup_table|srom|rom_block|auto_generated|q_a [31] $end
+$var wire 1 w" inst1|lookup_table|srom|rom_block|auto_generated|q_a [30] $end
+$var wire 1 x" inst1|lookup_table|srom|rom_block|auto_generated|q_a [29] $end
+$var wire 1 y" inst1|lookup_table|srom|rom_block|auto_generated|q_a [28] $end
+$var wire 1 z" inst1|lookup_table|srom|rom_block|auto_generated|q_a [27] $end
+$var wire 1 {" inst1|lookup_table|srom|rom_block|auto_generated|q_a [26] $end
+$var wire 1 |" inst1|lookup_table|srom|rom_block|auto_generated|q_a [25] $end
+$var wire 1 }" inst1|lookup_table|srom|rom_block|auto_generated|q_a [24] $end
+$var wire 1 ~" inst1|lookup_table|srom|rom_block|auto_generated|q_a [23] $end
+$var wire 1 !# inst1|lookup_table|srom|rom_block|auto_generated|q_a [22] $end
+$var wire 1 "# inst1|lookup_table|srom|rom_block|auto_generated|q_a [21] $end
+$var wire 1 ## inst1|lookup_table|srom|rom_block|auto_generated|q_a [20] $end
+$var wire 1 $# inst1|lookup_table|srom|rom_block|auto_generated|q_a [19] $end
+$var wire 1 %# inst1|lookup_table|srom|rom_block|auto_generated|q_a [18] $end
+$var wire 1 &# inst1|lookup_table|srom|rom_block|auto_generated|q_a [17] $end
+$var wire 1 '# inst1|lookup_table|srom|rom_block|auto_generated|q_a [16] $end
+$var wire 1 (# inst1|lookup_table|srom|rom_block|auto_generated|q_a [15] $end
+$var wire 1 )# inst1|lookup_table|srom|rom_block|auto_generated|q_a [14] $end
+$var wire 1 *# inst1|lookup_table|srom|rom_block|auto_generated|q_a [13] $end
+$var wire 1 +# inst1|lookup_table|srom|rom_block|auto_generated|q_a [12] $end
+$var wire 1 ,# inst1|lookup_table|srom|rom_block|auto_generated|q_a [11] $end
+$var wire 1 -# inst1|lookup_table|srom|rom_block|auto_generated|q_a [10] $end
+$var wire 1 .# inst1|lookup_table|srom|rom_block|auto_generated|q_a [9] $end
+$var wire 1 /# inst1|lookup_table|srom|rom_block|auto_generated|q_a [8] $end
+$var wire 1 0# inst1|lookup_table|srom|rom_block|auto_generated|q_a [7] $end
+$var wire 1 1# inst1|lookup_table|srom|rom_block|auto_generated|q_a [6] $end
+$var wire 1 2# inst1|lookup_table|srom|rom_block|auto_generated|q_a [5] $end
+$var wire 1 3# inst1|lookup_table|srom|rom_block|auto_generated|q_a [4] $end
+$var wire 1 4# inst1|lookup_table|srom|rom_block|auto_generated|q_a [3] $end
+$var wire 1 5# inst1|lookup_table|srom|rom_block|auto_generated|q_a [2] $end
+$var wire 1 6# inst1|lookup_table|srom|rom_block|auto_generated|q_a [1] $end
+$var wire 1 7# inst1|lookup_table|srom|rom_block|auto_generated|q_a [0] $end
+$var wire 1 8# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [35] $end
+$var wire 1 9# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [34] $end
+$var wire 1 :# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [33] $end
+$var wire 1 ;# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [32] $end
+$var wire 1 <# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [31] $end
+$var wire 1 =# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [30] $end
+$var wire 1 ># inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [29] $end
+$var wire 1 ?# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [28] $end
+$var wire 1 @# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [27] $end
+$var wire 1 A# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [26] $end
+$var wire 1 B# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [25] $end
+$var wire 1 C# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [24] $end
+$var wire 1 D# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [23] $end
+$var wire 1 E# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [22] $end
+$var wire 1 F# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [21] $end
+$var wire 1 G# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [20] $end
+$var wire 1 H# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [19] $end
+$var wire 1 I# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [18] $end
+$var wire 1 J# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [17] $end
+$var wire 1 K# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [16] $end
+$var wire 1 L# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [15] $end
+$var wire 1 M# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [14] $end
+$var wire 1 N# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [13] $end
+$var wire 1 O# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [12] $end
+$var wire 1 P# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [11] $end
+$var wire 1 Q# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [10] $end
+$var wire 1 R# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [9] $end
+$var wire 1 S# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [8] $end
+$var wire 1 T# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [7] $end
+$var wire 1 U# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [6] $end
+$var wire 1 V# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [5] $end
+$var wire 1 W# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [4] $end
+$var wire 1 X# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [3] $end
+$var wire 1 Y# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [2] $end
+$var wire 1 Z# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [1] $end
+$var wire 1 [# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a16_PORTADATAOUT_bus [0] $end
+$var wire 1 \# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [15] $end
+$var wire 1 ]# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [14] $end
+$var wire 1 ^# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [13] $end
+$var wire 1 _# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [12] $end
+$var wire 1 `# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [11] $end
+$var wire 1 a# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [10] $end
+$var wire 1 b# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [9] $end
+$var wire 1 c# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [8] $end
+$var wire 1 d# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [7] $end
+$var wire 1 e# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [6] $end
+$var wire 1 f# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [5] $end
+$var wire 1 g# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [4] $end
+$var wire 1 h# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [3] $end
+$var wire 1 i# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [2] $end
+$var wire 1 j# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [1] $end
+$var wire 1 k# inst1|lookup_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
 x!
-bx "
-x#
+b0 "
+0#
 bx $
-b1 %
+bx %
 0Y
 0X
 0W
@@ -428,45 +432,45 @@ b1 %
 0(
 0'
 0&
-1y
-1x
-0w
-0v
-0u
-0t
-0s
-0r
-0q
-0p
-0o
-0n
-0m
-0l
-0k
-0j
-1i
-0h
-0g
-0f
-0e
-0d
-0c
-0b
-0a
-0`
-0_
-0^
-0]
-0\
-0[
+xy
+xx
+xw
+xv
+xu
+xt
+xs
+xr
+xq
+xp
+xo
+xn
+xm
+xl
+xk
+xj
+xi
+xh
+xg
+xf
+xe
+xd
+xc
+xb
+xa
+x`
+x_
+x^
+x]
+x\
+x[
 0Z
-x"!
-x!!
-x~
-x}
-x|
-x{
-xz
+0"!
+0!!
+0~
+0}
+0|
+0{
+1z
 x#!
 0$!
 1%!
@@ -476,124 +480,132 @@ x&!
 1)!
 x*!
 x+!
-0,!
-1-!
-0.!
-1/!
-00!
-11!
-02!
-13!
-04!
-15!
-06!
-17!
-08!
-09!
-0:!
-0;!
-0<!
-0=!
-0>!
-0?!
-0@!
-0A!
-1B!
-0C!
-1D!
-0E!
-1F!
-0G!
-1H!
-0I!
-1J!
-0K!
-1L!
-0M!
-1N!
-0O!
-1P!
-0Q!
-1R!
-0S!
-1T!
-0U!
-1V!
-0W!
-1X!
-0Y!
-1Z!
-0[!
-1\!
-0]!
-1^!
-0_!
-0`!
-0a!
-0b!
-0c!
-0d!
-0e!
-0f!
-0g!
-0h!
-0i!
-0j!
-0k!
-0l!
-0m!
-0n!
-0o!
-1p!
-0q!
-0r!
-0s!
-0t!
-0u!
-0v!
-0w!
-0x!
-0y!
-0z!
-0{!
-0|!
-0}!
-0~!
-1!"
+x,!
+x-!
+x.!
+x/!
+x0!
+x1!
+x2!
+x3!
+x4!
+x5!
+x6!
+x7!
+x8!
+x9!
+x:!
+x;!
+x<!
+x=!
+x>!
+x?!
+x@!
+xA!
+xB!
+xC!
+xD!
+xE!
+xF!
+xG!
+xH!
+xI!
+xJ!
+xK!
+xL!
+xM!
+xN!
+xO!
+xP!
+xQ!
+xR!
+xS!
+xT!
+xU!
+xV!
+xW!
+xX!
+xY!
+xZ!
+x[!
+x\!
+x]!
+x^!
+x_!
+x`!
+xa!
+xb!
+xc!
+xd!
+xe!
+xf!
+xg!
+xh!
+xi!
+xj!
+xk!
+xl!
+xm!
+xn!
+xo!
+xp!
+xq!
+xr!
+xs!
+xt!
+xu!
+xv!
+xw!
+xx!
+xy!
+xz!
+x{!
+x|!
+x}!
+x~!
+x!"
 x""
 x#"
 x$"
 x%"
-x&"
-x'"
-x("
-x)"
-x*"
-x+"
-x,"
-x-"
-x."
-x/"
-x0"
-x1"
-x2"
-x3"
-1S"
-0R"
-0Q"
-0P"
-0O"
-0N"
-0M"
-0L"
-0K"
-0J"
-0I"
-0H"
-0G"
-0F"
-0E"
-0D"
+0&"
+0'"
+0("
+1)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+06"
+07"
+xW"
+xV"
+xU"
+xT"
+xS"
+xR"
+xQ"
+xP"
+xO"
+xN"
+xM"
+xL"
+xK"
+xJ"
+xI"
+xH"
+zG"
+zF"
+zE"
+zD"
 zC"
 zB"
 zA"
@@ -606,20 +618,20 @@ z;"
 z:"
 z9"
 z8"
-z7"
-z6"
-z5"
-z4"
-xW"
-xV"
-xU"
-xT"
+0["
+0Z"
+0Y"
+0X"
+xa"
+x`"
+x_"
+x^"
 x]"
 x\"
-x["
-xZ"
-xY"
-xX"
+07#
+06#
+05#
+04#
 03#
 02#
 01#
@@ -668,10 +680,10 @@ xX"
 0d"
 0c"
 0b"
-0a"
-0`"
-0_"
-0^"
+0[#
+0Z#
+0Y#
+0X#
 0W#
 0V#
 0U#
@@ -704,10 +716,10 @@ xX"
 0:#
 09#
 08#
-07#
-06#
-05#
-04#
+0k#
+0j#
+0i#
+0h#
 0g#
 0f#
 0e#
@@ -720,82 +732,528 @@ xX"
 0^#
 0]#
 0\#
-0[#
-0Z#
-0Y#
-0X#
 $end
 #10000
-b11 %
-b10 %
-0S"
-1R"
+b1 "
+1["
 0#!
-0B!
-1~!
-1n!
-0y
-0p!
-1o!
-1w
-0i
-1h
+16"
+14"
+1/"
+1."
+1-"
+1*"
+17"
+11"
+1,"
+1|
+1"!
+1}
+1{
 #20000
-b11 %
-1S"
+b11 "
+b10 "
+0["
+1Z"
 1#!
-1C!
-0!"
-1B!
-1y
-0D!
-0~!
-1p!
-0x
-1}!
-0w
-1i
-1v
+06"
+12"
+10"
+0/"
+0-"
+1'"
+07"
+13"
+01"
+0."
+0)"
+0"!
+1~
+0}
+0|
+0z
 #30000
-b111 %
-b101 %
-b100 %
-0S"
-0R"
-1Q"
+b11 "
+1["
 0#!
-0C!
-0B!
-0n!
-1E!
-0}!
-1l!
-0y
-1D!
-1~!
-0p!
-0o!
-1|!
-1m!
-0v
-0E!
-1}!
-1w
-0i
-0h
-1u
-1g
-0|!
-1v
-0u
+17"
+16"
+04"
+02"
+00"
+1."
+07"
+03"
+1"!
+1|
+0"!
+0~
 #40000
-b101 %
-1S"
+b111 "
+b101 "
+b100 "
+0["
+0Z"
+1Y"
 1#!
-1!"
-1B!
-1y
-1p!
-1x
-1i
+17"
+1/"
+0."
+1-"
+0*"
+1("
+11"
+1."
+0,"
+1"!
+0|
+1}
+1|
+0{
 #50000
+b101 "
+1["
+0#!
+06"
+14"
+12"
+0/"
+0-"
+1+"
+0("
+07"
+15"
+01"
+0"!
+1!!
+0}
+#60000
+b111 "
+b110 "
+0["
+1Z"
+1#!
+16"
+02"
+0."
+0+"
+0|
+#70000
+b111 "
+1["
+0#!
+06"
+04"
+10"
+1/"
+1."
+1*"
+1("
+0'"
+05"
+11"
+1,"
+1)"
+1|
+0!!
+1}
+1{
+1z
+#80000
+b1111 "
+b1011 "
+b1001 "
+b1000 "
+0["
+0Z"
+0Y"
+1X"
+1#!
+00"
+0/"
+0."
+0*"
+0("
+0,"
+01"
+0)"
+0|
+0{
+0}
+0z
+#90000
+b1001 "
+1["
+0#!
+1/"
+1-"
+1*"
+1."
+1|
+#100000
+b1011 "
+b1010 "
+0["
+1Z"
+1#!
+14"
+12"
+10"
+0/"
+0."
+0-"
+1'"
+11"
+0|
+1}
+#110000
+b1011 "
+1["
+0#!
+17"
+15"
+02"
+00"
+01"
+1"!
+1!!
+0}
+#120000
+b1111 "
+b1101 "
+b1100 "
+0["
+0Z"
+1Y"
+1#!
+07"
+16"
+04"
+1/"
+1-"
+0*"
+1("
+13"
+17"
+05"
+1)"
+0"!
+1~
+1"!
+0!!
+1z
+#130000
+b1101 "
+1["
+0#!
+12"
+0/"
+1."
+0-"
+1+"
+0("
+03"
+0."
+1,"
+0)"
+1|
+0~
+0|
+1{
+0z
+#140000
+b1111 "
+b1110 "
+0["
+1Z"
+1#!
+07"
+14"
+02"
+0+"
+15"
+13"
+0,"
+0"!
+1!!
+1~
+0{
+#150000
+b1111 "
+1["
+0#!
+10"
+1/"
+1*"
+1("
+0'"
+11"
+1)"
+1}
+1z
+#160000
+1#
+b111 "
+b11 "
+b1 "
+b0 "
+1&"
+0["
+0Z"
+0Y"
+0X"
+1#!
+06"
+00"
+0*"
+0("
+1'"
+05"
+03"
+1,"
+0,"
+0)"
+0!!
+0~
+1{
+0{
+0z
+#170000
+b1 "
+1["
+0#!
+12"
+0/"
+1*"
+1("
+13"
+01"
+1,"
+1~
+0}
+1{
+#180000
+b11 "
+b10 "
+0["
+1Z"
+1#!
+04"
+02"
+1-"
+1+"
+03"
+1."
+0~
+1|
+#190000
+b11 "
+1["
+0#!
+17"
+1/"
+0*"
+0("
+11"
+0,"
+1"!
+1}
+0{
+#200000
+b111 "
+b101 "
+b100 "
+0["
+0Z"
+1Y"
+1#!
+07"
+14"
+12"
+10"
+0/"
+0+"
+15"
+01"
+0"!
+1!!
+0}
+#210000
+b101 "
+1["
+0#!
+00"
+0-"
+1("
+0."
+0|
+#220000
+b111 "
+b110 "
+0["
+1Z"
+1#!
+04"
+1/"
+1-"
+1*"
+0'"
+05"
+11"
+1."
+1,"
+1)"
+0!!
+1}
+1|
+1{
+1z
+#230000
+b111 "
+1["
+0#!
+0/"
+0-"
+0*"
+1'"
+01"
+0."
+0,"
+0)"
+0}
+0|
+0{
+0z
+#240000
+b1111 "
+b1011 "
+b1001 "
+b1000 "
+0["
+0Z"
+0Y"
+1X"
+1#!
+16"
+02"
+1/"
+1."
+0("
+1)"
+0)"
+1|
+1z
+0z
+#250000
+b1001 "
+1["
+0#!
+17"
+06"
+12"
+0/"
+0."
+1*"
+1("
+07"
+1)"
+1"!
+0|
+0"!
+1z
+#260000
+b1011 "
+b1010 "
+0["
+1Z"
+1#!
+16"
+02"
+1."
+1-"
+1+"
+17"
+0."
+1,"
+1|
+1"!
+0|
+1{
+#270000
+b1011 "
+1["
+0#!
+07"
+06"
+1/"
+0*"
+0("
+17"
+0)"
+0"!
+1"!
+0z
+#280000
+b1111 "
+b1101 "
+b1100 "
+0["
+0Z"
+1Y"
+1#!
+07"
+16"
+12"
+10"
+0/"
+0+"
+13"
+17"
+03"
+11"
+0,"
+0"!
+1~
+1"!
+0~
+1}
+0{
+#290000
+b1101 "
+1["
+0#!
+06"
+00"
+0-"
+1("
+07"
+01"
+1)"
+0"!
+0}
+1z
+#300000
+b1111 "
+b1110 "
+0["
+1Z"
+1#!
+16"
+1/"
+1."
+1-"
+1*"
+0'"
+0."
+1|
+0|
+#310000
+b1111 "
+1["
+0#!
+06"
+0/"
+0-"
+0*"
+1'"
+#320000
