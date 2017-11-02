@@ -10,6 +10,10 @@ entity gA6_lab3 is
         data            : in     vl_logic_vector(5 downto 0);
         mode            : in     vl_logic_vector(1 downto 0);
         full            : out    vl_logic;
+        led_floor       : out    vl_logic_vector(6 downto 0);
+        button          : in     vl_logic;
+        mode_segment    : in     vl_logic;
+        led_mod         : out    vl_logic_vector(6 downto 0);
         num             : out    vl_logic_vector(5 downto 0);
         value           : out    vl_logic_vector(5 downto 0)
     );

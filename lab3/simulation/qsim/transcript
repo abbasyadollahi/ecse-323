@@ -17,6 +17,9 @@
 # Loading work.gA6_lab3_vlg_vec_tst
 # Loading work.gA6_lab3
 # Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading cycloneii_ver.cycloneii_ram_block
+# Loading cycloneii_ver.cycloneii_ram_register
+# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
@@ -25,9 +28,6 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
-# Loading cycloneii_ver.cycloneii_ram_block
-# Loading cycloneii_ver.cycloneii_ram_register
-# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading work.gA6_lab3_vlg_sample_tst
 # Loading work.gA6_lab3_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
@@ -59,5 +59,5 @@
 #      Expected value = 000000
 #      Real value = 011011
 #           9 mismatched vectors : Simulation failed !
-# ** Note: $finish    : gA6_lab3.vt(431)
+# ** Note: $finish    : gA6_lab3.vt(703)
 #    Time: 2 us  Iteration: 0  Instance: /gA6_lab3_vlg_vec_tst/tb_out
