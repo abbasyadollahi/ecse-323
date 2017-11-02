@@ -9514,42 +9514,6 @@ applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect -128 1288 64 1384)
-	(text "gA6_ff_enable52" (rect 5 0 104 14)(font "Arial" (font_size 8)))
-	(text "inst124" (rect 8 80 43 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "nop" (rect 0 0 21 14)(font "Arial" (font_size 8)))
-		(text "nop" (rect 21 27 42 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "en_in[51..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
-		(text "en_in[51..0]" (rect 21 43 87 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "enable" (rect 21 59 58 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "en_out[51..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
-		(text "en_out[51..0]" (rect 97 27 171 41)(font "Arial" (font_size 8)))
-		(line (pt 192 32)(pt 176 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 176 80))
-	)
-)
-(symbol
 	(rect -88 536 -24 584)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst117" (rect 3 37 38 49)(font "Arial" ))
@@ -9748,6 +9712,49 @@ applicable agreement for further details.
 		(line (pt 13 7)(pt 31 16))
 		(line (pt 13 25)(pt 31 16))
 		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect -128 1288 64 1416)
+	(text "gA6_ff_enable52" (rect 5 0 104 14)(font "Arial" (font_size 8)))
+	(text "inst124" (rect 8 112 43 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "nop" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "nop" (rect 21 27 42 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "push" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "push" (rect 21 43 49 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "enable" (rect 21 59 58 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "en_in[51..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "en_in[51..0]" (rect 21 75 87 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "en_out[51..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "en_out[51..0]" (rect 97 27 171 41)(font "Arial" (font_size 8)))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 112))
 	)
 )
 (connector
@@ -15207,41 +15214,10 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 120 1272)
-	(pt -184 1272)
-	(bus)
-)
-(connector
-	(pt -184 1272)
-	(pt -184 1336)
-	(bus)
-)
-(connector
-	(pt -128 1336)
-	(pt -184 1336)
-	(bus)
-)
-(connector
-	(text "nop" (rect -175 1312 -158 1324)(font "Arial" ))
-	(pt -152 1320)
-	(pt -128 1320)
-)
-(connector
-	(text "en_out[51..0]" (rect 72 1304 136 1316)(font "Arial" ))
-	(pt 64 1320)
-	(pt 120 1320)
-	(bus)
-)
-(connector
 	(text "G, G, G, G, G, G" (rect -174 1080 -90 1092)(font "Arial" ))
 	(pt -96 1088)
 	(pt -64 1088)
 	(bus)
-)
-(connector
-	(text "enable" (rect -183 1344 -152 1356)(font "Arial" ))
-	(pt -128 1352)
-	(pt -152 1352)
 )
 (connector
 	(text "cnt_en" (rect -133 808 -100 820)(font "Arial" ))
@@ -15302,6 +15278,42 @@ applicable agreement for further details.
 (connector
 	(pt -8 600)
 	(pt 0 600)
+)
+(connector
+	(text "en_out[51..0]" (rect 72 1304 136 1316)(font "Arial" ))
+	(pt 64 1320)
+	(pt 120 1320)
+	(bus)
+)
+(connector
+	(text "nop" (rect -181 1312 -164 1324)(font "Arial" ))
+	(pt -157 1320)
+	(pt -128 1320)
+)
+(connector
+	(text "push" (rect -188 1328 -165 1340)(font "Arial" ))
+	(pt -157 1336)
+	(pt -128 1336)
+)
+(connector
+	(text "enable" (rect -192 1344 -161 1356)(font "Arial" ))
+	(pt -157 1352)
+	(pt -128 1352)
+)
+(connector
+	(pt 120 1272)
+	(pt -200 1272)
+	(bus)
+)
+(connector
+	(pt -200 1272)
+	(pt -200 1368)
+	(bus)
+)
+(connector
+	(pt -128 1368)
+	(pt -200 1368)
+	(bus)
 )
 (junction (pt 784 552))
 (junction (pt 784 1000))

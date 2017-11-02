@@ -244,84 +244,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 528 304 704 464)
-	(text "gA6_stack52" (rect 5 0 80 14)(font "Arial" (font_size 8)))
-	(text "inst4" (rect 8 144 31 156)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "data[5..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "data[5..0]" (rect 21 27 74 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "mode[1..0]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
-		(text "mode[1..0]" (rect 21 43 80 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "addr[5..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
-		(text "addr[5..0]" (rect 21 59 75 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "enable" (rect 21 75 58 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "rst" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "rst" (rect 21 91 36 105)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 107 36 121)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 16 112))
-	)
-	(port
-		(pt 176 32)
-		(output)
-		(text "value[5..0]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
-		(text "value[5..0]" (rect 96 27 155 41)(font "Arial" (font_size 8)))
-		(line (pt 176 32)(pt 160 32)(line_width 3))
-	)
-	(port
-		(pt 176 48)
-		(output)
-		(text "num[5..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
-		(text "num[5..0]" (rect 104 43 155 57)(font "Arial" (font_size 8)))
-		(line (pt 176 48)(pt 160 48)(line_width 3))
-	)
-	(port
-		(pt 176 64)
-		(output)
-		(text "empty" (rect 0 0 34 14)(font "Arial" (font_size 8)))
-		(text "empty" (rect 121 59 155 73)(font "Arial" (font_size 8)))
-		(line (pt 176 64)(pt 160 64))
-	)
-	(port
-		(pt 176 80)
-		(output)
-		(text "full" (rect 0 0 16 14)(font "Arial" (font_size 8)))
-		(text "full" (rect 139 75 155 89)(font "Arial" (font_size 8)))
-		(line (pt 176 80)(pt 160 80))
-	)
-	(drawing
-		(rectangle (rect 16 16 160 144))
-	)
-)
-(symbol
 	(rect 1040 352 1256 432)
 	(text "gA6_7_segment_decoder" (rect 5 0 128 12)(font "Arial" ))
 	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
@@ -1112,70 +1034,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 264 536 400 600)
-	(text "LPM_CONSTANT" (rect 6 9 127 25)(font "Arial" (font_size 10)))
-	(text "inst13" (rect 108 48 137 60)(font "Arial" ))
-	(port
-		(pt 0 40)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 99 27 232 41)(font "Arial" (font_size 8)))
-		(text "result[]" (rect -1 27 37 41)(font "Arial" (font_size 8)))
-		(line (pt 48 40)(pt 0 40)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"20000000"
-		"Unsigned value to which outputs will be set"
-	)
-	(parameter
-		"LPM_WIDTH"
-		"21"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "(cvalue)" (rect 52 34 99 48)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 48 32))
-		(line (pt 96 48)(pt 48 48))
-		(line (pt 48 48)(pt 48 32))
-		(line (pt 96 48)(pt 96 32))
-	)
-	(flipy)
-	(annotation_block (parameter)(rect 32 488 247 530))
-)
-(symbol
-	(rect 264 184 400 248)
-	(text "LPM_CONSTANT" (rect 6 39 127 55)(font "Arial" (font_size 10)))
-	(text "inst2" (rect 108 2 135 16)(font "Arial" (font_size 8)))
-	(port
-		(pt 0 24)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 99 27 232 41)(font "Arial" (font_size 8)))
-		(text "result[]" (rect -1 23 37 37)(font "Arial" (font_size 8)))
-		(line (pt 48 24)(pt 0 24)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"20000000"
-		"Unsigned value to which outputs will be set"
-	)
-	(parameter
-		"LPM_WIDTH"
-		"21"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "(cvalue)" (rect 52 16 99 30)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 48 32))
-		(line (pt 96 16)(pt 48 16))
-		(line (pt 48 16)(pt 48 32))
-		(line (pt 96 16)(pt 96 32))
-	)
-	(rotate180)
-	(annotation_block (parameter)(rect 32 136 247 178))
-)
-(symbol
 	(rect 544 224 680 288)
 	(text "LPM_CONSTANT" (rect 6 9 127 25)(font "Arial" (font_size 10)))
 	(text "inst3" (rect 108 48 135 62)(font "Arial" (font_size 8)))
@@ -1256,6 +1114,148 @@ applicable agreement for further details.
 		(line (pt 13 25)(pt 31 16))
 		(circle (rect 31 12 39 20))
 	)
+)
+(symbol
+	(rect 528 304 704 464)
+	(text "gA6_stack52" (rect 5 0 80 14)(font "Arial" (font_size 8)))
+	(text "inst4" (rect 8 144 31 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data[5..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "data[5..0]" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "mode[1..0]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "mode[1..0]" (rect 21 43 80 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "addr[5..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "addr[5..0]" (rect 21 59 75 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "enable" (rect 21 75 58 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "rst" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "rst" (rect 21 91 36 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 107 36 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "value[5..0]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "value[5..0]" (rect 96 27 155 41)(font "Arial" (font_size 8)))
+		(line (pt 176 32)(pt 160 32)(line_width 3))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "num[5..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "num[5..0]" (rect 104 43 155 57)(font "Arial" (font_size 8)))
+		(line (pt 176 48)(pt 160 48)(line_width 3))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "empty" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "empty" (rect 121 59 155 73)(font "Arial" (font_size 8)))
+		(line (pt 176 64)(pt 160 64))
+	)
+	(port
+		(pt 176 80)
+		(output)
+		(text "full" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "full" (rect 139 75 155 89)(font "Arial" (font_size 8)))
+		(line (pt 176 80)(pt 160 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 144))
+	)
+)
+(symbol
+	(rect 264 184 400 248)
+	(text "LPM_CONSTANT" (rect 6 39 127 55)(font "Arial" (font_size 10)))
+	(text "inst2" (rect 108 2 135 16)(font "Arial" (font_size 8)))
+	(port
+		(pt 0 24)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 99 27 232 41)(font "Arial" (font_size 8)))
+		(text "result[]" (rect -1 23 37 37)(font "Arial" (font_size 8)))
+		(line (pt 48 24)(pt 0 24)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"2000"
+		"Unsigned value to which outputs will be set"
+	)
+	(parameter
+		"LPM_WIDTH"
+		"21"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "(cvalue)" (rect 52 16 99 30)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 48 32))
+		(line (pt 96 16)(pt 48 16))
+		(line (pt 48 16)(pt 48 32))
+		(line (pt 96 16)(pt 96 32))
+	)
+	(rotate180)
+	(annotation_block (parameter)(rect 32 136 230 178))
+)
+(symbol
+	(rect 264 536 400 600)
+	(text "LPM_CONSTANT" (rect 6 9 127 25)(font "Arial" (font_size 10)))
+	(text "inst13" (rect 108 48 137 60)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 99 27 232 41)(font "Arial" (font_size 8)))
+		(text "result[]" (rect -1 27 37 41)(font "Arial" (font_size 8)))
+		(line (pt 48 40)(pt 0 40)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"2000"
+		"Unsigned value to which outputs will be set"
+	)
+	(parameter
+		"LPM_WIDTH"
+		"21"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "(cvalue)" (rect 52 34 99 48)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 48 32))
+		(line (pt 96 48)(pt 48 48))
+		(line (pt 48 48)(pt 48 32))
+		(line (pt 96 48)(pt 96 32))
+	)
+	(flipy)
+	(annotation_block (parameter)(rect 32 488 230 530))
 )
 (connector
 	(text "G" (rect 894 48 902 60)(font "Arial" ))

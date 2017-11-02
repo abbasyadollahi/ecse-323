@@ -1,5 +1,5 @@
 Analysis & Synthesis report for gA6_lab3
-Wed Nov 01 22:48:35 2017
+Thu Nov 02 02:54:40 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -15,132 +15,131 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for gA6_testbed:inst|gA6_stack52:inst4|gA6_pop_enable:inst104|LPM_ROM:lookup_table|altrom:srom|altsyncram:rom_block|altsyncram_f911:auto_generated
- 15. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_COMPARE:inst120
- 16. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_COUNTER:inst115
- 17. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_COMPARE:inst119
- 18. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|lpm_mux0:inst125|LPM_MUX:LPM_MUX_component
- 19. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst
- 20. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|gA6_pop_enable:inst104|LPM_ROM:lookup_table
- 21. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst1
- 22. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst2
- 23. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst3
- 24. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst5
- 25. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst4
- 26. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst7
- 27. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst6
- 28. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst9
- 29. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst8
- 30. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst11
- 31. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst10
- 32. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst13
- 33. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst12
- 34. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst14
- 35. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst15
- 36. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst17
- 37. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst16
- 38. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst19
- 39. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst18
- 40. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst21
- 41. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst20
- 42. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst23
- 43. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst22
- 44. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst25
- 45. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst24
- 46. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst27
- 47. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst26
- 48. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst28
- 49. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst29
- 50. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst31
- 51. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst30
- 52. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst33
- 53. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst32
- 54. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst35
- 55. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst34
- 56. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst37
- 57. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst36
- 58. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst39
- 59. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst38
- 60. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst41
- 61. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst40
- 62. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst42
- 63. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst43
- 64. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst45
- 65. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst44
- 66. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst47
- 67. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst46
- 68. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst49
- 69. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst48
- 70. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst51
- 71. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst50
- 72. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst53
- 73. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst52
- 74. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst54
- 75. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst55
- 76. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst57
- 77. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst56
- 78. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst59
- 79. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst58
- 80. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst61
- 81. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst60
- 82. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst63
- 83. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst62
- 84. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst65
- 85. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst64
- 86. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst67
- 87. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst66
- 88. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst68
- 89. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst69
- 90. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst71
- 91. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst70
- 92. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst73
- 93. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst72
- 94. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst75
- 95. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst74
- 96. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst77
- 97. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst76
- 98. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst79
- 99. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst78
-100. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst81
-101. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst80
-102. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst82
-103. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst83
-104. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst85
-105. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst84
-106. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst87
-107. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst86
-108. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst89
-109. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst88
-110. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst91
-111. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst90
-112. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst93
-113. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst92
-114. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst95
-115. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst94
-116. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst96
-117. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst97
-118. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst99
-119. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst98
-120. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst101
-121. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst100
-122. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst103
-123. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst102
-124. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_COMPARE:inst1
-125. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_COUNTER:inst
-126. Parameter Settings for User Entity Instance: gA6_testbed:inst|lpm_constant:inst2
-127. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_COMPARE:inst11
-128. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_COUNTER:inst12
-129. Parameter Settings for User Entity Instance: gA6_testbed:inst|lpm_constant:inst13
-130. Parameter Settings for User Entity Instance: gA6_testbed:inst|lpm_constant:inst3
-131. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
-132. SignalTap II Logic Analyzer Settings
-133. Elapsed Time Per Partition
-134. Connections to In-System Debugging Instance "auto_signaltap_0"
-135. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for gA6_testbed:inst|gA6_stack52:inst4|gA6_pop_enable:inst104|LPM_ROM:lookup_table|altrom:srom|altsyncram:rom_block|altsyncram_f911:auto_generated
+ 14. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_COMPARE:inst120
+ 15. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_COUNTER:inst115
+ 16. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_COMPARE:inst119
+ 17. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|lpm_mux0:inst125|LPM_MUX:LPM_MUX_component
+ 18. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst
+ 19. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|gA6_pop_enable:inst104|LPM_ROM:lookup_table
+ 20. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst1
+ 21. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst2
+ 22. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst3
+ 23. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst5
+ 24. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst4
+ 25. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst7
+ 26. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst6
+ 27. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst9
+ 28. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst8
+ 29. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst11
+ 30. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst10
+ 31. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst13
+ 32. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst12
+ 33. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst14
+ 34. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst15
+ 35. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst17
+ 36. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst16
+ 37. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst19
+ 38. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst18
+ 39. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst21
+ 40. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst20
+ 41. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst23
+ 42. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst22
+ 43. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst25
+ 44. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst24
+ 45. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst27
+ 46. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst26
+ 47. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst28
+ 48. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst29
+ 49. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst31
+ 50. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst30
+ 51. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst33
+ 52. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst32
+ 53. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst35
+ 54. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst34
+ 55. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst37
+ 56. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst36
+ 57. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst39
+ 58. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst38
+ 59. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst41
+ 60. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst40
+ 61. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst42
+ 62. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst43
+ 63. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst45
+ 64. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst44
+ 65. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst47
+ 66. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst46
+ 67. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst49
+ 68. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst48
+ 69. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst51
+ 70. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst50
+ 71. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst53
+ 72. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst52
+ 73. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst54
+ 74. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst55
+ 75. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst57
+ 76. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst56
+ 77. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst59
+ 78. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst58
+ 79. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst61
+ 80. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst60
+ 81. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst63
+ 82. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst62
+ 83. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst65
+ 84. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst64
+ 85. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst67
+ 86. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst66
+ 87. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst68
+ 88. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst69
+ 89. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst71
+ 90. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst70
+ 91. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst73
+ 92. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst72
+ 93. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst75
+ 94. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst74
+ 95. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst77
+ 96. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst76
+ 97. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst79
+ 98. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst78
+ 99. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst81
+100. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst80
+101. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst82
+102. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst83
+103. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst85
+104. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst84
+105. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst87
+106. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst86
+107. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst89
+108. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst88
+109. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst91
+110. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst90
+111. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst93
+112. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst92
+113. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst95
+114. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst94
+115. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst96
+116. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst97
+117. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst99
+118. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst98
+119. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst101
+120. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst100
+121. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst103
+122. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst102
+123. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_COMPARE:inst1
+124. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_COUNTER:inst
+125. Parameter Settings for User Entity Instance: gA6_testbed:inst|lpm_constant:inst2
+126. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_COMPARE:inst11
+127. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_COUNTER:inst12
+128. Parameter Settings for User Entity Instance: gA6_testbed:inst|lpm_constant:inst13
+129. Parameter Settings for User Entity Instance: gA6_testbed:inst|lpm_constant:inst3
+130. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+131. SignalTap II Logic Analyzer Settings
+132. Elapsed Time Per Partition
+133. Connections to In-System Debugging Instance "auto_signaltap_0"
+134. Analysis & Synthesis Messages
 
 
 
@@ -166,13 +165,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 01 22:48:34 2017      ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 02 02:54:40 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA6_lab3                                   ;
 ; Top-level Entity Name              ; gA6_lab3                                   ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 1,754                                      ;
-;     Total combinational functions  ; 1,208                                      ;
+; Total logic elements               ; 1,757                                      ;
+;     Total combinational functions  ; 1,211                                      ;
 ;     Dedicated logic registers      ; 1,210                                      ;
 ; Total registers                    ; 1210                                       ;
 ; Total pins                         ; 54                                         ;
@@ -374,16 +373,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,754 ;
+; Estimated Total logic elements              ; 1,757 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1208  ;
+; Total combinational functions               ; 1211  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 589   ;
-;     -- 3 input functions                    ; 458   ;
-;     -- <=2 input functions                  ; 161   ;
+;     -- 4 input functions                    ; 887   ;
+;     -- 3 input functions                    ; 175   ;
+;     -- <=2 input functions                  ; 149   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1119  ;
+;     -- normal mode                          ; 1122  ;
 ;     -- arithmetic mode                      ; 89    ;
 ;                                             ;       ;
 ; Total registers                             ; 1210  ;
@@ -395,8 +394,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 926   ;
-; Total fan-out                               ; 9611  ;
-; Average fan-out                             ; 3.73  ;
+; Total fan-out                               ; 9930  ;
+; Average fan-out                             ; 3.85  ;
 +---------------------------------------------+-------+
 
 
@@ -405,8 +404,8 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                            ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |gA6_lab3                                                                                               ; 1208 (2)          ; 1210 (0)     ; 9216        ; 0            ; 0       ; 0         ; 54   ; 0            ; |gA6_lab3                                                                                                                                                                                                                                                                                                                                      ;              ;
-;    |gA6_testbed:inst|                                                                                   ; 736 (0)           ; 360 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst                                                                                                                                                                                                                                                                                                                     ;              ;
+; |gA6_lab3                                                                                               ; 1211 (2)          ; 1210 (0)     ; 9216        ; 0            ; 0       ; 0         ; 54   ; 0            ; |gA6_lab3                                                                                                                                                                                                                                                                                                                                      ;              ;
+;    |gA6_testbed:inst|                                                                                   ; 737 (0)           ; 360 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst                                                                                                                                                                                                                                                                                                                     ;              ;
 ;       |gA6_7_segment_decoder:inst6|                                                                     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_7_segment_decoder:inst6                                                                                                                                                                                                                                                                                         ;              ;
 ;       |gA6_7_segment_decoder:inst7|                                                                     ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_7_segment_decoder:inst7                                                                                                                                                                                                                                                                                         ;              ;
 ;       |gA6_7_segment_decoder:inst8|                                                                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_7_segment_decoder:inst8                                                                                                                                                                                                                                                                                         ;              ;
@@ -419,7 +418,7 @@ applicable agreement for further details.
 ;          |gA6_adder8:inst|                                                                              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_modulo_13:inst5|gA6_adder8:inst                                                                                                                                                                                                                                                                                 ;              ;
 ;             |gA6_adder:inst5|                                                                           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_modulo_13:inst5|gA6_adder8:inst|gA6_adder:inst5                                                                                                                                                                                                                                                                 ;              ;
 ;             |gA6_adder:inst7|                                                                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_modulo_13:inst5|gA6_adder8:inst|gA6_adder:inst7                                                                                                                                                                                                                                                                 ;              ;
-;       |gA6_stack52:inst4|                                                                               ; 639 (6)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4                                                                                                                                                                                                                                                                                                   ;              ;
+;       |gA6_stack52:inst4|                                                                               ; 639 (5)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4                                                                                                                                                                                                                                                                                                   ;              ;
 ;          |busmux:inst100|                                                                               ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|busmux:inst100                                                                                                                                                                                                                                                                                    ;              ;
 ;             |lpm_mux:$00000|                                                                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|busmux:inst100|lpm_mux:$00000                                                                                                                                                                                                                                                                     ;              ;
 ;                |mux_qmc:auto_generated|                                                                 ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|busmux:inst100|lpm_mux:$00000|mux_qmc:auto_generated                                                                                                                                                                                                                                              ;              ;
@@ -586,8 +585,8 @@ applicable agreement for further details.
 ;             |cmpr_4nh:auto_generated|                                                                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_compare:inst119|cmpr_4nh:auto_generated                                                                                                                                                                                                                                                       ;              ;
 ;          |lpm_compare:inst120|                                                                          ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_compare:inst120                                                                                                                                                                                                                                                                               ;              ;
 ;             |cmpr_86h:auto_generated|                                                                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_compare:inst120|cmpr_86h:auto_generated                                                                                                                                                                                                                                                       ;              ;
-;          |lpm_counter:inst115|                                                                          ; 14 (0)            ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_counter:inst115                                                                                                                                                                                                                                                                               ;              ;
-;             |cntr_p2i:auto_generated|                                                                   ; 14 (14)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_counter:inst115|cntr_p2i:auto_generated                                                                                                                                                                                                                                                       ;              ;
+;          |lpm_counter:inst115|                                                                          ; 15 (0)            ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_counter:inst115                                                                                                                                                                                                                                                                               ;              ;
+;             |cntr_p2i:auto_generated|                                                                   ; 15 (15)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_counter:inst115|cntr_p2i:auto_generated                                                                                                                                                                                                                                                       ;              ;
 ;          |lpm_ff:inst101|                                                                               ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_ff:inst101                                                                                                                                                                                                                                                                                    ;              ;
 ;          |lpm_ff:inst103|                                                                               ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_ff:inst103                                                                                                                                                                                                                                                                                    ;              ;
 ;          |lpm_ff:inst11|                                                                                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_ff:inst11                                                                                                                                                                                                                                                                                     ;              ;
@@ -645,14 +644,14 @@ applicable agreement for further details.
 ;                |mux_v4e:auto_generated|                                                                 ; 249 (249)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|lpm_mux0:inst125|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                                                                                                                                                                                                                 ;              ;
 ;       |lpm_compare:inst11|                                                                              ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_compare:inst11                                                                                                                                                                                                                                                                                                  ;              ;
 ;          |cmpr_6cg:auto_generated|                                                                      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_compare:inst11|cmpr_6cg:auto_generated                                                                                                                                                                                                                                                                          ;              ;
-;       |lpm_compare:inst1|                                                                               ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_compare:inst1                                                                                                                                                                                                                                                                                                   ;              ;
-;          |cmpr_6cg:auto_generated|                                                                      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_compare:inst1|cmpr_6cg:auto_generated                                                                                                                                                                                                                                                                           ;              ;
+;       |lpm_compare:inst1|                                                                               ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_compare:inst1                                                                                                                                                                                                                                                                                                   ;              ;
+;          |cmpr_6cg:auto_generated|                                                                      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_compare:inst1|cmpr_6cg:auto_generated                                                                                                                                                                                                                                                                           ;              ;
 ;       |lpm_counter:inst12|                                                                              ; 21 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_counter:inst12                                                                                                                                                                                                                                                                                                  ;              ;
 ;          |cntr_h1h:auto_generated|                                                                      ; 21 (21)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_counter:inst12|cntr_h1h:auto_generated                                                                                                                                                                                                                                                                          ;              ;
 ;       |lpm_counter:inst|                                                                                ; 21 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_counter:inst                                                                                                                                                                                                                                                                                                    ;              ;
 ;          |cntr_h1h:auto_generated|                                                                      ; 21 (21)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|gA6_testbed:inst|lpm_counter:inst|cntr_h1h:auto_generated                                                                                                                                                                                                                                                                            ;              ;
-;    |sld_hub:auto_hub|                                                                                   ; 116 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ;              ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 115 (77)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ;              ;
+;    |sld_hub:auto_hub|                                                                                   ; 118 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ;              ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 117 (79)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ;              ;
 ;          |sld_rom_sr:hub_info_reg|                                                                      ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                ;              ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                              ;              ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                     ; 354 (1)           ; 764 (92)     ; 5888        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab3|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                       ;              ;
@@ -757,30 +756,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------+----------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                                                          ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                                          ; Reason for Removal                                                                                                                                                                                 ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|segment_shift_clk_ena                                                      ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_enable_delayed                                                ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[0] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[0] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[1] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[1] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[2] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[2] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[3] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[3] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[4] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[4] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[5] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[5] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[6] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[6] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[0]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[0]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[1]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[1]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[2]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[2]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[3]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[3]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[4]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[4]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[5]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[5]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[6]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[6]                                            ;
-; Total Number of Removed Registers = 15                                                                                                                                                 ;                                                                                                                                                                                                    ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
@@ -817,22 +792,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |gA6_lab3|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|counter[0]   ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |gA6_lab3|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|word_counter[3]                   ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |gA6_lab3|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|WORD_SR[0]                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; No         ; |gA6_lab3|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|offset_count ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[0]                                                                                  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                                                                                     ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[0]                                                               ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]                                                                                           ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                                                                                    ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 36 LEs               ; 16 LEs                 ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[0]                    ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                       ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[0] ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]                             ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                      ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 36 LEs               ; 16 LEs                 ; Yes        ; |gA6_lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2523,9 +2494,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name     ; Value            ; Type                                     ;
 +--------------------+------------------+------------------------------------------+
 ; LPM_WIDTH          ; 21               ; Signed Integer                           ;
-; LPM_CVALUE         ; 20000000         ; Untyped                                  ;
+; LPM_CVALUE         ; 2000             ; Untyped                                  ;
 ; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                  ;
-; CBXI_PARAMETER     ; lpm_constant_mh4 ; Untyped                                  ;
+; CBXI_PARAMETER     ; lpm_constant_ph4 ; Untyped                                  ;
 +--------------------+------------------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2587,9 +2558,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name     ; Value            ; Type                                      ;
 +--------------------+------------------+-------------------------------------------+
 ; LPM_WIDTH          ; 21               ; Signed Integer                            ;
-; LPM_CVALUE         ; 20000000         ; Untyped                                   ;
+; LPM_CVALUE         ; 2000             ; Untyped                                   ;
 ; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                   ;
-; CBXI_PARAMETER     ; lpm_constant_mh4 ; Untyped                                   ;
+; CBXI_PARAMETER     ; lpm_constant_ph4 ; Untyped                                   ;
 +--------------------+------------------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2676,15 +2647,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+-----------------------------------------------+
-; Elapsed Time Per Partition                    ;
-+--------------------------------+--------------+
-; Partition Name                 ; Elapsed Time ;
-+--------------------------------+--------------+
-; sld_signaltap:auto_signaltap_0 ; 00:00:01     ;
-; Top                            ; 00:00:03     ;
-; sld_hub:auto_hub               ; 00:00:00     ;
-+--------------------------------+--------------+
++---------------------------------+
+; Elapsed Time Per Partition      ;
++------------------+--------------+
+; Partition Name   ; Elapsed Time ;
++------------------+--------------+
+; Top              ; 00:00:13     ;
+; sld_hub:auto_hub ; 00:00:01     ;
++------------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2794,7 +2764,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 01 22:48:18 2017
+    Info: Processing started: Thu Nov 02 02:53:38 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gA6_lab3 -c gA6_lab3
 Warning (125092): Tcl Script File lpm_counter0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE lpm_counter0.qip
@@ -3650,7 +3620,7 @@ Info (12128): Elaborating entity "cntr_h1h" for hierarchy "gA6_testbed:inst|LPM_
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "gA6_testbed:inst|lpm_constant:inst2"
 Info (12130): Elaborated megafunction instantiation "gA6_testbed:inst|lpm_constant:inst2"
 Info (12133): Instantiated megafunction "gA6_testbed:inst|lpm_constant:inst2" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "20000000"
+    Info (12134): Parameter "LPM_CVALUE" = "2000"
     Info (12134): Parameter "LPM_WIDTH" = "21"
 Info (12128): Elaborating entity "gA6_7_segment_decoder" for hierarchy "gA6_testbed:inst|gA6_7_segment_decoder:inst15"
 Warning (12125): Using design file ga6_modulo_13.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -3756,23 +3726,20 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "led_mode[1]" is stuck at GND
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (18057): The assignment to disallow NOT gate push-back on register "sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|trigger_out_mode_ff" is ignored
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 93 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1948 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1951 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 1791 logic cells
+    Info (21061): Implemented 1794 logic cells
     Info (21064): Implemented 98 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 343 warnings
-    Info: Peak virtual memory: 638 megabytes
-    Info: Processing ended: Wed Nov 01 22:48:35 2017
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:15
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 342 warnings
+    Info: Peak virtual memory: 629 megabytes
+    Info: Processing ended: Thu Nov 02 02:54:41 2017
+    Info: Elapsed time: 00:01:03
+    Info: Total CPU time (on all processors): 00:00:35
 
 

@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 208 112)
+	(rect 16 16 208 144)
 	(text "gA6_ff_enable52" (rect 5 0 104 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -33,9 +33,9 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "en_in[51..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
-		(text "en_in[51..0]" (rect 21 43 87 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "push" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "push" (rect 21 43 49 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
@@ -45,6 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "en_in[51..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "en_in[51..0]" (rect 21 75 87 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
 		(pt 192 32)
 		(output)
 		(text "en_out[51..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
@@ -52,6 +59,6 @@ applicable agreement for further details.
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 176 80))
+		(rectangle (rect 16 16 176 112))
 	)
 )

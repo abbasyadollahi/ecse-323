@@ -49,7 +49,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_COMPARE:inst120" CBX_FILE_NAME="cmpr_86h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst79|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_c94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_h84.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|lpm_constant:inst2" CBX_FILE_NAME="lpm_constant_mh4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|lpm_constant:inst2" CBX_FILE_NAME="lpm_constant_ph4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_2q14.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst12|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst30|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
@@ -60,7 +60,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst40|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst4|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst11|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_m84.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|lpm_constant:inst13" CBX_FILE_NAME="lpm_constant_mh4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|lpm_constant:inst13" CBX_FILE_NAME="lpm_constant_ph4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst32|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst50|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COUNTER:inst" CBX_FILE_NAME="cntr_h1h.tdf"/>
