@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="led_light[0]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[1]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[2]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[3]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[4]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[6]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[7]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[8]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[9]" source="Pin Planner" >
+		</pin>
+		<pin name="led_light[5]" source="Pin Planner" >
+		</pin>
+		<pin name="V" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

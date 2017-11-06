@@ -17,7 +17,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst41|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_v84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst5|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_j84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst42|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_094.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COUNTER:inst12" CBX_FILE_NAME="cntr_h1h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COUNTER:inst12" CBX_FILE_NAME="cntr_jjg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst25|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_4a4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst61|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ca4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst7|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_k84.tdf"/>
@@ -34,8 +34,8 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst82|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_e94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst47|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_294.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst65|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_594.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COMPARE:inst1" CBX_FILE_NAME="cmpr_6cg.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COMPARE:inst11" CBX_FILE_NAME="cmpr_6cg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COMPARE:inst1" CBX_FILE_NAME="cmpr_acg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COMPARE:inst11" CBX_FILE_NAME="cmpr_acg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst69|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_COUNTER:inst115" CBX_FILE_NAME="cntr_p2i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst49|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_394.tdf"/>
@@ -49,7 +49,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_COMPARE:inst120" CBX_FILE_NAME="cmpr_86h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst79|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_c94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_h84.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|lpm_constant:inst2" CBX_FILE_NAME="lpm_constant_ph4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|lpm_constant:inst2" CBX_FILE_NAME="lpm_constant_dj4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_2q14.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst12|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst30|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
@@ -60,10 +60,10 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst40|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst4|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|LPM_FF:inst11|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_m84.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|lpm_constant:inst13" CBX_FILE_NAME="lpm_constant_ph4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|lpm_constant:inst13" CBX_FILE_NAME="lpm_constant_dj4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst32|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst50|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COUNTER:inst" CBX_FILE_NAME="cntr_h1h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|LPM_COUNTER:inst" CBX_FILE_NAME="cntr_jjg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst24|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst60|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab3|gA6_testbed:inst|gA6_stack52:inst4|BUSMUX:inst6|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
