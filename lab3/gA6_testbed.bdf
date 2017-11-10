@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 56 64 224 80)
+	(rect 56 96 224 112)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 56 40 224 56)
+	(rect 56 72 224 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "button" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 56 88 224 104)
+	(rect 56 120 224 136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "mode[1..0]" (rect 5 0 58 12)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 240 64 408 80)
+	(rect 240 96 408 112)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "addr[5..0]" (rect 5 0 52 12)(font "Arial" ))
 	(pt 168 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 240 40 408 56)
+	(rect 240 72 408 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "rst" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 432 40 608 56)
+	(rect 432 72 608 88)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "led_mod[6..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
@@ -117,7 +117,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 624 40 800 56)
+	(rect 624 72 800 88)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "led_floor[6..0]" (rect 90 0 158 12)(font "Arial" ))
 	(pt 0 8)
@@ -133,7 +133,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 432 64 608 80)
+	(rect 432 96 608 112)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "led_mode[6..0]" (rect 90 0 163 12)(font "Arial" ))
 	(pt 0 8)
@@ -149,7 +149,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 624 64 800 80)
+	(rect 624 96 800 112)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "led_empty[6..0]" (rect 90 0 167 12)(font "Arial" ))
 	(pt 0 8)
@@ -165,7 +165,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 624 112 800 128)
+	(rect 624 144 800 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "empty" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
@@ -181,7 +181,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 432 112 608 128)
+	(rect 432 144 608 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "full" (rect 90 0 105 12)(font "Arial" ))
 	(pt 0 8)
@@ -197,7 +197,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 624 88 800 104)
+	(rect 624 120 800 136)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "num[5..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
@@ -213,7 +213,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 432 88 608 104)
+	(rect 432 120 608 136)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "value[5..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
@@ -228,7 +228,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1040 352 1256 432)
+	(rect 1056 352 1272 432)
 	(text "gA6_7_segment_decoder" (rect 5 0 128 12)(font "Arial" ))
 	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
 	(port
@@ -257,7 +257,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1040 256 1256 336)
+	(rect 1056 256 1272 336)
 	(text "gA6_7_segment_decoder" (rect 5 68 128 80)(font "Arial" ))
 	(text "inst7" (rect 8 4 31 16)(font "Arial" ))
 	(port
@@ -316,7 +316,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1040 472 1256 552)
+	(rect 1056 472 1272 552)
 	(text "gA6_7_segment_decoder" (rect 5 0 128 12)(font "Arial" ))
 	(text "inst8" (rect 8 64 31 76)(font "Arial" ))
 	(port
@@ -345,7 +345,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 832 40 864 72)
+	(rect 832 72 864 104)
 	(text "GND" (rect 6 8 16 29)(font "Arial" (font_size 6))(vertical))
 	(text "inst9" (rect -1 3 11 26)(font "Arial" )(vertical)(invisible))
 	(port
@@ -413,7 +413,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 832 88 848 120)
+	(rect 832 120 848 152)
 	(text "VCC" (rect 0 5 10 25)(font "Arial" (font_size 6))(vertical))
 	(text "inst16" (rect 5 0 17 29)(font "Arial" )(vertical)(invisible))
 	(port
@@ -429,7 +429,7 @@ applicable agreement for further details.
 	(rotate90)
 )
 (symbol
-	(rect 1040 568 1256 648)
+	(rect 1056 568 1272 648)
 	(text "gA6_7_segment_decoder" (rect 5 0 128 12)(font "Arial" ))
 	(text "inst15" (rect 8 64 37 76)(font "Arial" ))
 	(port
@@ -1194,16 +1194,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect -8 32 173 130))
 )
 (connector
-	(text "G" (rect 894 48 902 60)(font "Arial" ))
-	(pt 864 56)
-	(pt 888 56)
-)
-(connector
-	(text "V" (rect 896 96 904 108)(font "Arial" ))
-	(pt 848 104)
-	(pt 888 104)
-)
-(connector
 	(text "empty" (rect 735 360 766 372)(font "Arial" ))
 	(pt 704 368)
 	(pt 728 368)
@@ -1214,46 +1204,8 @@ applicable agreement for further details.
 	(pt 728 384)
 )
 (connector
-	(pt 944 336)
-	(pt 960 336)
-	(bus)
-)
-(connector
-	(pt 944 352)
-	(pt 960 352)
-	(bus)
-)
-(connector
-	(pt 960 336)
-	(pt 960 304)
-	(bus)
-)
-(connector
 	(pt 504 336)
 	(pt 504 264)
-	(bus)
-)
-(connector
-	(pt 960 352)
-	(pt 960 384)
-	(bus)
-)
-(connector
-	(text "led_mod[6..0]" (rect 1297 296 1364 308)(font "Arial" ))
-	(pt 1288 304)
-	(pt 1256 304)
-	(bus)
-)
-(connector
-	(text "led_floor[6..0]" (rect 1296 376 1364 388)(font "Arial" ))
-	(pt 1288 384)
-	(pt 1256 384)
-	(bus)
-)
-(connector
-	(text "led_mode[6..0]" (rect 1296 496 1369 508)(font "Arial" ))
-	(pt 1256 504)
-	(pt 1288 504)
 	(bus)
 )
 (connector
@@ -1282,27 +1234,6 @@ applicable agreement for further details.
 	(pt 504 264)
 	(pt 544 264)
 	(bus)
-)
-(connector
-	(pt 960 384)
-	(pt 1040 384)
-	(bus)
-)
-(connector
-	(pt 960 304)
-	(pt 1040 304)
-	(bus)
-)
-(connector
-	(text "G, G, mode[1..0]" (rect 938 496 1021 508)(font "Arial" ))
-	(pt 1016 504)
-	(pt 1040 504)
-	(bus)
-)
-(connector
-	(text "G" (rect 1000 512 1008 524)(font "Arial" ))
-	(pt 1016 520)
-	(pt 1040 520)
 )
 (connector
 	(pt 528 384)
@@ -1423,35 +1354,104 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "led_empty[6..0]" (rect 1296 592 1373 604)(font "Arial" ))
-	(pt 1256 600)
-	(pt 1288 600)
-	(bus)
-)
-(connector
-	(text "V, V, V, V" (rect 962 592 1012 604)(font "Arial" ))
-	(pt 1040 600)
-	(pt 1016 600)
-	(bus)
-)
-(connector
-	(text "V" (rect 997 608 1005 620)(font "Arial" ))
-	(pt 1040 616)
-	(pt 1016 616)
-)
-(connector
 	(text "value[5..0]" (rect 720 320 773 332)(font "Arial" ))
 	(pt 704 336)
 	(pt 776 336)
 	(bus)
 )
 (connector
-	(text "V" (rect 1003 280 1011 292)(font "Arial" ))
-	(pt 1040 288)
-	(pt 1016 288)
+	(text "G" (rect 894 80 902 92)(font "Arial" ))
+	(pt 864 88)
+	(pt 888 88)
 )
 (connector
-	(text "G" (rect 1003 392 1011 404)(font "Arial" ))
-	(pt 1040 400)
-	(pt 1016 400)
+	(text "V" (rect 896 128 904 140)(font "Arial" ))
+	(pt 848 136)
+	(pt 888 136)
+)
+(connector
+	(pt 944 336)
+	(pt 976 336)
+	(bus)
+)
+(connector
+	(pt 944 352)
+	(pt 976 352)
+	(bus)
+)
+(connector
+	(pt 976 336)
+	(pt 976 304)
+	(bus)
+)
+(connector
+	(pt 976 352)
+	(pt 976 384)
+	(bus)
+)
+(connector
+	(text "led_mod[6..0]" (rect 1313 296 1380 308)(font "Arial" ))
+	(pt 1304 304)
+	(pt 1272 304)
+	(bus)
+)
+(connector
+	(text "led_floor[6..0]" (rect 1312 376 1380 388)(font "Arial" ))
+	(pt 1304 384)
+	(pt 1272 384)
+	(bus)
+)
+(connector
+	(text "led_mode[6..0]" (rect 1312 496 1385 508)(font "Arial" ))
+	(pt 1272 504)
+	(pt 1304 504)
+	(bus)
+)
+(connector
+	(text "led_empty[6..0]" (rect 1312 592 1389 604)(font "Arial" ))
+	(pt 1272 600)
+	(pt 1304 600)
+	(bus)
+)
+(connector
+	(pt 976 384)
+	(pt 1056 384)
+	(bus)
+)
+(connector
+	(text "G" (rect 1019 392 1027 404)(font "Arial" ))
+	(pt 1032 400)
+	(pt 1056 400)
+)
+(connector
+	(pt 976 304)
+	(pt 1056 304)
+	(bus)
+)
+(connector
+	(text "V" (rect 1019 280 1027 292)(font "Arial" ))
+	(pt 1032 288)
+	(pt 1056 288)
+)
+(connector
+	(text "G, G, mode[1..0]" (rect 954 496 1037 508)(font "Arial" ))
+	(pt 1032 504)
+	(pt 1056 504)
+	(bus)
+)
+(connector
+	(text "G" (rect 1016 512 1024 524)(font "Arial" ))
+	(pt 1032 520)
+	(pt 1056 520)
+)
+(connector
+	(text "V, V, V, V" (rect 978 592 1028 604)(font "Arial" ))
+	(pt 1032 600)
+	(pt 1056 600)
+	(bus)
+)
+(connector
+	(text "V" (rect 1013 608 1021 620)(font "Arial" ))
+	(pt 1032 616)
+	(pt 1056 616)
 )

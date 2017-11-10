@@ -1,5 +1,5 @@
 Flow report for gA6_lab3
-Mon Nov 06 18:18:04 2017
+Thu Nov 09 19:01:14 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 06 18:18:04 2017      ;
+; Flow Status                        ; Successful - Thu Nov 09 19:01:14 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA6_lab3                                   ;
 ; Top-level Entity Name              ; gA6_lab3                                   ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C20F484C7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 2,035 / 18,752 ( 11 % )                    ;
-;     Total combinational functions  ; 1,216 / 18,752 ( 6 % )                     ;
-;     Dedicated logic registers      ; 1,218 / 18,752 ( 6 % )                     ;
-; Total registers                    ; 1218                                       ;
+; Total logic elements               ; 2,025 / 18,752 ( 11 % )                    ;
+;     Total combinational functions  ; 1,207 / 18,752 ( 6 % )                     ;
+;     Dedicated logic registers      ; 1,206 / 18,752 ( 6 % )                     ;
+; Total registers                    ; 1206                                       ;
 ; Total pins                         ; 63 / 315 ( 20 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 9,216 / 239,616 ( 4 % )                    ;
+; Total memory bits                  ; 9,088 / 239,616 ( 4 % )                    ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                             ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
 +------------------------------------+--------------------------------------------+
@@ -64,58 +64,58 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/06/2017 18:16:54 ;
+; Start date & time ; 11/09/2017 19:00:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; gA6_lab3            ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                                                                                                                          ;
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
-; Assignment Name                     ; Value                                                                                                                                                                              ; Default Value ; Entity Name ; Section Id       ;
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID               ; 88491850560622.151001021412960                                                                                                                                                     ; --            ; --          ; --               ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                                                                                                                                 ; --            ; --          ; eda_simulation   ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                                                                                                                        ; --            ; --          ; eda_simulation   ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                                                                                                                          ; <None>        ; --          ; --               ;
-; ENABLE_SIGNALTAP                    ; On                                                                                                                                                                                 ; --            ; --          ; --               ;
-; IP_TOOL_NAME                        ; LPM_MUX                                                                                                                                                                            ; --            ; --          ; --               ;
-; IP_TOOL_VERSION                     ; 13.0                                                                                                                                                                               ; --            ; --          ; --               ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                                                                                                                 ; --            ; --          ; --               ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                                                                                                                  ; --            ; --          ; --               ;
-; MISC_FILE                           ; lpm_mux0.bsf                                                                                                                                                                       ; --            ; --          ; --               ;
-; MISC_FILE                           ; lpm_mux0.cmp                                                                                                                                                                       ; --            ; --          ; --               ;
-; PARTITION_COLOR                     ; 16764057                                                                                                                                                                           ; --            ; --          ; Top              ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                                                                                                              ; --            ; --          ; Top              ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                                                                                                             ; --            ; --          ; Top              ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                                                                                                                       ; --            ; --          ; --               ;
-; SLD_FILE                            ; C:/home/abbas/dsd_A6/lab3/output_files/gA6_stack52_testbed_auto_stripped.stp                                                                                                       ; --            ; --          ; --               ;
-; SLD_NODE_CREATOR_ID                 ; 110                                                                                                                                                                                ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                                                                                                                      ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                                                                                                                                            ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                                                                                                             ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                                                                                                                      ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=128                                                                                                                                                               ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                                                                                                         ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                                                                                                                     ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                                                                                                                  ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                                                                                                             ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                                                                                                       ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                                                                                                                ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=128                                                                                                                                                               ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                                                                                                                                           ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                                                                                                               ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                                                                                                       ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                                                                                                      ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=46                                                                                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=46                                                                                                                                                                ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=159                                                                                                                                                      ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_LOWORD=22006                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_HIWORD=47125                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
-; USE_SIGNALTAP_FILE                  ; output_files/gA6_stack52_testbed.stp                                                                                                                                               ; --            ; --          ; --               ;
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                                       ;
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                     ; Value                                                                                                                                                                           ; Default Value ; Entity Name ; Section Id       ;
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID               ; 88491850560622.151027201007204                                                                                                                                                  ; --            ; --          ; --               ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                                                                                                                              ; --            ; --          ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                                                                                                                     ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                                                                                                                       ; <None>        ; --          ; --               ;
+; ENABLE_SIGNALTAP                    ; On                                                                                                                                                                              ; --            ; --          ; --               ;
+; IP_TOOL_NAME                        ; LPM_MUX                                                                                                                                                                         ; --            ; --          ; --               ;
+; IP_TOOL_VERSION                     ; 13.0                                                                                                                                                                            ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                                                                                                              ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                                                                                                               ; --            ; --          ; --               ;
+; MISC_FILE                           ; lpm_mux0.bsf                                                                                                                                                                    ; --            ; --          ; --               ;
+; MISC_FILE                           ; lpm_mux0.cmp                                                                                                                                                                    ; --            ; --          ; --               ;
+; PARTITION_COLOR                     ; 16764057                                                                                                                                                                        ; --            ; --          ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                                                                                                           ; --            ; --          ; Top              ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                                                                                                          ; --            ; --          ; Top              ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                                                                                                                    ; --            ; --          ; --               ;
+; SLD_FILE                            ; C:/home/abbas/dsd_A6/lab3/output_files/gA6_stack52_testbed_auto_stripped.stp                                                                                                    ; --            ; --          ; --               ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                                                                                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                                                                                                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=128                                                                                                                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                                                                                                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                                                                                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                                                                                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                                                                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                                                                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=128                                                                                                                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                                                                                                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                                                                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                                                                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=45                                                                                                                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=45                                                                                                                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=156                                                                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_LOWORD=4491                                                                                                                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_HIWORD=35408                                                                                                                                                       ; --            ; --          ; auto_signaltap_0 ;
+; USE_SIGNALTAP_FILE                  ; output_files/gA6_stack52_testbed.stp                                                                                                                                            ; --            ; --          ; --               ;
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -123,12 +123,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:27     ; 1.0                     ; 637 MB              ; 00:00:19                           ;
-; Fitter                    ; 00:00:25     ; 1.2                     ; 962 MB              ; 00:00:27                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 507 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 554 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 473 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:01     ; --                      ; --                  ; 00:00:54                           ;
+; Analysis & Synthesis      ; 00:00:31     ; 1.0                     ; 634 MB              ; 00:00:24                           ;
+; Fitter                    ; 00:00:17     ; 1.4                     ; 967 MB              ; 00:00:21                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 507 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 553 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 473 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:54     ; --                      ; --                  ; 00:00:53                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 216 208)
-	(text "gA6_testbed" (rect 5 0 78 14)(font "Arial" (font_size 8)))
+	(text "ga6_testbed" (rect 5 0 75 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
 		(pt 0 32)

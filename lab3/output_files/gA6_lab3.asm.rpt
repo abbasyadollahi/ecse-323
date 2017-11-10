@@ -1,5 +1,5 @@
 Assembler report for gA6_lab3
-Mon Nov 06 18:17:54 2017
+Thu Nov 09 19:01:06 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Nov 06 18:17:54 2017 ;
+; Assembler Status      ; Successful - Thu Nov 09 19:01:06 2017 ;
 ; Revision Name         ; gA6_lab3                              ;
 ; Top-level Entity Name ; gA6_lab3                              ;
 ; Family                ; Cyclone II                            ;
@@ -105,8 +105,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                      ;
 +----------------+--------------------------------------------------------------+
 ; Device         ; EP2C20F484C7                                                 ;
-; JTAG usercode  ; 0x002EAF7D                                                   ;
-; Checksum       ; 0x002EAF7D                                                   ;
+; JTAG usercode  ; 0x002E9095                                                   ;
+; Checksum       ; 0x002E9095                                                   ;
 +----------------+--------------------------------------------------------------+
 
 
@@ -117,7 +117,7 @@ applicable agreement for further details.
 +--------------------+----------------------------------------------------------+
 ; Device             ; EPCS16                                                   ;
 ; JTAG usercode      ; 0x00000000                                               ;
-; Checksum           ; 0x1DB9CC13                                               ;
+; Checksum           ; 0x1DB7DF0D                                               ;
 ; Compression Ratio  ; 2                                                        ;
 +--------------------+----------------------------------------------------------+
 
@@ -128,14 +128,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Nov 06 18:17:51 2017
+    Info: Processing started: Thu Nov 09 19:01:04 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off gA6_lab3 -c gA6_lab3
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 515 megabytes
-    Info: Processing ended: Mon Nov 06 18:17:55 2017
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Thu Nov 09 19:01:07 2017
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

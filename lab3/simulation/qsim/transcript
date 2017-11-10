@@ -28,36 +28,21 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_jtag
 # Loading work.gA6_lab3_vlg_sample_tst
 # Loading work.gA6_lab3_vlg_check_tst
+# ** Warning: (vsim-3017) gA6_lab3.vt(740): [TFMPC] - Too few port connections. Expected 18, found 14.
+# 
+#         Region: /gA6_lab3_vlg_vec_tst/i1
+# ** Warning: (vsim-3722) gA6_lab3.vt(740): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# 
+# ** Warning: (vsim-3722) gA6_lab3.vt(740): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# 
+# ** Warning: (vsim-3722) gA6_lab3.vt(740): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# 
+# ** Warning: (vsim-3722) gA6_lab3.vt(740): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# 
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ERROR! Vector Mismatch for output port empty :: @time = 1000000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port full :: @time = 1280000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port num[2] :: @time = 1280000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port num[4] :: @time = 1280000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port num[5] :: @time = 1280000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port value[3] :: @time = 1280000.000 ps
-#      Expected value = 000000
-#      Real value = 011000
-# ERROR! Vector Mismatch for output port value[4] :: @time = 1280000.000 ps
-#      Expected value = 000000
-#      Real value = 011000
-# ERROR! Vector Mismatch for output port value[0] :: @time = 1360000.000 ps
-#      Expected value = 000000
-#      Real value = 011011
-# ERROR! Vector Mismatch for output port value[1] :: @time = 1360000.000 ps
-#      Expected value = 000000
-#      Real value = 011011
-#           9 mismatched vectors : Simulation failed !
-# ** Note: $finish    : gA6_lab3.vt(703)
-#    Time: 2 us  Iteration: 0  Instance: /gA6_lab3_vlg_vec_tst/tb_out
+# Simulation passed !
+# ** Note: $finish    : gA6_lab3.vt(698)
+#    Time: 1 us  Iteration: 0  Instance: /gA6_lab3_vlg_vec_tst/tb_out
