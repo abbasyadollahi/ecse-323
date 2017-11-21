@@ -1,0 +1,37 @@
+|gA6_lab4
+legal_play <= gA6_rules:inst.legal_play
+ace_out <= gA6_rules:inst.ace_out
+hand_sum[0] => gA6_rules:inst.hand_sum[0]
+hand_sum[1] => gA6_rules:inst.hand_sum[1]
+hand_sum[2] => gA6_rules:inst.hand_sum[2]
+hand_sum[3] => gA6_rules:inst.hand_sum[3]
+hand_sum[4] => gA6_rules:inst.hand_sum[4]
+hand_sum[5] => gA6_rules:inst.hand_sum[5]
+new_card[0] => gA6_rules:inst.new_card[0]
+new_card[1] => gA6_rules:inst.new_card[1]
+new_card[2] => gA6_rules:inst.new_card[2]
+new_card[3] => gA6_rules:inst.new_card[3]
+new_card[4] => gA6_rules:inst.new_card[4]
+new_card[5] => gA6_rules:inst.new_card[5]
+
+
+|gA6_lab4|gA6_rules:inst
+ace => sum_cards.IN1
+ace => hand_ace.DATAA
+ace => sum_cards.IN1
+new_card[0] => Mod0.IN11
+new_card[1] => Mod0.IN10
+new_card[2] => Mod0.IN9
+new_card[3] => Mod0.IN8
+new_card[4] => Mod0.IN7
+new_card[5] => Mod0.IN6
+hand_sum[0] => Add1.IN6
+hand_sum[1] => Add1.IN5
+hand_sum[2] => Add1.IN4
+hand_sum[3] => Add1.IN3
+hand_sum[4] => Add1.IN2
+hand_sum[5] => Add1.IN1
+ace_out <= hand_ace.DB_MAX_OUTPUT_PORT_TYPE
+legal_play <= \sum_cards:legal.DB_MAX_OUTPUT_PORT_TYPE
+
+
