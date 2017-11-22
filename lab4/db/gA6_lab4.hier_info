@@ -1,6 +1,5 @@
 |gA6_lab4
 legal_play <= gA6_rules:inst.legal_play
-ace_out <= gA6_rules:inst.ace_out
 hand_sum[0] => gA6_rules:inst.hand_sum[0]
 hand_sum[1] => gA6_rules:inst.hand_sum[1]
 hand_sum[2] => gA6_rules:inst.hand_sum[2]
@@ -13,8 +12,17 @@ new_card[2] => gA6_rules:inst.new_card[2]
 new_card[3] => gA6_rules:inst.new_card[3]
 new_card[4] => gA6_rules:inst.new_card[4]
 new_card[5] => gA6_rules:inst.new_card[5]
+ace_out <= gA6_rules:inst.ace_out
 out_4 <= gA6_rules:inst.out_4
 out_5 <= gA6_rules:inst.out_5
+rand_enable <= gA6_dealer:inst1.rand_enable
+clk => gA6_dealer:inst1.clk
+rst => gA6_dealer:inst1.rst
+legal_num => gA6_dealer:inst1.legal_num
+request_deal => gA6_dealer:inst1.request_deal
+stack_enable <= gA6_dealer:inst1.stack_enable
+fsm_state[0] <= gA6_dealer:inst1.fsm_state[0]
+fsm_state[1] <= gA6_dealer:inst1.fsm_state[1]
 out_1[0] <= gA6_rules:inst.out_1[0]
 out_1[1] <= gA6_rules:inst.out_1[1]
 out_1[2] <= gA6_rules:inst.out_1[2]
@@ -73,5 +81,26 @@ out_3[4] <= new_sum.DB_MAX_OUTPUT_PORT_TYPE
 out_3[5] <= new_sum.DB_MAX_OUTPUT_PORT_TYPE
 out_4 <= new_ace.DB_MAX_OUTPUT_PORT_TYPE
 out_5 <= ace.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gA6_lab4|gA6_dealer:inst1
+clk => stack_enable~reg0.CLK
+clk => rand_enable~reg0.CLK
+clk => \dealer:state[0].CLK
+clk => \dealer:state[1].CLK
+rst => stack_enable~reg0.ACLR
+rst => rand_enable~reg0.ACLR
+rst => \dealer:state[0].ACLR
+rst => \dealer:state[1].ACLR
+legal_num => state.OUTPUTSELECT
+legal_num => state.OUTPUTSELECT
+request_deal => state.OUTPUTSELECT
+request_deal => state.OUTPUTSELECT
+request_deal => state.OUTPUTSELECT
+request_deal => state.OUTPUTSELECT
+rand_enable <= rand_enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+stack_enable <= stack_enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+fsm_state[0] <= \dealer:state[0].DB_MAX_OUTPUT_PORT_TYPE
+fsm_state[1] <= \dealer:state[1].DB_MAX_OUTPUT_PORT_TYPE
 
 

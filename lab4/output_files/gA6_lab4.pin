@@ -78,16 +78,16 @@ GND*                         : A7        :        :                   :         
 GND*                         : A8        :        :                   :         : 3         :                
 GND*                         : A9        :        :                   :         : 3         :                
 GND*                         : A10       :        :                   :         : 3         :                
-GND*                         : A11       :        :                   :         : 3         :                
+out_3[0]                     : A11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : A12       :        :                   :         : 4         :                
-GND*                         : A13       :        :                   :         : 4         :                
-GND*                         : A14       :        :                   :         : 4         :                
-GND*                         : A15       :        :                   :         : 4         :                
-GND*                         : A16       :        :                   :         : 4         :                
-GND*                         : A17       :        :                   :         : 4         :                
-new_card[5]                  : A18       : input  : 3.3-V LVTTL       :         : 4         : N              
-new_card[1]                  : A19       : input  : 3.3-V LVTTL       :         : 4         : N              
-new_card[3]                  : A20       : input  : 3.3-V LVTTL       :         : 4         : N              
+out_3[4]                     : A13       : output : 3.3-V LVTTL       :         : 4         : N              
+out_3[1]                     : A14       : output : 3.3-V LVTTL       :         : 4         : N              
+out_2[1]                     : A15       : output : 3.3-V LVTTL       :         : 4         : N              
+out_1[1]                     : A16       : output : 3.3-V LVTTL       :         : 4         : N              
+hand_sum[4]                  : A17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A18       :        :                   :         : 4         :                
+GND*                         : A19       :        :                   :         : 4         :                
+GND*                         : A20       :        :                   :         : 4         :                
 VCCIO4                       : A21       : power  :                   : 3.3V    : 4         :                
 GND                          : A22       : gnd    :                   :         :           :                
 VCCIO1                       : AA1       : power  :                   : 3.3V    : 1         :                
@@ -104,7 +104,7 @@ GND*                         : AA11      :        :                   :         
 GND*                         : AA12      :        :                   :         : 7         :                
 GND*                         : AA13      :        :                   :         : 7         :                
 GND*                         : AA14      :        :                   :         : 7         :                
-GND*                         : AA15      :        :                   :         : 7         :                
+out_1[4]                     : AA15      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AA16      :        :                   :         : 7         :                
 GND*                         : AA17      :        :                   :         : 7         :                
 GND*                         : AA18      :        :                   :         : 7         :                
@@ -137,23 +137,23 @@ GND                          : AB22      : gnd    :                   :         
 VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
 GND*                         : B3        :        :                   :         : 3         :                
-GND*                         : B4        :        :                   :         : 3         :                
+out_1[5]                     : B4        : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : B5        :        :                   :         : 3         :                
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
 GND*                         : B9        :        :                   :         : 3         :                
-GND*                         : B10       :        :                   :         : 3         :                
-GND*                         : B11       :        :                   :         : 3         :                
+ace_out                      : B10       : output : 3.3-V LVTTL       :         : 3         : N              
+out_3[2]                     : B11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : B12       :        :                   :         : 4         :                
-GND*                         : B13       :        :                   :         : 4         :                
-GND*                         : B14       :        :                   :         : 4         :                
-GND*                         : B15       :        :                   :         : 4         :                
-GND*                         : B16       :        :                   :         : 4         :                
-GND*                         : B17       :        :                   :         : 4         :                
-new_card[0]                  : B18       : input  : 3.3-V LVTTL       :         : 4         : N              
-hand_sum[1]                  : B19       : input  : 3.3-V LVTTL       :         : 4         : N              
-new_card[4]                  : B20       : input  : 3.3-V LVTTL       :         : 4         : N              
+out_3[3]                     : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+out_3[5]                     : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+out_2[4]                     : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+out_1[3]                     : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+new_card[0]                  : B17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B18       :        :                   :         : 4         :                
+GND*                         : B19       :        :                   :         : 4         :                
+stack_enable                 : B20       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : B21       : gnd    :                   :         :           :                
 VCCIO5                       : B22       : power  :                   : 3.3V    : 5         :                
 GND*                         : C1        :        :                   :         : 2         :                
@@ -168,14 +168,14 @@ GND*                         : C9        :        :                   :         
 GND*                         : C10       :        :                   :         : 3         :                
 VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : C12       : power  :                   : 3.3V    : 4         :                
-GND*                         : C13       :        :                   :         : 4         :                
-GND*                         : C14       :        :                   :         : 4         :                
+out_2[2]                     : C13       : output : 3.3-V LVTTL       :         : 4         : N              
+new_card[2]                  : C14       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND                          : C15       : gnd    :                   :         :           :                
-legal_play                   : C16       : output : 3.3-V LVTTL       :         : 4         : N              
-new_card[2]                  : C17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C16       :        :                   :         : 4         :                
+GND*                         : C17       :        :                   :         : 4         :                
 GND*                         : C18       :        :                   :         : 4         :                
 GND*                         : C19       :        :                   :         : 5         :                
-GND*                         : C20       :        :                   :         : 5         :                
+legal_num                    : C20       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : C21       :        :                   :         : 5         :                
 GND*                         : C22       :        :                   :         : 5         :                
 GND*                         : D1        :        :                   :         : 2         :                
@@ -188,16 +188,16 @@ GND*                         : D7        :        :                   :         
 GND*                         : D8        :        :                   :         : 3         :                
 GND*                         : D9        :        :                   :         : 3         :                
 GND                          : D10       : gnd    :                   :         :           :                
-GND*                         : D11       :        :                   :         : 3         :                
+legal_play                   : D11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : D12       :        :                   :         : 3         :                
 GND                          : D13       : gnd    :                   :         :           :                
-GND*                         : D14       :        :                   :         : 4         :                
-GND*                         : D15       :        :                   :         : 4         :                
+hand_sum[1]                  : D14       : input  : 3.3-V LVTTL       :         : 4         : N              
+new_card[5]                  : D15       : input  : 3.3-V LVTTL       :         : 4         : N              
 hand_sum[0]                  : D16       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : D17       : power  :                   : 3.3V    : 4         :                
 GND                          : D18       : gnd    :                   :         :           :                
-GND*                         : D19       :        :                   :         : 5         :                
-GND*                         : D20       :        :                   :         : 5         :                
+state_fsm[0]                 : D19       : output : 3.3-V LVTTL       :         : 5         : N              
+state_fsm[1]                 : D20       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : D21       :        :                   :         : 5         :                
 GND*                         : D22       :        :                   :         : 5         :                
 GND*                         : E1        :        :                   :         : 2         :                
@@ -210,15 +210,15 @@ GND*                         : E7        :        :                   :         
 GND*                         : E8        :        :                   :         : 3         :                
 GND*                         : E9        :        :                   :         : 3         :                
 VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
-GND*                         : E11       :        :                   :         : 3         :                
+out_2[0]                     : E11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : E12       :        :                   :         : 3         :                
 VCCIO4                       : E13       : power  :                   : 3.3V    : 4         :                
-GND*                         : E14       :        :                   :         : 4         :                
-hand_sum[4]                  : E15       : input  : 3.3-V LVTTL       :         : 4         : N              
+hand_sum[5]                  : E14       : input  : 3.3-V LVTTL       :         : 4         : N              
+hand_sum[2]                  : E15       : input  : 3.3-V LVTTL       :         : 4         : N              
 GNDA_PLL2                    : E16       : gnd    :                   :         :           :                
 GND_PLL2                     : E17       : gnd    :                   :         :           :                
-GND*                         : E18       :        :                   :         : 5         :                
-GND*                         : E19       :        :                   :         : 5         :                
+rand_enable                  : E18       : output : 3.3-V LVTTL       :         : 5         : N              
+request_deal                 : E19       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : E20       :        :                   :         : 5         :                
 GND*                         : E21       :        :                   :         : 5         :                
 GND*                         : E22       :        :                   :         : 5         :                
@@ -233,10 +233,10 @@ GND*                         : F8        :        :                   :         
 GND*                         : F9        :        :                   :         : 3         :                
 GND*                         : F10       :        :                   :         : 3         :                
 GND*                         : F11       :        :                   :         : 3         :                
-GND*                         : F12       :        :                   :         : 4         :                
-GND*                         : F13       :        :                   :         : 4         :                
-GND*                         : F14       :        :                   :         : 4         :                
-GND*                         : F15       :        :                   :         : 4         :                
+out_2[3]                     : F12       : output : 3.3-V LVTTL       :         : 4         : N              
+out_1[2]                     : F13       : output : 3.3-V LVTTL       :         : 4         : N              
+out_1[0]                     : F14       : output : 3.3-V LVTTL       :         : 4         : N              
+new_card[3]                  : F15       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCA_PLL2                    : F16       : power  :                   : 1.2V    :           :                
 VCCD_PLL2                    : F17       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : F18       : gnd    :                   :         :           :                
@@ -255,11 +255,11 @@ GND*                         : G8        :        :                   :         
 VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
 GND                          : G10       : gnd    :                   :         :           :                
 GND*                         : G11       :        :                   :         : 3         :                
-GND*                         : G12       :        :                   :         : 4         :                
+out_2[5]                     : G12       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO4                       : G14       : power  :                   : 3.3V    : 4         :                
-GND*                         : G15       :        :                   :         : 4         :                
-hand_sum[3]                  : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
+new_card[4]                  : G15       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : G16       :        :                   :         : 4         :                
 GND*                         : G17       :        :                   :         : 5         :                
 GND*                         : G18       :        :                   :         : 5         :                
 VCCIO5                       : G19       : power  :                   : 3.3V    : 5         :                
@@ -276,11 +276,11 @@ GND*                         : H7        :        :                   :         
 GND*                         : H8        :        :                   :         : 3         :                
 GND*                         : H9        :        :                   :         : 3         :                
 GND*                         : H10       :        :                   :         : 3         :                
-GND*                         : H11       :        :                   :         : 3         :                
-GND*                         : H12       :        :                   :         : 4         :                
-GND*                         : H13       :        :                   :         : 4         :                
-hand_sum[2]                  : H14       : input  : 3.3-V LVTTL       :         : 4         : N              
-ace_out                      : H15       : output : 3.3-V LVTTL       :         : 4         : N              
+out_5                        : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+out_4                        : H12       : output : 3.3-V LVTTL       :         : 4         : N              
+new_card[1]                  : H13       : input  : 3.3-V LVTTL       :         : 4         : N              
+hand_sum[3]                  : H14       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : H15       :        :                   :         : 4         :                
 GND*                         : H16       :        :                   :         : 5         :                
 GND*                         : H17       :        :                   :         : 5         :                
 GND*                         : H18       :        :                   :         : 5         :                
@@ -301,7 +301,7 @@ VCCINT                       : J10       : power  :                   : 1.2V    
 VCCINT                       : J11       : power  :                   : 1.2V    :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
 VCCINT                       : J13       : power  :                   : 1.2V    :           :                
-hand_sum[5]                  : J14       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : J14       :        :                   :         : 4         :                
 GND*                         : J15       :        :                   :         : 5         :                
 VCCIO5                       : J16       : power  :                   : 3.3V    : 5         :                
 GND*                         : J17       :        :                   :         : 5         :                
@@ -354,8 +354,8 @@ GND*                         : L19       :        :                   :         
 VCCIO5                       : L20       : power  :                   : 3.3V    : 5         :                
 GND+                         : L21       :        :                   :         : 5         :                
 GND+                         : L22       :        :                   :         : 5         :                
-GND+                         : M1        :        :                   :         : 1         :                
-GND+                         : M2        :        :                   :         : 1         :                
+clk                          : M1        : input  : 3.3-V LVTTL       :         : 1         : N              
+rst                          : M2        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : M3        : power  :                   : 3.3V    : 1         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GND*                         : M5        :        :                   :         : 1         :                

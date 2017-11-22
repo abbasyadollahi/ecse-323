@@ -21,9 +21,10 @@
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading work.gA6_lab4_vlg_sample_tst
 # Loading work.gA6_lab4_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : gA6_lab4.vt(579)
-#    Time: 600 ns  Iteration: 0  Instance: /gA6_lab4_vlg_vec_tst/tb_out
+# ** Note: $finish    : gA6_lab4.vt(264)
+#    Time: 1 us  Iteration: 0  Instance: /gA6_lab4_vlg_vec_tst/tb_out
