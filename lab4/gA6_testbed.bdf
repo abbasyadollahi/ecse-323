@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 216 136 384 152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "data[5..0]" (rect 5 0 53 12)(font "Arial" ))
+	(text "data[5..0]" (rect 5 0 52 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -823,7 +823,7 @@ applicable agreement for further details.
 		(pt 216 48)
 		(output)
 		(text "segments_out[6..0]" (rect 0 0 95 12)(font "Arial" ))
-		(text "segments_out[6..0]" (rect 115 41 195 53)(font "Arial" ))
+		(text "segments_out[6..0]" (rect 115 41 210 53)(font "Arial" ))
 		(line (pt 216 48)(pt 200 48)(line_width 3))
 	)
 	(drawing
@@ -853,7 +853,7 @@ applicable agreement for further details.
 		(pt 216 32)
 		(output)
 		(text "segments_out[6..0]" (rect 0 0 95 12)(font "Arial" ))
-		(text "segments_out[6..0]" (rect 115 27 195 39)(font "Arial" ))
+		(text "segments_out[6..0]" (rect 115 27 210 39)(font "Arial" ))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(drawing
@@ -1015,6 +1015,97 @@ applicable agreement for further details.
 		(line (pt 16 112)(pt 16 16))
 	)
 	(annotation_block (parameter)(rect 720 536 929 620))
+)
+(symbol
+	(rect 824 760 968 872)
+	(text "LPM_DIVIDE" (rect 38 96 127 112)(font "Arial" (font_size 10)))
+	(text "inst16" (rect 3 0 32 12)(font "Arial" ))
+	(port
+		(pt 0 24)
+		(input)
+		(text "aclr" (rect 20 79 41 93)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 20 19 41 33)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
+		(unused)
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "clken" (rect 20 63 49 77)(font "Arial" (font_size 8)))
+		(text "clken" (rect 20 35 49 49)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+		(unused)
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "clock" (rect 20 49 49 63)(font "Arial" (font_size 8)))
+		(text "clock" (rect 20 49 49 63)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+		(unused)
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "denom[LPM_WIDTHD-1..0]" (rect 20 32 167 46)(font "Arial" (font_size 8)))
+		(text "denom[]" (rect 20 66 64 80)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "numer[LPM_WIDTHN-1..0]" (rect 21 16 166 30)(font "Arial" (font_size 8)))
+		(text "numer[]" (rect 21 82 63 96)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 3))
+	)
+	(port
+		(pt 144 88)
+		(output)
+		(text "quotient[LPM_WIDTHN-1..0]" (rect 83 16 237 30)(font "Arial" (font_size 8)))
+		(text "quotient[]" (rect 80 82 131 96)(font "Arial" (font_size 8)))
+		(line (pt 128 88)(pt 144 88)(line_width 3))
+		(unused)
+	)
+	(port
+		(pt 144 72)
+		(output)
+		(text "remain[LPM_WIDTHD-1..0]" (rect 88 32 235 46)(font "Arial" (font_size 8)))
+		(text "remain[]" (rect 86 66 130 80)(font "Arial" (font_size 8)))
+		(line (pt 128 72)(pt 144 72)(line_width 3))
+	)
+	(parameter
+		"LPM_DREPRESENTATION"
+		"\"UNSIGNED\""
+		""
+	)
+	(parameter
+		"LPM_NREPRESENTATION"
+		"\"UNSIGNED\""
+		""
+	)
+	(parameter
+		"LPM_PIPELINE"
+		"0"
+		""
+	)
+	(parameter
+		"LPM_WIDTHD"
+		"6"
+		""
+	)
+	(parameter
+		"LPM_WIDTHN"
+		"6"
+		""
+	)
+	(drawing
+		(line (pt 16 96)(pt 128 96))
+		(line (pt 16 16)(pt 128 16))
+		(line (pt 16 16)(pt 16 96))
+		(line (pt 128 16)(pt 128 96))
+	)
+	(flipx)
+	(annotation_block (parameter)(rect 968 672 1199 756))
 )
 (connector
 	(text "addr[5..0]" (rect 144 504 191 516)(font "Arial" ))
@@ -1196,12 +1287,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "addr[5..0]" (rect 780 840 827 852)(font "Arial" ))
-	(pt 744 848)
-	(pt 768 848)
-	(bus)
-)
-(connector
 	(text "clk" (rect 528 840 542 852)(font "Arial" ))
 	(pt 544 848)
 	(pt 568 848)
@@ -1290,13 +1375,30 @@ applicable agreement for further details.
 	(pt 272 176)
 )
 (connector
-	(text "seed[5..0]" (rect 512 672 561 684)(font "Arial" ))
+	(text "seed[31..26]" (rect 496 672 557 684)(font "Arial" ))
 	(pt 560 680)
 	(pt 592 680)
 	(bus)
 )
 (connector
-	(text "seed[5..0]" (rect 496 824 545 836)(font "Arial" ))
+	(text "addr[5..0]" (rect 1020 824 1067 836)(font "Arial" ))
+	(pt 968 832)
+	(pt 1008 832)
+	(bus)
+)
+(connector
+	(text "num[5..0]" (rect 752 824 799 836)(font "Arial" ))
+	(pt 802 832)
+	(pt 824 832)
+	(bus)
+)
+(connector
+	(pt 744 848)
+	(pt 824 848)
+	(bus)
+)
+(connector
+	(text "seed[31..26]" (rect 488 824 549 836)(font "Arial" ))
 	(pt 544 832)
 	(pt 568 832)
 	(bus)

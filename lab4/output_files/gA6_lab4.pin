@@ -70,10 +70,10 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 GND                          : A1        : gnd    :                   :         :           :                
 VCCIO3                       : A2        : power  :                   : 3.3V    : 3         :                
-GND*                         : A3        :        :                   :         : 3         :                
-GND*                         : A4        :        :                   :         : 3         :                
-GND*                         : A5        :        :                   :         : 3         :                
-GND*                         : A6        :        :                   :         : 3         :                
+new_card[3]                  : A3        : input  : 3.3-V LVTTL       :         : 3         : N              
+new_card[2]                  : A4        : input  : 3.3-V LVTTL       :         : 3         : N              
+hand_sum[2]                  : A5        : input  : 3.3-V LVTTL       :         : 3         : N              
+hand_sum[0]                  : A6        : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : A7        :        :                   :         : 3         :                
 GND*                         : A8        :        :                   :         : 3         :                
 GND*                         : A9        :        :                   :         : 3         :                
@@ -136,10 +136,10 @@ VCCIO7                       : AB21      : power  :                   : 3.3V    
 GND                          : AB22      : gnd    :                   :         :           :                
 VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
-GND*                         : B3        :        :                   :         : 3         :                
-GND*                         : B4        :        :                   :         : 3         :                
-GND*                         : B5        :        :                   :         : 3         :                
-GND*                         : B6        :        :                   :         : 3         :                
+new_card[5]                  : B3        : input  : 3.3-V LVTTL       :         : 3         : N              
+new_card[4]                  : B4        : input  : 3.3-V LVTTL       :         : 3         : N              
+new_card[1]                  : B5        : input  : 3.3-V LVTTL       :         : 3         : N              
+ace_out                      : B6        : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
 GND*                         : B9        :        :                   :         : 3         :                
@@ -206,7 +206,7 @@ led_empty[4]                 : E3        : output : 3.3-V LVTTL       :         
 led_empty[5]                 : E4        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCD_PLL3                    : E5        : power  :                   : 1.2V    :           :                
 VCCA_PLL3                    : E6        : power  :                   : 1.2V    :           :                
-GND*                         : E7        :        :                   :         : 3         :                
+hand_sum[3]                  : E7        : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : E8        :        :                   :         : 3         :                
 GND*                         : E9        :        :                   :         : 3         :                
 VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
@@ -250,8 +250,8 @@ led_suit[4]                  : G3        : output : 3.3-V LVTTL       :         
 GND                          : G4        : gnd    :                   :         :           :                
 led_empty[0]                 : G5        : output : 3.3-V LVTTL       :         : 2         : Y              
 led_empty[1]                 : G6        : output : 3.3-V LVTTL       :         : 2         : Y              
-GND*                         : G7        :        :                   :         : 3         :                
-GND*                         : G8        :        :                   :         : 3         :                
+new_card[0]                  : G7        : input  : 3.3-V LVTTL       :         : 3         : N              
+hand_sum[1]                  : G8        : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
 GND                          : G10       : gnd    :                   :         :           :                
 GND*                         : G11       :        :                   :         : 3         :                
@@ -268,12 +268,12 @@ GND*                         : G21       :        :                   :         
 GND*                         : G22       :        :                   :         : 5         :                
 led_value[3]                 : H1        : output : 3.3-V LVTTL       :         : 2         : Y              
 led_value[2]                 : H2        : output : 3.3-V LVTTL       :         : 2         : Y              
-GND*                         : H3        :        :                   :         : 2         :                
+hand_sum[5]                  : H3        : input  : 3.3-V LVTTL       :         : 2         : N              
 led_suit[3]                  : H4        : output : 3.3-V LVTTL       :         : 2         : Y              
 led_suit[2]                  : H5        : output : 3.3-V LVTTL       :         : 2         : Y              
 led_suit[1]                  : H6        : output : 3.3-V LVTTL       :         : 2         : Y              
-GND*                         : H7        :        :                   :         : 3         :                
-GND*                         : H8        :        :                   :         : 3         :                
+legal_play                   : H7        : output : 3.3-V LVTTL       :         : 3         : N              
+hand_sum[4]                  : H8        : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : H9        :        :                   :         : 3         :                
 GND*                         : H10       :        :                   :         : 3         :                
 GND*                         : H11       :        :                   :         : 3         :                
@@ -331,7 +331,7 @@ NC                           : K18       :        :                   :         
 GND                          : K19       : gnd    :                   :         :           :                
 GND*                         : K20       :        :                   :         : 5         :                
 GND*                         : K21       :        :                   :         : 5         :                
-GND*                         : K22       :        :                   :         : 5         :                
+rand_enable                  : K22       : output : 3.3-V LVTTL       :         : 5         : N              
 clk                          : L1        : input  : 3.3-V LVTTL       :         : 2         : Y              
 mode[1]                      : L2        : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : L3        : power  :                   : 3.3V    : 2         :                
@@ -349,8 +349,8 @@ VCCINT                       : L14       : power  :                   : 1.2V    
 NC                           : L15       :        :                   :         :           :                
 NC                           : L16       :        :                   :         :           :                
 NC                           : L17       :        :                   :         :           :                
-GND*                         : L18       :        :                   :         : 5         :                
-GND*                         : L19       :        :                   :         : 5         :                
+stack_enable                 : L18       : output : 3.3-V LVTTL       :         : 5         : N              
+legal_num                    : L19       : input  : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : L20       : power  :                   : 3.3V    : 5         :                
 data[1]                      : L21       : input  : 3.3-V LVTTL       :         : 5         : Y              
 data[0]                      : L22       : input  : 3.3-V LVTTL       :         : 5         : Y              

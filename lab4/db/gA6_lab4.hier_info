@@ -1,9 +1,12 @@
 |gA6_lab4
 empty <= gA6_testbed:inst.empty
 clk => gA6_testbed:inst.clk
+clk => gA6_dealer:inst3.clk
 rst => gA6_testbed:inst.rst
+rst => gA6_dealer:inst3.rst
 stack => gA6_testbed:inst.stack
 request_deal => gA6_testbed:inst.request
+request_deal => gA6_dealer:inst3.request_deal
 data[0] => gA6_testbed:inst.data[0]
 data[1] => gA6_testbed:inst.data[1]
 data[2] => gA6_testbed:inst.data[2]
@@ -15,6 +18,23 @@ mode[0] => gA6_7_segment_decoder:inst1.code[0]
 mode[1] => gA6_testbed:inst.mode[1]
 mode[1] => gA6_7_segment_decoder:inst1.code[1]
 full <= gA6_testbed:inst.full
+legal_play <= gA6_rules:inst18.legal_play
+ace_out <= gA6_rules:inst18.ace_out
+hand_sum[0] => gA6_rules:inst18.hand_sum[0]
+hand_sum[1] => gA6_rules:inst18.hand_sum[1]
+hand_sum[2] => gA6_rules:inst18.hand_sum[2]
+hand_sum[3] => gA6_rules:inst18.hand_sum[3]
+hand_sum[4] => gA6_rules:inst18.hand_sum[4]
+hand_sum[5] => gA6_rules:inst18.hand_sum[5]
+new_card[0] => gA6_rules:inst18.new_card[0]
+new_card[1] => gA6_rules:inst18.new_card[1]
+new_card[2] => gA6_rules:inst18.new_card[2]
+new_card[3] => gA6_rules:inst18.new_card[3]
+new_card[4] => gA6_rules:inst18.new_card[4]
+new_card[5] => gA6_rules:inst18.new_card[5]
+rand_enable <= gA6_dealer:inst3.rand_enable
+legal_num => gA6_dealer:inst3.legal_num
+stack_enable <= gA6_dealer:inst3.stack_enable
 addr[0] <= gA6_testbed:inst.addr[0]
 addr[1] <= gA6_testbed:inst.addr[1]
 addr[2] <= gA6_testbed:inst.addr[2]
@@ -74,12 +94,12 @@ num[4] <= gA6_stack52:inst.num[4]
 num[5] <= gA6_stack52:inst.num[5]
 request => gA6_debouncer:inst11.button
 stack => gA6_debouncer:inst14.button
-addr[0] <= LPM_FF:inst4.q[0]
-addr[1] <= LPM_FF:inst4.q[1]
-addr[2] <= LPM_FF:inst4.q[2]
-addr[3] <= LPM_FF:inst4.q[3]
-addr[4] <= LPM_FF:inst4.q[4]
-addr[5] <= LPM_FF:inst4.q[5]
+addr[0] <= LPM_DIVIDE:inst16.remain[0]
+addr[1] <= LPM_DIVIDE:inst16.remain[1]
+addr[2] <= LPM_DIVIDE:inst16.remain[2]
+addr[3] <= LPM_DIVIDE:inst16.remain[3]
+addr[4] <= LPM_DIVIDE:inst16.remain[4]
+addr[5] <= LPM_DIVIDE:inst16.remain[5]
 data[0] => gA6_stack52:inst.data[0]
 data[1] => gA6_stack52:inst.data[1]
 data[2] => gA6_stack52:inst.data[2]
@@ -14658,6 +14678,196 @@ result[23] <= <GND>
 result[24] <= <VCC>
 
 
+|gA6_lab4|gA6_testbed:inst|LPM_DIVIDE:inst16
+numer[0] => lpm_divide_fhn:auto_generated.numer[0]
+numer[1] => lpm_divide_fhn:auto_generated.numer[1]
+numer[2] => lpm_divide_fhn:auto_generated.numer[2]
+numer[3] => lpm_divide_fhn:auto_generated.numer[3]
+numer[4] => lpm_divide_fhn:auto_generated.numer[4]
+numer[5] => lpm_divide_fhn:auto_generated.numer[5]
+denom[0] => lpm_divide_fhn:auto_generated.denom[0]
+denom[1] => lpm_divide_fhn:auto_generated.denom[1]
+denom[2] => lpm_divide_fhn:auto_generated.denom[2]
+denom[3] => lpm_divide_fhn:auto_generated.denom[3]
+denom[4] => lpm_divide_fhn:auto_generated.denom[4]
+denom[5] => lpm_divide_fhn:auto_generated.denom[5]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+quotient[0] <= <GND>
+quotient[1] <= <GND>
+quotient[2] <= <GND>
+quotient[3] <= <GND>
+quotient[4] <= <GND>
+quotient[5] <= <GND>
+remain[0] <= lpm_divide_fhn:auto_generated.remain[0]
+remain[1] <= lpm_divide_fhn:auto_generated.remain[1]
+remain[2] <= lpm_divide_fhn:auto_generated.remain[2]
+remain[3] <= lpm_divide_fhn:auto_generated.remain[3]
+remain[4] <= lpm_divide_fhn:auto_generated.remain[4]
+remain[5] <= lpm_divide_fhn:auto_generated.remain[5]
+
+
+|gA6_lab4|gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated
+denom[0] => sign_div_unsign_bkh:divider.denominator[0]
+denom[1] => sign_div_unsign_bkh:divider.denominator[1]
+denom[2] => sign_div_unsign_bkh:divider.denominator[2]
+denom[3] => sign_div_unsign_bkh:divider.denominator[3]
+denom[4] => sign_div_unsign_bkh:divider.denominator[4]
+denom[5] => sign_div_unsign_bkh:divider.denominator[5]
+numer[0] => sign_div_unsign_bkh:divider.numerator[0]
+numer[1] => sign_div_unsign_bkh:divider.numerator[1]
+numer[2] => sign_div_unsign_bkh:divider.numerator[2]
+numer[3] => sign_div_unsign_bkh:divider.numerator[3]
+numer[4] => sign_div_unsign_bkh:divider.numerator[4]
+numer[5] => sign_div_unsign_bkh:divider.numerator[5]
+quotient[0] <= sign_div_unsign_bkh:divider.quotient[0]
+quotient[1] <= sign_div_unsign_bkh:divider.quotient[1]
+quotient[2] <= sign_div_unsign_bkh:divider.quotient[2]
+quotient[3] <= sign_div_unsign_bkh:divider.quotient[3]
+quotient[4] <= sign_div_unsign_bkh:divider.quotient[4]
+quotient[5] <= sign_div_unsign_bkh:divider.quotient[5]
+remain[0] <= sign_div_unsign_bkh:divider.remainder[0]
+remain[1] <= sign_div_unsign_bkh:divider.remainder[1]
+remain[2] <= sign_div_unsign_bkh:divider.remainder[2]
+remain[3] <= sign_div_unsign_bkh:divider.remainder[3]
+remain[4] <= sign_div_unsign_bkh:divider.remainder[4]
+remain[5] <= sign_div_unsign_bkh:divider.remainder[5]
+
+
+|gA6_lab4|gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider
+denominator[0] => alt_u_div_ove:divider.denominator[0]
+denominator[1] => alt_u_div_ove:divider.denominator[1]
+denominator[2] => alt_u_div_ove:divider.denominator[2]
+denominator[3] => alt_u_div_ove:divider.denominator[3]
+denominator[4] => alt_u_div_ove:divider.denominator[4]
+denominator[5] => alt_u_div_ove:divider.denominator[5]
+numerator[0] => alt_u_div_ove:divider.numerator[0]
+numerator[1] => alt_u_div_ove:divider.numerator[1]
+numerator[2] => alt_u_div_ove:divider.numerator[2]
+numerator[3] => alt_u_div_ove:divider.numerator[3]
+numerator[4] => alt_u_div_ove:divider.numerator[4]
+numerator[5] => alt_u_div_ove:divider.numerator[5]
+quotient[0] <= protect_quotient[0].DB_MAX_OUTPUT_PORT_TYPE
+quotient[1] <= protect_quotient[1].DB_MAX_OUTPUT_PORT_TYPE
+quotient[2] <= protect_quotient[2].DB_MAX_OUTPUT_PORT_TYPE
+quotient[3] <= protect_quotient[3].DB_MAX_OUTPUT_PORT_TYPE
+quotient[4] <= protect_quotient[4].DB_MAX_OUTPUT_PORT_TYPE
+quotient[5] <= protect_quotient[5].DB_MAX_OUTPUT_PORT_TYPE
+remainder[0] <= protect_remainder[0].DB_MAX_OUTPUT_PORT_TYPE
+remainder[1] <= protect_remainder[1].DB_MAX_OUTPUT_PORT_TYPE
+remainder[2] <= protect_remainder[2].DB_MAX_OUTPUT_PORT_TYPE
+remainder[3] <= protect_remainder[3].DB_MAX_OUTPUT_PORT_TYPE
+remainder[4] <= protect_remainder[4].DB_MAX_OUTPUT_PORT_TYPE
+remainder[5] <= protect_remainder[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gA6_lab4|gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider
+denominator[0] => add_sub_lkc:add_sub_0.datab[0]
+denominator[0] => add_sub_mkc:add_sub_1.datab[0]
+denominator[0] => op_1.IN8
+denominator[0] => op_2.IN10
+denominator[0] => op_3.IN12
+denominator[0] => op_4.IN14
+denominator[1] => sel[0].IN1
+denominator[1] => add_sub_mkc:add_sub_1.datab[1]
+denominator[1] => sel[6].IN1
+denominator[1] => sel[12].IN1
+denominator[1] => op_1.IN6
+denominator[1] => sel[18].IN1
+denominator[1] => op_2.IN8
+denominator[1] => sel[24].IN1
+denominator[1] => op_3.IN10
+denominator[1] => sel[30].IN1
+denominator[1] => op_4.IN12
+denominator[1] => sel[36].IN1
+denominator[2] => sel[1].IN1
+denominator[2] => sel[7].IN1
+denominator[2] => sel[13].IN1
+denominator[2] => op_1.IN4
+denominator[2] => sel[19].IN1
+denominator[2] => op_2.IN6
+denominator[2] => sel[25].IN1
+denominator[2] => op_3.IN8
+denominator[2] => sel[31].IN1
+denominator[2] => op_4.IN10
+denominator[2] => sel[37].IN1
+denominator[3] => sel[2].IN1
+denominator[3] => sel[8].IN1
+denominator[3] => sel[14].IN1
+denominator[3] => sel[20].IN1
+denominator[3] => op_2.IN4
+denominator[3] => sel[26].IN1
+denominator[3] => op_3.IN6
+denominator[3] => sel[32].IN1
+denominator[3] => op_4.IN8
+denominator[3] => sel[38].IN1
+denominator[4] => sel[3].IN1
+denominator[4] => sel[9].IN1
+denominator[4] => sel[15].IN1
+denominator[4] => sel[21].IN1
+denominator[4] => sel[27].IN1
+denominator[4] => op_3.IN4
+denominator[4] => sel[33].IN1
+denominator[4] => op_4.IN6
+denominator[4] => sel[39].IN1
+denominator[5] => sel[4].IN1
+denominator[5] => sel[10].IN1
+denominator[5] => sel[16].IN1
+denominator[5] => sel[22].IN1
+denominator[5] => sel[28].IN1
+denominator[5] => sel[34].IN1
+denominator[5] => op_4.IN4
+denominator[5] => sel[40].IN1
+numerator[0] => StageOut[30].IN0
+numerator[0] => op_4.IN13
+numerator[1] => StageOut[24].IN0
+numerator[1] => op_3.IN11
+numerator[2] => StageOut[18].IN0
+numerator[2] => op_2.IN9
+numerator[3] => StageOut[12].IN0
+numerator[3] => op_1.IN7
+numerator[4] => add_sub_mkc:add_sub_1.dataa[0]
+numerator[4] => StageOut[6].IN0
+numerator[5] => add_sub_lkc:add_sub_0.dataa[0]
+numerator[5] => StageOut[0].IN0
+quotient[0] <= quotient_tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+quotient[1] <= quotient_tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+quotient[2] <= quotient_tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+quotient[3] <= quotient_tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+quotient[4] <= quotient_tmp[4].DB_MAX_OUTPUT_PORT_TYPE
+quotient[5] <= quotient_tmp[5].DB_MAX_OUTPUT_PORT_TYPE
+remainder[0] <= StageOut[30].DB_MAX_OUTPUT_PORT_TYPE
+remainder[1] <= StageOut[31].DB_MAX_OUTPUT_PORT_TYPE
+remainder[2] <= StageOut[32].DB_MAX_OUTPUT_PORT_TYPE
+remainder[3] <= StageOut[33].DB_MAX_OUTPUT_PORT_TYPE
+remainder[4] <= StageOut[34].DB_MAX_OUTPUT_PORT_TYPE
+remainder[5] <= StageOut[35].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gA6_lab4|gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_lkc:add_sub_0
+cout <= carry_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => carry_eqn[0].IN0
+dataa[0] => _.IN0
+dataa[0] => sum_eqn[0].IN0
+datab[0] => datab_node[0].IN0
+result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gA6_lab4|gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_mkc:add_sub_1
+cout <= carry_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => carry_eqn[0].IN0
+dataa[0] => _.IN0
+dataa[0] => sum_eqn[0].IN0
+dataa[1] => carry_eqn[1].IN0
+dataa[1] => _.IN0
+dataa[1] => sum_eqn[1].IN0
+datab[0] => datab_node[0].IN0
+datab[1] => datab_node[1].IN0
+result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= sum_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
 |gA6_lab4|gA6_testbed:inst|LPM_FF:inst4
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
@@ -15207,6 +15417,44 @@ segments_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gA6_lab4|gA6_rules:inst18
+ace => sum_cards.IN1
+ace => hand_ace.DATAA
+new_card[0] => Mod0.IN11
+new_card[1] => Mod0.IN10
+new_card[2] => Mod0.IN9
+new_card[3] => Mod0.IN8
+new_card[4] => Mod0.IN7
+new_card[5] => Mod0.IN6
+hand_sum[0] => Add1.IN6
+hand_sum[1] => Add1.IN5
+hand_sum[2] => Add1.IN4
+hand_sum[3] => Add1.IN3
+hand_sum[4] => Add1.IN2
+hand_sum[5] => Add1.IN1
+ace_out <= hand_ace.DB_MAX_OUTPUT_PORT_TYPE
+legal_play <= LessThan2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gA6_lab4|gA6_dealer:inst3
+clk => stack_enable~reg0.CLK
+clk => rand_enable~reg0.CLK
+clk => \dealer:state[0].CLK
+clk => \dealer:state[1].CLK
+rst => stack_enable~reg0.ACLR
+rst => rand_enable~reg0.ACLR
+rst => \dealer:state[0].ACLR
+rst => \dealer:state[1].ACLR
+legal_num => state.OUTPUTSELECT
+legal_num => state.OUTPUTSELECT
+request_deal => state.OUTPUTSELECT
+request_deal => state.OUTPUTSELECT
+request_deal => state.OUTPUTSELECT
+request_deal => state.OUTPUTSELECT
+rand_enable <= rand_enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+stack_enable <= stack_enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |gA6_lab4|gA6_7_segment_decoder:inst2

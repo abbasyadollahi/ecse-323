@@ -65,6 +65,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|LPM_FF:inst2|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_i84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_rqf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter" CBX_FILE_NAME="cntr_gui.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|LPM_DIVIDE:inst16" CBX_FILE_NAME="lpm_divide_fhn.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|BUSMUX:inst15|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|BUSMUX:inst6|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|LPM_FF:inst103|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_i94.tdf"/>
@@ -81,6 +82,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|LPM_FF:inst33|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_r84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|LPM_FF:inst51|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_494.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|LPM_FF:inst7|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_k84.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_rules:inst18|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_45m.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|BUSMUX:inst55|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|LPM_FF:inst17|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_p84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|LPM_FF:inst35|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_s84.tdf"/>

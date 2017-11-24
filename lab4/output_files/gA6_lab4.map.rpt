@@ -1,5 +1,5 @@
 Analysis & Synthesis report for gA6_lab4
-Fri Nov 24 16:38:34 2017
+Fri Nov 24 18:20:35 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -144,15 +144,17 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 136. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_debouncer:inst14|LPM_COMPARE:inst1
 137. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_debouncer:inst14|LPM_COUNTER:inst
 138. Parameter Settings for User Entity Instance: gA6_testbed:inst|gA6_debouncer:inst14|lpm_constant:inst2
-139. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_FF:inst4
-140. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
-141. Port Connectivity Checks: "gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder"
-142. Port Connectivity Checks: "gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:first_adder"
-143. SignalTap II Logic Analyzer Settings
-144. Elapsed Time Per Partition
-145. Connections to In-System Debugging Instance "auto_signaltap_0"
-146. Analysis & Synthesis Messages
-147. Analysis & Synthesis Suppressed Messages
+139. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_DIVIDE:inst16
+140. Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_FF:inst4
+141. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+142. Parameter Settings for Inferred Entity Instance: gA6_rules:inst18|lpm_divide:Mod0
+143. Port Connectivity Checks: "gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder"
+144. Port Connectivity Checks: "gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:first_adder"
+145. SignalTap II Logic Analyzer Settings
+146. Elapsed Time Per Partition
+147. Connections to In-System Debugging Instance "auto_signaltap_0"
+148. Analysis & Synthesis Messages
+149. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -178,16 +180,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 24 16:38:33 2017      ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 24 18:20:35 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA6_lab4                                   ;
 ; Top-level Entity Name              ; gA6_lab4                                   ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 1,939                                      ;
-;     Total combinational functions  ; 1,364                                      ;
-;     Dedicated logic registers      ; 1,223                                      ;
-; Total registers                    ; 1223                                       ;
-; Total pins                         ; 54                                         ;
+; Total logic elements               ; 2,124                                      ;
+;     Total combinational functions  ; 1,555                                      ;
+;     Dedicated logic registers      ; 1,227                                      ;
+; Total registers                    ; 1227                                       ;
+; Total pins                         ; 71                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 8,448                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -312,6 +314,7 @@ applicable agreement for further details.
 ; gA6_adder.bdf                                      ; yes             ; User Block Diagram/Schematic File      ; C:/home/abbas/dsd_A6/lab4/gA6_adder.bdf                                      ;         ;
 ; gA6_pop_enable.vhd                                 ; yes             ; User VHDL File                         ; C:/home/abbas/dsd_A6/lab4/gA6_pop_enable.vhd                                 ;         ;
 ; gA6_7_segment_decoder.vhd                          ; yes             ; User VHDL File                         ; C:/home/abbas/dsd_A6/lab4/gA6_7_segment_decoder.vhd                          ;         ;
+; gA6_rules.vhd                                      ; yes             ; User VHDL File                         ; C:/home/abbas/dsd_A6/lab4/gA6_rules.vhd                                      ;         ;
 ; gA6_lab4.bdf                                       ; yes             ; User Block Diagram/Schematic File      ; C:/home/abbas/dsd_A6/lab4/gA6_lab4.bdf                                       ;         ;
 ; gA6_dealer.vhd                                     ; yes             ; User VHDL File                         ; C:/home/abbas/dsd_A6/lab4/gA6_dealer.vhd                                     ;         ;
 ; gA6_testbed.bdf                                    ; yes             ; User Block Diagram/Schematic File      ; C:/home/abbas/dsd_A6/lab4/gA6_testbed.bdf                                    ;         ;
@@ -365,6 +368,14 @@ applicable agreement for further details.
 ; ga6_adder32.vhd                                    ; yes             ; Auto-Found Wizard-Generated File       ; C:/home/abbas/dsd_A6/lab4/ga6_adder32.vhd                                    ;         ;
 ; db/add_sub_efi.tdf                                 ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab4/db/add_sub_efi.tdf                                 ;         ;
 ; db/lpm_constant_3j4.tdf                            ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab4/db/lpm_constant_3j4.tdf                            ;         ;
+; lpm_divide.tdf                                     ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_divide.tdf                ;         ;
+; abs_divider.inc                                    ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/abs_divider.inc               ;         ;
+; sign_div_unsign.inc                                ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/sign_div_unsign.inc           ;         ;
+; db/lpm_divide_fhn.tdf                              ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab4/db/lpm_divide_fhn.tdf                              ;         ;
+; db/sign_div_unsign_bkh.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab4/db/sign_div_unsign_bkh.tdf                         ;         ;
+; db/alt_u_div_ove.tdf                               ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab4/db/alt_u_div_ove.tdf                               ;         ;
+; db/add_sub_lkc.tdf                                 ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab4/db/add_sub_lkc.tdf                                 ;         ;
+; db/add_sub_mkc.tdf                                 ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab4/db/add_sub_mkc.tdf                                 ;         ;
 ; sld_signaltap.vhd                                  ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/sld_signaltap.vhd             ;         ;
 ; sld_signaltap_impl.vhd                             ; yes             ; Encrypted Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/sld_signaltap_impl.vhd        ;         ;
 ; sld_ela_control.vhd                                ; yes             ; Encrypted Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/sld_ela_control.vhd           ;         ;
@@ -396,6 +407,7 @@ applicable agreement for further details.
 ; sld_rom_sr.vhd                                     ; yes             ; Encrypted Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/sld_rom_sr.vhd                ;         ;
 ; sld_hub.vhd                                        ; yes             ; Encrypted Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/sld_hub.vhd                   ;         ;
 ; sld_jtag_hub.vhd                                   ; yes             ; Encrypted Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/sld_jtag_hub.vhd              ;         ;
+; db/lpm_divide_45m.tdf                              ; yes             ; Auto-Generated Megafunction            ; C:/home/abbas/dsd_A6/lab4/db/lpm_divide_45m.tdf                              ;         ;
 +----------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -404,29 +416,29 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,939 ;
+; Estimated Total logic elements              ; 2,124 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1364  ;
+; Total combinational functions               ; 1555  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 682   ;
-;     -- 3 input functions                    ; 474   ;
-;     -- <=2 input functions                  ; 208   ;
+;     -- 4 input functions                    ; 709   ;
+;     -- 3 input functions                    ; 550   ;
+;     -- <=2 input functions                  ; 296   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1229  ;
-;     -- arithmetic mode                      ; 135   ;
+;     -- normal mode                          ; 1313  ;
+;     -- arithmetic mode                      ; 242   ;
 ;                                             ;       ;
-; Total registers                             ; 1223  ;
-;     -- Dedicated logic registers            ; 1223  ;
+; Total registers                             ; 1227  ;
+;     -- Dedicated logic registers            ; 1227  ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 54    ;
+; I/O pins                                    ; 71    ;
 ; Total memory bits                           ; 8448  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 876   ;
-; Total fan-out                               ; 10172 ;
-; Average fan-out                             ; 3.72  ;
+; Maximum fan-out                             ; 880   ;
+; Total fan-out                               ; 10681 ;
+; Average fan-out                             ; 3.62  ;
 +---------------------------------------------+-------+
 
 
@@ -435,15 +447,24 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                                              ; Library Name ;
 +------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |gA6_lab4                                                                                      ; 1364 (2)          ; 1223 (0)     ; 8448        ; 0            ; 0       ; 0         ; 54   ; 0            ; |gA6_lab4                                                                                                                                                                                                                                                                                                                                                                                        ;              ;
+; |gA6_lab4                                                                                      ; 1555 (2)          ; 1227 (0)     ; 8448        ; 0            ; 0       ; 0         ; 71   ; 0            ; |gA6_lab4                                                                                                                                                                                                                                                                                                                                                                                        ;              ;
 ;    |gA6_7_segment_decoder:inst1|                                                               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_7_segment_decoder:inst1                                                                                                                                                                                                                                                                                                                                                            ;              ;
-;    |gA6_testbed:inst|                                                                          ; 795 (1)           ; 403 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst                                                                                                                                                                                                                                                                                                                                                                       ;              ;
+;    |gA6_dealer:inst3|                                                                          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_dealer:inst3                                                                                                                                                                                                                                                                                                                                                                       ;              ;
+;    |gA6_rules:inst18|                                                                          ; 70 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_rules:inst18                                                                                                                                                                                                                                                                                                                                                                       ;              ;
+;       |lpm_divide:Mod0|                                                                        ; 42 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_rules:inst18|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                                                                       ;              ;
+;          |lpm_divide_45m:auto_generated|                                                       ; 42 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_rules:inst18|lpm_divide:Mod0|lpm_divide_45m:auto_generated                                                                                                                                                                                                                                                                                                                         ;              ;
+;             |sign_div_unsign_bkh:divider|                                                      ; 42 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_rules:inst18|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider                                                                                                                                                                                                                                                                                             ;              ;
+;                |alt_u_div_ove:divider|                                                         ; 42 (42)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_rules:inst18|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider                                                                                                                                                                                                                                                                       ;              ;
+;    |gA6_testbed:inst|                                                                          ; 914 (1)           ; 403 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst                                                                                                                                                                                                                                                                                                                                                                       ;              ;
 ;       |gA6_7_segment_decoder:inst6|                                                            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_7_segment_decoder:inst6                                                                                                                                                                                                                                                                                                                                           ;              ;
 ;       |gA6_7_segment_decoder:inst7|                                                            ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_7_segment_decoder:inst7                                                                                                                                                                                                                                                                                                                                           ;              ;
-;       |gA6_RANDU:inst15|                                                                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15                                                                                                                                                                                                                                                                                                                                                      ;              ;
-;          |gA6_adder32:second_adder|                                                            ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder                                                                                                                                                                                                                                                                                                                             ;              ;
-;             |lpm_add_sub:LPM_ADD_SUB_component|                                                ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder|lpm_add_sub:LPM_ADD_SUB_component                                                                                                                                                                                                                                                                                           ;              ;
-;                |add_sub_efi:auto_generated|                                                    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder|lpm_add_sub:LPM_ADD_SUB_component|add_sub_efi:auto_generated                                                                                                                                                                                                                                                                ;              ;
+;       |gA6_RANDU:inst15|                                                                       ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15                                                                                                                                                                                                                                                                                                                                                      ;              ;
+;          |gA6_adder32:first_adder|                                                             ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:first_adder                                                                                                                                                                                                                                                                                                                              ;              ;
+;             |lpm_add_sub:LPM_ADD_SUB_component|                                                ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:first_adder|lpm_add_sub:LPM_ADD_SUB_component                                                                                                                                                                                                                                                                                            ;              ;
+;                |add_sub_efi:auto_generated|                                                    ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:first_adder|lpm_add_sub:LPM_ADD_SUB_component|add_sub_efi:auto_generated                                                                                                                                                                                                                                                                 ;              ;
+;          |gA6_adder32:second_adder|                                                            ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder                                                                                                                                                                                                                                                                                                                             ;              ;
+;             |lpm_add_sub:LPM_ADD_SUB_component|                                                ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder|lpm_add_sub:LPM_ADD_SUB_component                                                                                                                                                                                                                                                                                           ;              ;
+;                |add_sub_efi:auto_generated|                                                    ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder|lpm_add_sub:LPM_ADD_SUB_component|add_sub_efi:auto_generated                                                                                                                                                                                                                                                                ;              ;
 ;       |gA6_dealer:inst2|                                                                       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_dealer:inst2                                                                                                                                                                                                                                                                                                                                                      ;              ;
 ;       |gA6_debouncer:inst11|                                                                   ; 33 (0)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_debouncer:inst11                                                                                                                                                                                                                                                                                                                                                  ;              ;
 ;          |lpm_compare:inst1|                                                                   ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_debouncer:inst11|lpm_compare:inst1                                                                                                                                                                                                                                                                                                                                ;              ;
@@ -470,7 +491,7 @@ applicable agreement for further details.
 ;             |gA6_adder:inst5|                                                                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_modulo_13:inst3|gA6_adder8:inst|gA6_adder:inst5                                                                                                                                                                                                                                                                                                                   ;              ;
 ;             |gA6_adder:inst6|                                                                  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_modulo_13:inst3|gA6_adder8:inst|gA6_adder:inst6                                                                                                                                                                                                                                                                                                                   ;              ;
 ;             |gA6_adder:inst7|                                                                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_modulo_13:inst3|gA6_adder8:inst|gA6_adder:inst7                                                                                                                                                                                                                                                                                                                   ;              ;
-;       |gA6_stack52:inst|                                                                       ; 642 (7)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst                                                                                                                                                                                                                                                                                                                                                      ;              ;
+;       |gA6_stack52:inst|                                                                       ; 649 (6)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst                                                                                                                                                                                                                                                                                                                                                      ;              ;
 ;          |busmux:inst100|                                                                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|busmux:inst100                                                                                                                                                                                                                                                                                                                                       ;              ;
 ;             |lpm_mux:$00000|                                                                   ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|busmux:inst100|lpm_mux:$00000                                                                                                                                                                                                                                                                                                                        ;              ;
 ;                |mux_qmc:auto_generated|                                                        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|busmux:inst100|lpm_mux:$00000|mux_qmc:auto_generated                                                                                                                                                                                                                                                                                                 ;              ;
@@ -635,8 +656,8 @@ applicable agreement for further details.
 ;                      |altsyncram_f911:auto_generated|                                          ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|gA6_pop_enable:inst104|lpm_rom:lookup_table|altrom:srom|altsyncram:rom_block|altsyncram_f911:auto_generated                                                                                                                                                                                                                                          ;              ;
 ;          |lpm_compare:inst119|                                                                 ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst119                                                                                                                                                                                                                                                                                                                                  ;              ;
 ;             |cmpr_4nh:auto_generated|                                                          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst119|cmpr_4nh:auto_generated                                                                                                                                                                                                                                                                                                          ;              ;
-;          |lpm_compare:inst120|                                                                 ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst120                                                                                                                                                                                                                                                                                                                                  ;              ;
-;             |cmpr_86h:auto_generated|                                                          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst120|cmpr_86h:auto_generated                                                                                                                                                                                                                                                                                                          ;              ;
+;          |lpm_compare:inst120|                                                                 ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst120                                                                                                                                                                                                                                                                                                                                  ;              ;
+;             |cmpr_86h:auto_generated|                                                          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst120|cmpr_86h:auto_generated                                                                                                                                                                                                                                                                                                          ;              ;
 ;          |lpm_counter:inst115|                                                                 ; 15 (0)            ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115                                                                                                                                                                                                                                                                                                                                  ;              ;
 ;             |cntr_p2i:auto_generated|                                                          ; 15 (15)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated                                                                                                                                                                                                                                                                                                          ;              ;
 ;          |lpm_ff:inst101|                                                                      ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_ff:inst101                                                                                                                                                                                                                                                                                                                                       ;              ;
@@ -691,16 +712,20 @@ applicable agreement for further details.
 ;          |lpm_ff:inst99|                                                                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_ff:inst99                                                                                                                                                                                                                                                                                                                                        ;              ;
 ;          |lpm_ff:inst9|                                                                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_ff:inst9                                                                                                                                                                                                                                                                                                                                         ;              ;
 ;          |lpm_ff:inst|                                                                         ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_ff:inst                                                                                                                                                                                                                                                                                                                                          ;              ;
-;          |lpm_mux0:inst125|                                                                    ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_mux0:inst125                                                                                                                                                                                                                                                                                                                                     ;              ;
-;             |lpm_mux:LPM_MUX_component|                                                        ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_mux0:inst125|lpm_mux:LPM_MUX_component                                                                                                                                                                                                                                                                                                           ;              ;
-;                |mux_v4e:auto_generated|                                                        ; 249 (249)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_mux0:inst125|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                                                                                                                                                                                                                                                                    ;              ;
-;       |lpm_add_sub:inst8|                                                                      ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_add_sub:inst8                                                                                                                                                                                                                                                                                                                                                     ;              ;
-;          |add_sub_13d:auto_generated|                                                          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated                                                                                                                                                                                                                                                                                                                          ;              ;
+;          |lpm_mux0:inst125|                                                                    ; 258 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_mux0:inst125                                                                                                                                                                                                                                                                                                                                     ;              ;
+;             |lpm_mux:LPM_MUX_component|                                                        ; 258 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_mux0:inst125|lpm_mux:LPM_MUX_component                                                                                                                                                                                                                                                                                                           ;              ;
+;                |mux_v4e:auto_generated|                                                        ; 258 (258)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|gA6_stack52:inst|lpm_mux0:inst125|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                                                                                                                                                                                                                                                                    ;              ;
+;       |lpm_add_sub:inst8|                                                                      ; 34 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_add_sub:inst8                                                                                                                                                                                                                                                                                                                                                     ;              ;
+;          |add_sub_13d:auto_generated|                                                          ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated                                                                                                                                                                                                                                                                                                                          ;              ;
 ;       |lpm_compare:inst5|                                                                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_compare:inst5                                                                                                                                                                                                                                                                                                                                                     ;              ;
 ;          |cmpr_41f:auto_generated|                                                             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_compare:inst5|cmpr_41f:auto_generated                                                                                                                                                                                                                                                                                                                             ;              ;
+;       |lpm_divide:inst16|                                                                      ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_divide:inst16                                                                                                                                                                                                                                                                                                                                                     ;              ;
+;          |lpm_divide_fhn:auto_generated|                                                       ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated                                                                                                                                                                                                                                                                                                                       ;              ;
+;             |sign_div_unsign_bkh:divider|                                                      ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider                                                                                                                                                                                                                                                                                           ;              ;
+;                |alt_u_div_ove:divider|                                                         ; 46 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider                                                                                                                                                                                                                                                                     ;              ;
 ;       |lpm_ff:inst4|                                                                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|gA6_testbed:inst|lpm_ff:inst4                                                                                                                                                                                                                                                                                                                                                          ;              ;
-;    |sld_hub:auto_hub|                                                                          ; 119 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                                                                       ;              ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                           ; 118 (80)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                                                                          ;              ;
+;    |sld_hub:auto_hub|                                                                          ; 117 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                                                                       ;              ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                           ; 116 (78)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                                                                          ;              ;
 ;          |sld_rom_sr:hub_info_reg|                                                             ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                                                                  ;              ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                           ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                                                                                ;              ;
 ;    |sld_signaltap:auto_signaltap_0|                                                            ; 446 (1)           ; 734 (80)     ; 5120        ; 0            ; 0       ; 0         ; 0    ; 0            ; |gA6_lab4|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                                                                         ;              ;
@@ -934,19 +959,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops                                   ;
-+----------------------------------------------------------------------------+---+
-; Logic Cell Name                                                            ;   ;
-+----------------------------------------------------------------------------+---+
-; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[5]~10 ;   ;
-; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[4]~11 ;   ;
-; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[3]~12 ;   ;
-; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[2]~13 ;   ;
-; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[1]~14 ;   ;
-; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[0]~15 ;   ;
-; Number of logic cells representing combinational loops                     ; 6 ;
-+----------------------------------------------------------------------------+---+
++---------------------------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                                    ;
++----------------------------------------------------------------------------+----+
+; Logic Cell Name                                                            ;    ;
++----------------------------------------------------------------------------+----+
+; gA6_rules:inst18|ace_out~0                                                 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[14]~1 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[13]~2 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[12]~3 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[11]~4 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[10]~5 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[9]~6  ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[8]~7  ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[7]~8  ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[6]~9  ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[5]~10 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[4]~11 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[3]~12 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[2]~13 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[1]~14 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[0]~15 ;    ;
+; gA6_testbed:inst|lpm_add_sub:inst8|add_sub_13d:auto_generated|result[15]~0 ;    ;
+; Number of logic cells representing combinational loops                     ; 17 ;
++----------------------------------------------------------------------------+----+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -979,10 +1015,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1223  ;
+; Total registers                              ; 1227  ;
 ; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 346   ;
-; Number of registers using Asynchronous Clear ; 689   ;
+; Number of registers using Asynchronous Clear ; 693   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 802   ;
 ; Number of registers using Preset             ; 0     ;
@@ -1016,6 +1052,9 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |gA6_lab4|gA6_testbed:inst|gA6_dealer:inst2|\dealer:state[0]                                                                                                                  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |gA6_lab4|gA6_dealer:inst3|\dealer:state[0]                                                                                                                                   ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |gA6_lab4|gA6_rules:inst18|\sum_cards:card_value[0]                                                                                                                           ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |gA6_lab4|gA6_rules:inst18|\sum_cards:new_sum[1]                                                                                                                              ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |gA6_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|counter[3]   ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |gA6_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|word_counter[0]                   ;
 ; 12:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; Yes        ; |gA6_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|WORD_SR[0]                        ;
@@ -1024,7 +1063,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                                                                                     ;
 ; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[0]                                                               ;
 ; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]                                                                                           ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                                                                                    ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 48 LEs               ; 40 LEs                 ; Yes        ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                                                                                    ;
 ; 20:1               ; 4 bits    ; 52 LEs        ; 36 LEs               ; 16 LEs                 ; Yes        ; |gA6_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -2973,6 +3012,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_DIVIDE:inst16 ;
++------------------------+----------------+---------------------------------------+
+; Parameter Name         ; Value          ; Type                                  ;
++------------------------+----------------+---------------------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                               ;
+; LPM_WIDTHD             ; 6              ; Untyped                               ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                               ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                               ;
+; LPM_PIPELINE           ; 0              ; Untyped                               ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                               ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                               ;
+; CBXI_PARAMETER         ; lpm_divide_fhn ; Untyped                               ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                               ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                               ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                          ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                        ;
++------------------------+----------------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: gA6_testbed:inst|LPM_FF:inst4 ;
 +------------------------+------------+--------------------------------------+
@@ -3052,6 +3114,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: gA6_rules:inst18|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                                 ;
+; LPM_WIDTHD             ; 6              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_45m ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "gA6_testbed:inst|gA6_RANDU:inst15|gA6_adder32:second_adder"                                  ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -3091,99 +3176,99 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------------------+--------------+
 ; Partition Name                 ; Elapsed Time ;
 +--------------------------------+--------------+
-; Top                            ; 00:00:04     ;
-; sld_signaltap:auto_signaltap_0 ; 00:00:03     ;
+; Top                            ; 00:00:11     ;
+; sld_signaltap:auto_signaltap_0 ; 00:00:06     ;
 ; sld_hub:auto_hub               ; 00:00:00     ;
 +--------------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                        ;
-+--------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------------+---------+
-; Name         ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                           ; Details ;
-+--------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------------+---------+
-; addr[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[0]                                                                       ; N/A     ;
-; addr[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[0]                                                                       ; N/A     ;
-; addr[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[1]                                                                       ; N/A     ;
-; addr[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[1]                                                                       ; N/A     ;
-; addr[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[2]                                                                       ; N/A     ;
-; addr[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[2]                                                                       ; N/A     ;
-; addr[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[3]                                                                       ; N/A     ;
-; addr[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[3]                                                                       ; N/A     ;
-; addr[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[4]                                                                       ; N/A     ;
-; addr[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[4]                                                                       ; N/A     ;
-; addr[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[5]                                                                       ; N/A     ;
-; addr[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_ff:inst4|dffs[5]                                                                       ; N/A     ;
-; clk          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; clk                                                                                                         ; N/A     ;
-; empty        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst120|cmpr_86h:auto_generated|aneb_result_wire[0]~_wirecell ; N/A     ;
-; empty        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst120|cmpr_86h:auto_generated|aneb_result_wire[0]~_wirecell ; N/A     ;
-; full         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst119|cmpr_4nh:auto_generated|aneb_result_wire[0]~_wirecell ; N/A     ;
-; full         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst119|cmpr_4nh:auto_generated|aneb_result_wire[0]~_wirecell ; N/A     ;
-; led_mode[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux1~1                                                                          ; N/A     ;
-; led_mode[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux1~1                                                                          ; N/A     ;
-; led_mode[1]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ~GND                                                                                                        ; N/A     ;
-; led_mode[1]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ~GND                                                                                                        ; N/A     ;
-; led_mode[2]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|inst108~0                                                                 ; N/A     ;
-; led_mode[2]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|inst108~0                                                                 ; N/A     ;
-; led_mode[3]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux1~1                                                                          ; N/A     ;
-; led_mode[3]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux1~1                                                                          ; N/A     ;
-; led_mode[4]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[0]                                                                                                     ; N/A     ;
-; led_mode[4]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[0]                                                                                                     ; N/A     ;
-; led_mode[5]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux1~0                                                                          ; N/A     ;
-; led_mode[5]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux1~0                                                                          ; N/A     ;
-; led_mode[6]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[1]~_wirecell                                                                                           ; N/A     ;
-; led_mode[6]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[1]~_wirecell                                                                                           ; N/A     ;
-; led_suit[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux3~0                                                         ; N/A     ;
-; led_suit[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux3~0                                                         ; N/A     ;
-; led_suit[1]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ~GND                                                                                                        ; N/A     ;
-; led_suit[1]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ~GND                                                                                                        ; N/A     ;
-; led_suit[2]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux4~1                                                         ; N/A     ;
-; led_suit[2]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux4~1                                                         ; N/A     ;
-; led_suit[3]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux3~0                                                         ; N/A     ;
-; led_suit[3]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux3~0                                                         ; N/A     ;
-; led_suit[4]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux4~0_wirecell                                                ; N/A     ;
-; led_suit[4]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux4~0_wirecell                                                ; N/A     ;
-; led_suit[5]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux1~0                                                         ; N/A     ;
-; led_suit[5]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux1~0                                                         ; N/A     ;
-; led_suit[6]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux0~0_wirecell                                                ; N/A     ;
-; led_suit[6]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux0~0_wirecell                                                ; N/A     ;
-; led_value[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux6~0                                                         ; N/A     ;
-; led_value[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux6~0                                                         ; N/A     ;
-; led_value[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux5~0                                                         ; N/A     ;
-; led_value[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux5~0                                                         ; N/A     ;
-; led_value[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux4~0                                                         ; N/A     ;
-; led_value[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux4~0                                                         ; N/A     ;
-; led_value[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux3~0_wirecell                                                ; N/A     ;
-; led_value[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux3~0_wirecell                                                ; N/A     ;
-; led_value[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux2~0                                                         ; N/A     ;
-; led_value[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux2~0                                                         ; N/A     ;
-; led_value[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux1~0                                                         ; N/A     ;
-; led_value[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux1~0                                                         ; N/A     ;
-; led_value[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux0~0                                                         ; N/A     ;
-; led_value[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux0~0                                                         ; N/A     ;
-; mode[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[0]                                                                                                     ; N/A     ;
-; mode[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[0]                                                                                                     ; N/A     ;
-; mode[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[1]                                                                                                     ; N/A     ;
-; mode[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[1]                                                                                                     ; N/A     ;
-; num[0]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[0]                     ; N/A     ;
-; num[0]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[0]                     ; N/A     ;
-; num[1]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[1]                     ; N/A     ;
-; num[1]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[1]                     ; N/A     ;
-; num[2]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[2]                     ; N/A     ;
-; num[2]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[2]                     ; N/A     ;
-; num[3]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[3]                     ; N/A     ;
-; num[3]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[3]                     ; N/A     ;
-; num[4]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[4]                     ; N/A     ;
-; num[4]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[4]                     ; N/A     ;
-; num[5]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[5]                     ; N/A     ;
-; num[5]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[5]                     ; N/A     ;
-; request_deal ; post-fitting  ; connected ; Top            ; post-synthesis    ; request_deal                                                                                                ; N/A     ;
-; request_deal ; post-fitting  ; connected ; Top            ; post-synthesis    ; request_deal                                                                                                ; N/A     ;
-; rst          ; post-fitting  ; connected ; Top            ; post-synthesis    ; rst                                                                                                         ; N/A     ;
-; rst          ; post-fitting  ; connected ; Top            ; post-synthesis    ; rst                                                                                                         ; N/A     ;
-; stack        ; post-fitting  ; connected ; Top            ; post-synthesis    ; stack                                                                                                       ; N/A     ;
-; stack        ; post-fitting  ; connected ; Top            ; post-synthesis    ; stack                                                                                                       ; N/A     ;
-+--------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                               ;
++--------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Name         ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                                                  ; Details ;
++--------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; addr[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[30]~21 ; N/A     ;
+; addr[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[30]~21 ; N/A     ;
+; addr[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[31]~20 ; N/A     ;
+; addr[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[31]~20 ; N/A     ;
+; addr[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[32]~19 ; N/A     ;
+; addr[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[32]~19 ; N/A     ;
+; addr[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[33]~18 ; N/A     ;
+; addr[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[33]~18 ; N/A     ;
+; addr[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[34]~17 ; N/A     ;
+; addr[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[34]~17 ; N/A     ;
+; addr[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[35]~16 ; N/A     ;
+; addr[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|lpm_divide:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[35]~16 ; N/A     ;
+; clk          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; clk                                                                                                                                ; N/A     ;
+; empty        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst120|cmpr_86h:auto_generated|aneb_result_wire[0]~_wirecell                        ; N/A     ;
+; empty        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst120|cmpr_86h:auto_generated|aneb_result_wire[0]~_wirecell                        ; N/A     ;
+; full         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst119|cmpr_4nh:auto_generated|aneb_result_wire[0]~_wirecell                        ; N/A     ;
+; full         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_compare:inst119|cmpr_4nh:auto_generated|aneb_result_wire[0]~_wirecell                        ; N/A     ;
+; led_mode[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux6~0                                                                                                 ; N/A     ;
+; led_mode[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux6~0                                                                                                 ; N/A     ;
+; led_mode[1]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ~GND                                                                                                                               ; N/A     ;
+; led_mode[1]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ~GND                                                                                                                               ; N/A     ;
+; led_mode[2]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|inst108~0                                                                                        ; N/A     ;
+; led_mode[2]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|inst108~0                                                                                        ; N/A     ;
+; led_mode[3]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux6~0                                                                                                 ; N/A     ;
+; led_mode[3]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux6~0                                                                                                 ; N/A     ;
+; led_mode[4]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[0]                                                                                                                            ; N/A     ;
+; led_mode[4]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[0]                                                                                                                            ; N/A     ;
+; led_mode[5]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux1~0                                                                                                 ; N/A     ;
+; led_mode[5]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_7_segment_decoder:inst1|Mux1~0                                                                                                 ; N/A     ;
+; led_mode[6]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[1]~_wirecell                                                                                                                  ; N/A     ;
+; led_mode[6]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[1]~_wirecell                                                                                                                  ; N/A     ;
+; led_suit[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux3~0                                                                                ; N/A     ;
+; led_suit[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux3~0                                                                                ; N/A     ;
+; led_suit[1]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ~GND                                                                                                                               ; N/A     ;
+; led_suit[1]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ~GND                                                                                                                               ; N/A     ;
+; led_suit[2]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux4~1                                                                                ; N/A     ;
+; led_suit[2]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux4~1                                                                                ; N/A     ;
+; led_suit[3]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux3~0                                                                                ; N/A     ;
+; led_suit[3]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux3~0                                                                                ; N/A     ;
+; led_suit[4]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux4~0_wirecell                                                                       ; N/A     ;
+; led_suit[4]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux4~0_wirecell                                                                       ; N/A     ;
+; led_suit[5]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux1~0                                                                                ; N/A     ;
+; led_suit[5]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux1~0                                                                                ; N/A     ;
+; led_suit[6]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux0~0_wirecell                                                                       ; N/A     ;
+; led_suit[6]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst6|Mux0~0_wirecell                                                                       ; N/A     ;
+; led_value[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux6~0                                                                                ; N/A     ;
+; led_value[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux6~0                                                                                ; N/A     ;
+; led_value[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux5~0                                                                                ; N/A     ;
+; led_value[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux5~0                                                                                ; N/A     ;
+; led_value[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux4~0                                                                                ; N/A     ;
+; led_value[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux4~0                                                                                ; N/A     ;
+; led_value[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux3~0_wirecell                                                                       ; N/A     ;
+; led_value[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux3~0_wirecell                                                                       ; N/A     ;
+; led_value[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux2~0                                                                                ; N/A     ;
+; led_value[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux2~0                                                                                ; N/A     ;
+; led_value[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux1~0                                                                                ; N/A     ;
+; led_value[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux1~0                                                                                ; N/A     ;
+; led_value[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux0~0                                                                                ; N/A     ;
+; led_value[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_7_segment_decoder:inst7|Mux0~0                                                                                ; N/A     ;
+; mode[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[0]                                                                                                                            ; N/A     ;
+; mode[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[0]                                                                                                                            ; N/A     ;
+; mode[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[1]                                                                                                                            ; N/A     ;
+; mode[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mode[1]                                                                                                                            ; N/A     ;
+; num[0]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[0]                                            ; N/A     ;
+; num[0]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[0]                                            ; N/A     ;
+; num[1]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[1]                                            ; N/A     ;
+; num[1]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[1]                                            ; N/A     ;
+; num[2]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[2]                                            ; N/A     ;
+; num[2]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[2]                                            ; N/A     ;
+; num[3]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[3]                                            ; N/A     ;
+; num[3]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[3]                                            ; N/A     ;
+; num[4]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[4]                                            ; N/A     ;
+; num[4]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[4]                                            ; N/A     ;
+; num[5]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[5]                                            ; N/A     ;
+; num[5]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; gA6_testbed:inst|gA6_stack52:inst|lpm_counter:inst115|cntr_p2i:auto_generated|safe_q[5]                                            ; N/A     ;
+; request_deal ; post-fitting  ; connected ; Top            ; post-synthesis    ; request_deal                                                                                                                       ; N/A     ;
+; request_deal ; post-fitting  ; connected ; Top            ; post-synthesis    ; request_deal                                                                                                                       ; N/A     ;
+; rst          ; post-fitting  ; connected ; Top            ; post-synthesis    ; rst                                                                                                                                ; N/A     ;
+; rst          ; post-fitting  ; connected ; Top            ; post-synthesis    ; rst                                                                                                                                ; N/A     ;
+; stack        ; post-fitting  ; connected ; Top            ; post-synthesis    ; stack                                                                                                                              ; N/A     ;
+; stack        ; post-fitting  ; connected ; Top            ; post-synthesis    ; stack                                                                                                                              ; N/A     ;
++--------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------+
@@ -3192,9 +3277,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Nov 24 16:38:13 2017
+    Info: Processing started: Fri Nov 24 18:19:58 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gA6_lab4 -c gA6_lab4
-Critical Warning (138067): Current license file does not support incremental compilation. The Quartus II software removes all the user-specified design partitions in the design automatically.
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux0.vhd
     Info (12022): Found design unit 1: lpm_mux0-SYN
@@ -3846,6 +3930,29 @@ Info (12133): Instantiated megafunction "gA6_testbed:inst|lpm_constant:inst18" w
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_constant_3j4.tdf
     Info (12023): Found entity 1: lpm_constant_3j4
 Info (12128): Elaborating entity "lpm_constant_3j4" for hierarchy "gA6_testbed:inst|lpm_constant:inst18|lpm_constant_3j4:ag"
+Info (12128): Elaborating entity "LPM_DIVIDE" for hierarchy "gA6_testbed:inst|LPM_DIVIDE:inst16"
+Info (12130): Elaborated megafunction instantiation "gA6_testbed:inst|LPM_DIVIDE:inst16"
+Info (12133): Instantiated megafunction "gA6_testbed:inst|LPM_DIVIDE:inst16" with the following parameter:
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fhn.tdf
+    Info (12023): Found entity 1: lpm_divide_fhn
+Info (12128): Elaborating entity "lpm_divide_fhn" for hierarchy "gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bkh
+Info (12128): Elaborating entity "sign_div_unsign_bkh" for hierarchy "gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider"
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ove.tdf
+    Info (12023): Found entity 1: alt_u_div_ove
+Info (12128): Elaborating entity "alt_u_div_ove" for hierarchy "gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info (12023): Found entity 1: add_sub_lkc
+Info (12128): Elaborating entity "add_sub_lkc" for hierarchy "gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_lkc:add_sub_0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info (12023): Found entity 1: add_sub_mkc
+Info (12128): Elaborating entity "add_sub_mkc" for hierarchy "gA6_testbed:inst|LPM_DIVIDE:inst16|lpm_divide_fhn:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_mkc:add_sub_1"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "gA6_testbed:inst|LPM_FF:inst4"
 Info (12130): Elaborated megafunction instantiation "gA6_testbed:inst|LPM_FF:inst4"
 Info (12133): Instantiated megafunction "gA6_testbed:inst|LPM_FF:inst4" with the following parameter:
@@ -3858,6 +3965,8 @@ Info (12128): Elaborating entity "gA6_adder8" for hierarchy "gA6_testbed:inst|gA
 Info (12128): Elaborating entity "gA6_adder" for hierarchy "gA6_testbed:inst|gA6_modulo_13:inst3|gA6_adder8:inst|gA6_adder:inst7"
 Info (12128): Elaborating entity "gA6_adder6" for hierarchy "gA6_testbed:inst|gA6_modulo_13:inst3|gA6_adder6:inst5"
 Info (12128): Elaborating entity "gA6_not6" for hierarchy "gA6_testbed:inst|gA6_modulo_13:inst3|gA6_not6:inst15"
+Info (12128): Elaborating entity "gA6_rules" for hierarchy "gA6_rules:inst18"
+Warning (10492): VHDL Process Statement warning at gA6_rules.vhd(36): signal "ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_ela_trigger_1lo.tdf
     Info (12023): Found entity 1: sld_ela_trigger_1lo
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_reserved_ga6_lab4_auto_signaltap_0_1_5d51.v
@@ -3942,6 +4051,16 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "gA6_testbed:inst|gA6_stack52:inst|gA6_pop_enable:inst104|lpm_rom:lookup_table|otri[2]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "gA6_testbed:inst|gA6_stack52:inst|gA6_pop_enable:inst104|lpm_rom:lookup_table|otri[1]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "gA6_testbed:inst|gA6_stack52:inst|gA6_pop_enable:inst104|lpm_rom:lookup_table|otri[0]" feeding internal logic into a wire
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "gA6_rules:inst18|Mod0"
+Info (12130): Elaborated megafunction instantiation "gA6_rules:inst18|lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "gA6_rules:inst18|lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_45m.tdf
+    Info (12023): Found entity 1: lpm_divide_45m
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "led_empty[6]" is stuck at GND
     Warning (13410): Pin "led_empty[5]" is stuck at VCC
@@ -3963,16 +4082,16 @@ Info (144001): Generated suppressed messages file C:/home/abbas/dsd_A6/lab4/outp
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 81 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2127 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 1976 logic cells
+Info (21057): Implemented 2335 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 28 input pins
+    Info (21059): Implemented 47 output pins
+    Info (21061): Implemented 2167 logic cells
     Info (21064): Implemented 92 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 71 warnings
-    Info: Peak virtual memory: 644 megabytes
-    Info: Processing ended: Fri Nov 24 16:38:34 2017
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 653 megabytes
+    Info: Processing ended: Fri Nov 24 18:20:35 2017
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+
