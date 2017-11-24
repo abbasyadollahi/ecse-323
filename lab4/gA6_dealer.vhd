@@ -18,8 +18,7 @@ entity gA6_dealer is
 		request_deal		: in std_logic;
 
 		rand_enable			: out std_logic;
-		stack_enable		: out std_logic;
-		fsm_state			: out std_logic_vector(1 downto 0)
+		stack_enable		: out std_logic
 	);
 end gA6_dealer;
 
@@ -75,7 +74,5 @@ architecture behavior of gA6_dealer is
 						state := "00";
 				end case;
 			end if;
-
-			fsm_state <= state;
 		end process;
 end behavior;
