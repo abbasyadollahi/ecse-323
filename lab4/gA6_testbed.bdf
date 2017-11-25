@@ -1316,7 +1316,7 @@ applicable agreement for further details.
 	(pt 640 328)
 )
 (connector
-	(text "<<__$DEF_ALIAS30859>>" (rect 821 304 950 316)(font "Arial" )(invisible))
+	(text "<<__$DEF_ALIAS30859>>" (rect 873 296 1002 308)(font "Arial" )(invisible))
 	(pt 864 312)
 	(pt 880 312)
 )

@@ -21,7 +21,6 @@
 # Loading cycloneii_ver.cycloneii_ram_block
 # Loading cycloneii_ver.cycloneii_ram_register
 # Loading cycloneii_ver.cycloneii_ram_pulse_generator
-# Loading cycloneii_ver.cycloneii_jtag
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
@@ -29,20 +28,21 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_jtag
 # Loading work.gA6_lab4_vlg_sample_tst
 # Loading work.gA6_lab4_vlg_check_tst
-# ** Warning: (vsim-3017) gA6_lab4.vt(332): [TFMPC] - Too few port connections. Expected 30, found 26.
+# ** Warning: (vsim-3017) gA6_lab4.vt(519): [TFMPC] - Too few port connections. Expected 25, found 21.
 # 
 #         Region: /gA6_lab4_vlg_vec_tst/i1
-# ** Warning: (vsim-3722) gA6_lab4.vt(332): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# ** Warning: (vsim-3722) gA6_lab4.vt(519): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
 # 
-# ** Warning: (vsim-3722) gA6_lab4.vt(332): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: (vsim-3722) gA6_lab4.vt(519): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
 # 
-# ** Warning: (vsim-3722) gA6_lab4.vt(332): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: (vsim-3722) gA6_lab4.vt(519): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
 # 
-# ** Warning: (vsim-3722) gA6_lab4.vt(332): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: (vsim-3722) gA6_lab4.vt(519): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
 # 
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : gA6_lab4.vt(266)
+# ** Note: $finish    : gA6_lab4.vt(463)
 #    Time: 1 us  Iteration: 0  Instance: /gA6_lab4_vlg_vec_tst/tb_out

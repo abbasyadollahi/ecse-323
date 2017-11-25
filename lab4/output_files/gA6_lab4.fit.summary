@@ -1,16 +1,16 @@
-Fitter Status : Successful - Fri Nov 24 18:20:58 2017
+Fitter Status : Successful - Fri Nov 24 23:22:02 2017
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : gA6_lab4
 Top-level Entity Name : gA6_lab4
 Family : Cyclone II
 Device : EP2C20F484C7
 Timing Models : Final
-Total logic elements : 2,008 / 18,752 ( 11 % )
-    Total combinational functions : 1,557 / 18,752 ( 8 % )
-    Dedicated logic registers : 1,227 / 18,752 ( 7 % )
-Total registers : 1227
+Total logic elements : 1,709 / 18,752 ( 9 % )
+    Total combinational functions : 1,426 / 18,752 ( 8 % )
+    Dedicated logic registers : 950 / 18,752 ( 5 % )
+Total registers : 950
 Total pins : 71 / 315 ( 23 % )
 Total virtual pins : 0
-Total memory bits : 8,448 / 239,616 ( 4 % )
+Total memory bits : 5,760 / 239,616 ( 2 % )
 Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
