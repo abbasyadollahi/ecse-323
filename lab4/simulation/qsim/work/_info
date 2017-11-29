@@ -4,82 +4,82 @@ K3
 cModel Technology
 Z0 dC:\home\abbas\dsd_A6\lab4\simulation\qsim
 vgA6_lab4
-Z1 !s100 M8H6ZF=k?[5OXEP;<U?=j0
-Z2 IIY69LA;9AYLXWL9OZ<;c00
-Z3 V^ZWK686d7ki@E]8G?B6eX0
-Z4 dC:\home\abbas\dsd_A6\lab4\simulation\qsim
-Z5 w1511583407
-Z6 8gA6_lab4.vo
-Z7 FgA6_lab4.vo
+Z1 IPGH6SJ43]BN4A2B7A>aNE2
+Z2 V^ZWK686d7ki@E]8G?B6eX0
+Z3 dC:\home\abbas\dsd_A6\lab4\simulation\qsim
+Z4 w1511986186
+Z5 8gA6_lab4.vo
+Z6 FgA6_lab4.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|gA6_lab4.vo|
-Z10 o-work work -O0
-Z11 ng@a6_lab4
+Z8 !s90 -work|work|gA6_lab4.vo|
+Z9 o-work work -O0
+Z10 ng@a6_lab4
 !i10b 1
+Z11 !s100 LG=]k4_c_dhniAz__RL?d2
 !s85 0
-Z12 !s108 1511583408.715000
+Z12 !s108 1511986191.326000
 Z13 !s107 gA6_lab4.vo|
 !s101 -O0
 vgA6_lab4_vlg_check_tst
 !i10b 1
-Z14 !s100 ID_C5HA1:m?U1Th6iLj`23
-Z15 I[kghe71M6>VnSbXn`DEd[0
-Z16 VlilCa?^f]bd:Q]A>V>P>o2
-R4
-Z17 w1511583406
-Z18 8gA6_lab4.vt
-Z19 FgA6_lab4.vt
+!s100 fci4F1zLi?`JX6ZTj@>dQ2
+I6UcFCTWS7@RQFSoHMkhn13
+Z14 VlilCa?^f]bd:Q]A>V>P>o2
+R3
+Z15 w1511986184
+Z16 8gA6_lab4.vt
+Z17 FgA6_lab4.vt
 L0 73
-R8
+R7
 r1
 !s85 0
 31
-Z20 !s108 1511583409.761000
-Z21 !s107 gA6_lab4.vt|
-Z22 !s90 -work|work|gA6_lab4.vt|
+Z18 !s108 1511986192.371000
+Z19 !s107 gA6_lab4.vt|
+Z20 !s90 -work|work|gA6_lab4.vt|
 !s101 -O0
-R10
-Z23 ng@a6_lab4_vlg_check_tst
+R9
+Z21 ng@a6_lab4_vlg_check_tst
 vgA6_lab4_vlg_sample_tst
 !i10b 1
-Z24 !s100 j]WjC=fUanGAig@QI^2j93
-Z25 IElFW]`XfTbGZ9hc`OYW7Q2
-Z26 V15nZ7V@1VL]20Xk=:lZ<L3
-R4
+Z22 !s100 j]WjC=fUanGAig@QI^2j93
+Z23 IElFW]`XfTbGZ9hc`OYW7Q2
+Z24 V15nZ7V@1VL]20Xk=:lZ<L3
+R3
+R15
+R16
 R17
-R18
-R19
 L0 29
-R8
+R7
 r1
 !s85 0
 31
+R18
+R19
 R20
-R21
-R22
 !s101 -O0
-R10
-Z27 ng@a6_lab4_vlg_sample_tst
+R9
+Z25 ng@a6_lab4_vlg_sample_tst
 vgA6_lab4_vlg_vec_tst
 !i10b 1
-!s100 A;o25[jV[[i9XROna[JSF0
-I[H6E9j`VBJSNWB<B90LnJ2
-Z28 V55D_TkcXaP>]Wmd;UYFcY0
-R4
+!s100 0V=a^<gFZ=`j;WFN>KiRM2
+INWN4M3jHYGDX`;S41zLgM3
+Z26 V55D_TkcXaP>]Wmd;UYFcY0
+R3
+R15
+R16
 R17
-R18
-R19
-Z29 L0 467
-R8
+L0 245
+R7
 r1
 !s85 0
 31
+R18
+R19
 R20
-R21
-R22
 !s101 -O0
-R10
-Z30 ng@a6_lab4_vlg_vec_tst
+R9
+Z27 ng@a6_lab4_vlg_vec_tst

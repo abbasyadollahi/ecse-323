@@ -174,7 +174,6 @@ set_location_assignment PIN_M22 -to data[2]
 set_location_assignment PIN_L21 -to data[1]
 set_location_assignment PIN_L22 -to data[0]
 set_global_assignment -name VECTOR_WAVEFORM_FILE gA6_lab4_rules.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/home/abbas/dsd_A6/lab4/gA6_lab4.vwf"
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to mode[0] -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to mode[1] -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to num[0] -section_id auto_signaltap_0
@@ -203,4 +202,5 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=6
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=52394" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_gA6_lab4_auto_signaltap_0_1_d1ba," -section_id auto_signaltap_0
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/home/abbas/dsd_A6/lab4/gA6_lab4_rules.vwf"
 set_global_assignment -name SLD_FILE "C:/home/abbas/dsd_A6/lab4/output_files/gA6_dealer_testbed_auto_stripped.stp"
