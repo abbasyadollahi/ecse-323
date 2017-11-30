@@ -1,0 +1,1149 @@
+TimeQuest Timing Analyzer report for gA6_lab5
+Wed Nov 29 18:54:43 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk'
+ 12. Slow Model Hold: 'clk'
+ 13. Slow Model Minimum Pulse Width: 'clk'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'clk'
+ 24. Fast Model Hold: 'clk'
+ 25. Fast Model Minimum Pulse Width: 'clk'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; gA6_lab5                                           ;
+; Device Family      ; Cyclone II                                         ;
+; Device Name        ; EP2C20F484C7                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 195.39 MHz ; 195.39 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -4.118 ; -25.738       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.445 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.631 ; -22.405               ;
++-------+--------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                                                    ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -4.118 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.155      ;
+; -4.118 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.155      ;
+; -4.118 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.155      ;
+; -4.042 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.079      ;
+; -4.042 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.079      ;
+; -4.042 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.079      ;
+; -4.023 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.060      ;
+; -4.023 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.060      ;
+; -4.023 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; -0.001     ; 5.060      ;
+; -3.948 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.985      ;
+; -3.948 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.985      ;
+; -3.948 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.985      ;
+; -3.794 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.831      ;
+; -3.794 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.831      ;
+; -3.794 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.831      ;
+; -3.555 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 4.592      ;
+; -3.489 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 4.526      ;
+; -3.477 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 4.514      ;
+; -3.456 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 4.493      ;
+; -3.413 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 4.450      ;
+; -3.394 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 4.431      ;
+; -3.375 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 4.412      ;
+; -3.319 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 4.356      ;
+; -3.226 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 4.263      ;
+; -3.165 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 4.202      ;
+; -3.077 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 4.114      ;
+; -3.040 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.077      ;
+; -3.040 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.077      ;
+; -3.040 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; -0.001     ; 4.077      ;
+; -2.999 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 4.036      ;
+; -2.978 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 4.015      ;
+; -2.897 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.934      ;
+; -2.870 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 3.907      ;
+; -2.794 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 3.831      ;
+; -2.775 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 3.812      ;
+; -2.748 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.785      ;
+; -2.700 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 3.737      ;
+; -2.546 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 3.583      ;
+; -2.470 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 3.507      ;
+; -2.411 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.448      ;
+; -2.326 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 3.364      ;
+; -2.326 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 3.364      ;
+; -2.326 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 3.364      ;
+; -1.992 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.029      ;
+; -1.792 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; -0.001     ; 2.829      ;
+; -1.153 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 2.191      ;
+; -0.626 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.664      ;
+; -0.626 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.664      ;
+; -0.626 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.664      ;
+; -0.534 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.572      ;
+; -0.255 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|hit                ; clk          ; clk         ; 1.000        ; 0.000      ; 1.293      ;
+; -0.171 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.209      ;
+; -0.138 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|done               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.176      ;
+; 0.115  ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|\computer:state[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.923      ;
+; 0.115  ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|hit                ; clk          ; clk         ; 1.000        ; 0.000      ; 0.923      ;
+; 0.123  ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|done               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.915      ;
+; 0.124  ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|\computer:state[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.914      ;
+; 0.307  ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
+; 0.307  ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|\computer:state[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
+; 0.307  ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|\computer:state[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                                                                    ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.445 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|\computer:state[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|\computer:state[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.628 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|\computer:state[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.914      ;
+; 0.629 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|done               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.915      ;
+; 0.637 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|hit                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.923      ;
+; 0.637 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|\computer:state[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.923      ;
+; 0.890 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|done               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.176      ;
+; 0.923 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.209      ;
+; 0.924 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.210      ;
+; 1.007 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|hit                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.293      ;
+; 1.008 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.294      ;
+; 1.010 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.296      ;
+; 1.281 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.567      ;
+; 1.286 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.572      ;
+; 1.287 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.573      ;
+; 1.378 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.664      ;
+; 1.905 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.191      ;
+; 1.918 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.203      ;
+; 2.085 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 2.370      ;
+; 2.144 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.429      ;
+; 2.277 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.562      ;
+; 2.311 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 2.596      ;
+; 2.352 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; -0.001     ; 2.637      ;
+; 2.397 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; -0.001     ; 2.682      ;
+; 2.444 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 2.729      ;
+; 2.458 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.743      ;
+; 2.468 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 2.753      ;
+; 2.471 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.756      ;
+; 2.499 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 2.784      ;
+; 2.527 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.812      ;
+; 2.537 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 2.822      ;
+; 2.563 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.848      ;
+; 2.564 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; -0.001     ; 2.849      ;
+; 2.578 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; -0.001     ; 2.863      ;
+; 2.623 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; -0.001     ; 2.908      ;
+; 2.643 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 2.928      ;
+; 2.711 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; -0.001     ; 2.996      ;
+; 2.751 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.036      ;
+; 2.763 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 3.048      ;
+; 2.788 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.073      ;
+; 2.789 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 3.074      ;
+; 2.790 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.075      ;
+; 2.791 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.076      ;
+; 2.819 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.104      ;
+; 2.822 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.107      ;
+; 2.896 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 3.181      ;
+; 2.922 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 3.207      ;
+; 2.923 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.208      ;
+; 2.946 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 3.231      ;
+; 2.947 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.232      ;
+; 2.961 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.246      ;
+; 2.963 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.248      ;
+; 2.977 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 3.262      ;
+; 2.978 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.263      ;
+; 3.077 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 3.362      ;
+; 3.090 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 3.375      ;
+; 3.121 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; -0.001     ; 3.406      ;
+; 3.122 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; -0.001     ; 3.407      ;
+; 3.146 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; -0.001     ; 3.431      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                               ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; -1.631 ; 1.000        ; 2.631          ; Port Rate        ; clk   ; Rise       ; clk                                  ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|\computer:state[0] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|\computer:state[0] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|\computer:state[1] ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|\computer:state[1] ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|done               ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|done               ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|hit                ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|hit                ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[0]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[0]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[1]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[1]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[2]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[2]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[3]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[3]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[4]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[4]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[5]         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[5]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|\dealer:d_win       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|\dealer:d_win       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|\dealer:p_win       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|\dealer:p_win       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|dealer_wins         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|dealer_wins         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|led_display1[0]     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|led_display1[0]     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|led_display3[1]     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|led_display3[1]     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|led_display4[3]     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|led_display4[3]     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|player_wins         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|player_wins         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|\dealer:d_win|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|\dealer:d_win|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|\dealer:p_win|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|\dealer:p_win|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|dealer_wins|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|dealer_wins|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|led_display1[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|led_display1[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|led_display3[1]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|led_display3[1]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|led_display4[3]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|led_display4[3]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|player_wins|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|player_wins|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|\computer:state[0]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|\computer:state[0]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|\computer:state[1]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|\computer:state[1]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|done|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|done|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|hit|clk                         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|hit|clk                         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[3]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[3]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[4]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[4]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[5]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[5]|clk                  ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; player_sum[*]  ; clk        ; 8.247 ; 8.247 ; Rise       ; clk             ;
+;  player_sum[0] ; clk        ; 7.974 ; 7.974 ; Rise       ; clk             ;
+;  player_sum[1] ; clk        ; 8.247 ; 8.247 ; Rise       ; clk             ;
+;  player_sum[2] ; clk        ; 7.565 ; 7.565 ; Rise       ; clk             ;
+;  player_sum[3] ; clk        ; 7.714 ; 7.714 ; Rise       ; clk             ;
+;  player_sum[4] ; clk        ; 7.628 ; 7.628 ; Rise       ; clk             ;
+;  player_sum[5] ; clk        ; 6.924 ; 6.924 ; Rise       ; clk             ;
+; sum[*]         ; clk        ; 6.241 ; 6.241 ; Rise       ; clk             ;
+;  sum[0]        ; clk        ; 6.241 ; 6.241 ; Rise       ; clk             ;
+;  sum[1]        ; clk        ; 6.187 ; 6.187 ; Rise       ; clk             ;
+;  sum[2]        ; clk        ; 6.225 ; 6.225 ; Rise       ; clk             ;
+;  sum[3]        ; clk        ; 5.864 ; 5.864 ; Rise       ; clk             ;
+;  sum[4]        ; clk        ; 5.461 ; 5.461 ; Rise       ; clk             ;
+;  sum[5]        ; clk        ; 5.413 ; 5.413 ; Rise       ; clk             ;
+; turn           ; clk        ; 3.772 ; 3.772 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; player_sum[*]  ; clk        ; -4.050 ; -4.050 ; Rise       ; clk             ;
+;  player_sum[0] ; clk        ; -5.783 ; -5.783 ; Rise       ; clk             ;
+;  player_sum[1] ; clk        ; -5.592 ; -5.592 ; Rise       ; clk             ;
+;  player_sum[2] ; clk        ; -5.383 ; -5.383 ; Rise       ; clk             ;
+;  player_sum[3] ; clk        ; -5.409 ; -5.409 ; Rise       ; clk             ;
+;  player_sum[4] ; clk        ; -4.797 ; -4.797 ; Rise       ; clk             ;
+;  player_sum[5] ; clk        ; -4.050 ; -4.050 ; Rise       ; clk             ;
+; sum[*]         ; clk        ; -3.325 ; -3.325 ; Rise       ; clk             ;
+;  sum[0]        ; clk        ; -3.394 ; -3.394 ; Rise       ; clk             ;
+;  sum[1]        ; clk        ; -3.579 ; -3.579 ; Rise       ; clk             ;
+;  sum[2]        ; clk        ; -3.325 ; -3.325 ; Rise       ; clk             ;
+;  sum[3]        ; clk        ; -3.358 ; -3.358 ; Rise       ; clk             ;
+;  sum[4]        ; clk        ; -3.380 ; -3.380 ; Rise       ; clk             ;
+;  sum[5]        ; clk        ; -3.603 ; -3.603 ; Rise       ; clk             ;
+; turn           ; clk        ; -3.524 ; -3.524 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Clock to Output Times                                                        ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; dealer_wins      ; clk        ; 6.926 ; 6.926 ; Rise       ; clk             ;
+; done             ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
+; hit              ; clk        ; 6.871 ; 6.871 ; Rise       ; clk             ;
+; led_display1[*]  ; clk        ; 7.305 ; 7.305 ; Rise       ; clk             ;
+;  led_display1[0] ; clk        ; 7.275 ; 7.275 ; Rise       ; clk             ;
+;  led_display1[1] ; clk        ; 7.305 ; 7.305 ; Rise       ; clk             ;
+;  led_display1[2] ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
+;  led_display1[3] ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
+;  led_display1[6] ; clk        ; 7.275 ; 7.275 ; Rise       ; clk             ;
+; led_display2[*]  ; clk        ; 7.707 ; 7.707 ; Rise       ; clk             ;
+;  led_display2[0] ; clk        ; 7.707 ; 7.707 ; Rise       ; clk             ;
+;  led_display2[5] ; clk        ; 7.263 ; 7.263 ; Rise       ; clk             ;
+; led_display3[*]  ; clk        ; 7.283 ; 7.283 ; Rise       ; clk             ;
+;  led_display3[0] ; clk        ; 7.283 ; 7.283 ; Rise       ; clk             ;
+;  led_display3[1] ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
+;  led_display3[3] ; clk        ; 6.942 ; 6.942 ; Rise       ; clk             ;
+;  led_display3[5] ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
+;  led_display3[6] ; clk        ; 6.919 ; 6.919 ; Rise       ; clk             ;
+; led_display4[*]  ; clk        ; 7.697 ; 7.697 ; Rise       ; clk             ;
+;  led_display4[0] ; clk        ; 7.305 ; 7.305 ; Rise       ; clk             ;
+;  led_display4[1] ; clk        ; 7.697 ; 7.697 ; Rise       ; clk             ;
+;  led_display4[2] ; clk        ; 7.689 ; 7.689 ; Rise       ; clk             ;
+;  led_display4[3] ; clk        ; 7.689 ; 7.689 ; Rise       ; clk             ;
+;  led_display4[6] ; clk        ; 6.912 ; 6.912 ; Rise       ; clk             ;
+; player_wins      ; clk        ; 6.911 ; 6.911 ; Rise       ; clk             ;
+; state_out[*]     ; clk        ; 6.910 ; 6.910 ; Rise       ; clk             ;
+;  state_out[0]    ; clk        ; 6.910 ; 6.910 ; Rise       ; clk             ;
+;  state_out[1]    ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
+; sum_out[*]       ; clk        ; 7.326 ; 7.326 ; Rise       ; clk             ;
+;  sum_out[0]      ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
+;  sum_out[1]      ; clk        ; 7.170 ; 7.170 ; Rise       ; clk             ;
+;  sum_out[2]      ; clk        ; 7.139 ; 7.139 ; Rise       ; clk             ;
+;  sum_out[3]      ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
+;  sum_out[4]      ; clk        ; 7.145 ; 7.145 ; Rise       ; clk             ;
+;  sum_out[5]      ; clk        ; 7.326 ; 7.326 ; Rise       ; clk             ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; dealer_wins      ; clk        ; 6.926 ; 6.926 ; Rise       ; clk             ;
+; done             ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
+; hit              ; clk        ; 6.871 ; 6.871 ; Rise       ; clk             ;
+; led_display1[*]  ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
+;  led_display1[0] ; clk        ; 7.275 ; 7.275 ; Rise       ; clk             ;
+;  led_display1[1] ; clk        ; 7.305 ; 7.305 ; Rise       ; clk             ;
+;  led_display1[2] ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
+;  led_display1[3] ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
+;  led_display1[6] ; clk        ; 7.275 ; 7.275 ; Rise       ; clk             ;
+; led_display2[*]  ; clk        ; 7.263 ; 7.263 ; Rise       ; clk             ;
+;  led_display2[0] ; clk        ; 7.707 ; 7.707 ; Rise       ; clk             ;
+;  led_display2[5] ; clk        ; 7.263 ; 7.263 ; Rise       ; clk             ;
+; led_display3[*]  ; clk        ; 6.919 ; 6.919 ; Rise       ; clk             ;
+;  led_display3[0] ; clk        ; 7.283 ; 7.283 ; Rise       ; clk             ;
+;  led_display3[1] ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
+;  led_display3[3] ; clk        ; 6.942 ; 6.942 ; Rise       ; clk             ;
+;  led_display3[5] ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
+;  led_display3[6] ; clk        ; 6.919 ; 6.919 ; Rise       ; clk             ;
+; led_display4[*]  ; clk        ; 6.912 ; 6.912 ; Rise       ; clk             ;
+;  led_display4[0] ; clk        ; 7.305 ; 7.305 ; Rise       ; clk             ;
+;  led_display4[1] ; clk        ; 7.697 ; 7.697 ; Rise       ; clk             ;
+;  led_display4[2] ; clk        ; 7.689 ; 7.689 ; Rise       ; clk             ;
+;  led_display4[3] ; clk        ; 7.689 ; 7.689 ; Rise       ; clk             ;
+;  led_display4[6] ; clk        ; 6.912 ; 6.912 ; Rise       ; clk             ;
+; player_wins      ; clk        ; 6.911 ; 6.911 ; Rise       ; clk             ;
+; state_out[*]     ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
+;  state_out[0]    ; clk        ; 6.910 ; 6.910 ; Rise       ; clk             ;
+;  state_out[1]    ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
+; sum_out[*]       ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
+;  sum_out[0]      ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
+;  sum_out[1]      ; clk        ; 7.170 ; 7.170 ; Rise       ; clk             ;
+;  sum_out[2]      ; clk        ; 7.139 ; 7.139 ; Rise       ; clk             ;
+;  sum_out[3]      ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
+;  sum_out[4]      ; clk        ; 7.145 ; 7.145 ; Rise       ; clk             ;
+;  sum_out[5]      ; clk        ; 7.326 ; 7.326 ; Rise       ; clk             ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -1.010 ; -5.377        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -18.380               ;
++-------+--------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                                                                    ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.010 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 2.042      ;
+; -1.010 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 2.042      ;
+; -1.010 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 2.042      ;
+; -0.978 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 2.010      ;
+; -0.978 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 2.010      ;
+; -0.978 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 2.010      ;
+; -0.966 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.998      ;
+; -0.966 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.998      ;
+; -0.966 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.998      ;
+; -0.935 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.967      ;
+; -0.935 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.967      ;
+; -0.935 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.967      ;
+; -0.869 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.901      ;
+; -0.869 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.901      ;
+; -0.869 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.901      ;
+; -0.709 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.741      ;
+; -0.677 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.709      ;
+; -0.676 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.665 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.697      ;
+; -0.642 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.674      ;
+; -0.634 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.666      ;
+; -0.628 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.660      ;
+; -0.626 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.658      ;
+; -0.626 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.658      ;
+; -0.626 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.658      ;
+; -0.592 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.624      ;
+; -0.568 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.600      ;
+; -0.530 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.562      ;
+; -0.505 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.471 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.503      ;
+; -0.457 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.489      ;
+; -0.457 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.489      ;
+; -0.425 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.457      ;
+; -0.421 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.453      ;
+; -0.413 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.445      ;
+; -0.382 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.414      ;
+; -0.359 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.391      ;
+; -0.342 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.374      ;
+; -0.342 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.374      ;
+; -0.342 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.374      ;
+; -0.325 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.357      ;
+; -0.316 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.348      ;
+; -0.286 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.318      ;
+; -0.115 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.147      ;
+; -0.073 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.105      ;
+; 0.151  ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.881      ;
+; 0.228  ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 1.000        ; 0.000      ; 0.804      ;
+; 0.228  ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 1.000        ; 0.000      ; 0.804      ;
+; 0.228  ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 1.000        ; 0.000      ; 0.804      ;
+; 0.403  ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.629      ;
+; 0.494  ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.538      ;
+; 0.506  ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|hit                ; clk          ; clk         ; 1.000        ; 0.000      ; 0.526      ;
+; 0.515  ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|done               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.517      ;
+; 0.633  ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|\computer:state[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.399      ;
+; 0.633  ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|hit                ; clk          ; clk         ; 1.000        ; 0.000      ; 0.399      ;
+; 0.637  ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|\computer:state[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637  ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|done               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.395      ;
+; 0.665  ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|\computer:state[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|\computer:state[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                                    ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|\computer:state[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|\computer:state[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.243 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|done               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.395      ;
+; 0.243 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|\computer:state[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.395      ;
+; 0.247 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|hit                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.399      ;
+; 0.247 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|\computer:state[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.399      ;
+; 0.365 ; gA6_computer:inst|\computer:state[0] ; gA6_computer:inst|done               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.374 ; gA6_computer:inst|\computer:state[1] ; gA6_computer:inst|hit                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
+; 0.378 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.380 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.532      ;
+; 0.386 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.538      ;
+; 0.386 ; gA6_winner:inst1|\dealer:p_win       ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.538      ;
+; 0.477 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.629      ;
+; 0.477 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.629      ;
+; 0.480 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.632      ;
+; 0.652 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.804      ;
+; 0.729 ; gA6_winner:inst1|\dealer:d_win       ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.881      ;
+; 0.758 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.910      ;
+; 0.809 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.961      ;
+; 0.828 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.980      ;
+; 0.861 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.013      ;
+; 0.879 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.031      ;
+; 0.912 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.064      ;
+; 0.914 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.066      ;
+; 0.926 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.078      ;
+; 0.926 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.078      ;
+; 0.929 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.081      ;
+; 0.931 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.083      ;
+; 0.931 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.083      ;
+; 0.933 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|dealer_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.085      ;
+; 0.977 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.129      ;
+; 0.977 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.129      ;
+; 0.999 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.151      ;
+; 0.999 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.151      ;
+; 1.003 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|\dealer:p_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.155      ;
+; 1.010 ; gA6_computer:inst|sum_out[1]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.162      ;
+; 1.023 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.175      ;
+; 1.026 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.178      ;
+; 1.032 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.184      ;
+; 1.034 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.186      ;
+; 1.049 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.201      ;
+; 1.050 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.202      ;
+; 1.050 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.202      ;
+; 1.051 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.203      ;
+; 1.061 ; gA6_computer:inst|sum_out[3]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.213      ;
+; 1.083 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.235      ;
+; 1.083 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.235      ;
+; 1.100 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.252      ;
+; 1.100 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.252      ;
+; 1.101 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display1[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.253      ;
+; 1.101 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display3[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.253      ;
+; 1.102 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.254      ;
+; 1.102 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.254      ;
+; 1.113 ; gA6_computer:inst|sum_out[5]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.265      ;
+; 1.166 ; gA6_computer:inst|sum_out[4]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.318      ;
+; 1.174 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|player_wins         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.326      ;
+; 1.174 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|led_display4[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.326      ;
+; 1.183 ; gA6_computer:inst|sum_out[0]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.335      ;
+; 1.185 ; gA6_computer:inst|sum_out[2]         ; gA6_winner:inst1|\dealer:d_win       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.337      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                               ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|\computer:state[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|\computer:state[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|\computer:state[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|\computer:state[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|done               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|done               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|hit                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|hit                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[0]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[0]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[1]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[1]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[2]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[2]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[3]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[3]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[4]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[4]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_computer:inst|sum_out[5]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_computer:inst|sum_out[5]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|\dealer:d_win       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|\dealer:d_win       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|\dealer:p_win       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|\dealer:p_win       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|dealer_wins         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|dealer_wins         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|led_display1[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|led_display1[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|led_display3[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|led_display3[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|led_display4[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|led_display4[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; gA6_winner:inst1|player_wins         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; gA6_winner:inst1|player_wins         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|\dealer:d_win|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|\dealer:d_win|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|\dealer:p_win|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|\dealer:p_win|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|dealer_wins|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|dealer_wins|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|led_display1[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|led_display1[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|led_display3[1]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|led_display3[1]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|led_display4[3]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|led_display4[3]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst1|player_wins|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst1|player_wins|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|\computer:state[0]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|\computer:state[0]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|\computer:state[1]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|\computer:state[1]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|done|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|done|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|hit|clk                         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|hit|clk                         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[3]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[3]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[4]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[4]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; inst|sum_out[5]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; inst|sum_out[5]|clk                  ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; player_sum[*]  ; clk        ; 3.414 ; 3.414 ; Rise       ; clk             ;
+;  player_sum[0] ; clk        ; 3.340 ; 3.340 ; Rise       ; clk             ;
+;  player_sum[1] ; clk        ; 3.414 ; 3.414 ; Rise       ; clk             ;
+;  player_sum[2] ; clk        ; 3.156 ; 3.156 ; Rise       ; clk             ;
+;  player_sum[3] ; clk        ; 3.192 ; 3.192 ; Rise       ; clk             ;
+;  player_sum[4] ; clk        ; 3.179 ; 3.179 ; Rise       ; clk             ;
+;  player_sum[5] ; clk        ; 2.951 ; 2.951 ; Rise       ; clk             ;
+; sum[*]         ; clk        ; 2.591 ; 2.591 ; Rise       ; clk             ;
+;  sum[0]        ; clk        ; 2.555 ; 2.555 ; Rise       ; clk             ;
+;  sum[1]        ; clk        ; 2.591 ; 2.591 ; Rise       ; clk             ;
+;  sum[2]        ; clk        ; 2.551 ; 2.551 ; Rise       ; clk             ;
+;  sum[3]        ; clk        ; 2.411 ; 2.411 ; Rise       ; clk             ;
+;  sum[4]        ; clk        ; 2.270 ; 2.270 ; Rise       ; clk             ;
+;  sum[5]        ; clk        ; 2.259 ; 2.259 ; Rise       ; clk             ;
+; turn           ; clk        ; 1.666 ; 1.666 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; player_sum[*]  ; clk        ; -1.764 ; -1.764 ; Rise       ; clk             ;
+;  player_sum[0] ; clk        ; -2.401 ; -2.401 ; Rise       ; clk             ;
+;  player_sum[1] ; clk        ; -2.318 ; -2.318 ; Rise       ; clk             ;
+;  player_sum[2] ; clk        ; -2.237 ; -2.237 ; Rise       ; clk             ;
+;  player_sum[3] ; clk        ; -2.235 ; -2.235 ; Rise       ; clk             ;
+;  player_sum[4] ; clk        ; -2.018 ; -2.018 ; Rise       ; clk             ;
+;  player_sum[5] ; clk        ; -1.764 ; -1.764 ; Rise       ; clk             ;
+; sum[*]         ; clk        ; -1.531 ; -1.531 ; Rise       ; clk             ;
+;  sum[0]        ; clk        ; -1.559 ; -1.559 ; Rise       ; clk             ;
+;  sum[1]        ; clk        ; -1.660 ; -1.660 ; Rise       ; clk             ;
+;  sum[2]        ; clk        ; -1.538 ; -1.538 ; Rise       ; clk             ;
+;  sum[3]        ; clk        ; -1.531 ; -1.531 ; Rise       ; clk             ;
+;  sum[4]        ; clk        ; -1.544 ; -1.544 ; Rise       ; clk             ;
+;  sum[5]        ; clk        ; -1.607 ; -1.607 ; Rise       ; clk             ;
+; turn           ; clk        ; -1.546 ; -1.546 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Clock to Output Times                                                        ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; dealer_wins      ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+; done             ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+; hit              ; clk        ; 3.757 ; 3.757 ; Rise       ; clk             ;
+; led_display1[*]  ; clk        ; 3.919 ; 3.919 ; Rise       ; clk             ;
+;  led_display1[0] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+;  led_display1[1] ; clk        ; 3.919 ; 3.919 ; Rise       ; clk             ;
+;  led_display1[2] ; clk        ; 3.779 ; 3.779 ; Rise       ; clk             ;
+;  led_display1[3] ; clk        ; 3.757 ; 3.757 ; Rise       ; clk             ;
+;  led_display1[6] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+; led_display2[*]  ; clk        ; 4.079 ; 4.079 ; Rise       ; clk             ;
+;  led_display2[0] ; clk        ; 4.079 ; 4.079 ; Rise       ; clk             ;
+;  led_display2[5] ; clk        ; 3.881 ; 3.881 ; Rise       ; clk             ;
+; led_display3[*]  ; clk        ; 3.901 ; 3.901 ; Rise       ; clk             ;
+;  led_display3[0] ; clk        ; 3.901 ; 3.901 ; Rise       ; clk             ;
+;  led_display3[1] ; clk        ; 3.779 ; 3.779 ; Rise       ; clk             ;
+;  led_display3[3] ; clk        ; 3.769 ; 3.769 ; Rise       ; clk             ;
+;  led_display3[5] ; clk        ; 3.766 ; 3.766 ; Rise       ; clk             ;
+;  led_display3[6] ; clk        ; 3.746 ; 3.746 ; Rise       ; clk             ;
+; led_display4[*]  ; clk        ; 4.069 ; 4.069 ; Rise       ; clk             ;
+;  led_display4[0] ; clk        ; 3.919 ; 3.919 ; Rise       ; clk             ;
+;  led_display4[1] ; clk        ; 4.069 ; 4.069 ; Rise       ; clk             ;
+;  led_display4[2] ; clk        ; 4.062 ; 4.062 ; Rise       ; clk             ;
+;  led_display4[3] ; clk        ; 4.062 ; 4.062 ; Rise       ; clk             ;
+;  led_display4[6] ; clk        ; 3.739 ; 3.739 ; Rise       ; clk             ;
+; player_wins      ; clk        ; 3.742 ; 3.742 ; Rise       ; clk             ;
+; state_out[*]     ; clk        ; 3.790 ; 3.790 ; Rise       ; clk             ;
+;  state_out[0]    ; clk        ; 3.790 ; 3.790 ; Rise       ; clk             ;
+;  state_out[1]    ; clk        ; 3.765 ; 3.765 ; Rise       ; clk             ;
+; sum_out[*]       ; clk        ; 3.937 ; 3.937 ; Rise       ; clk             ;
+;  sum_out[0]      ; clk        ; 3.786 ; 3.786 ; Rise       ; clk             ;
+;  sum_out[1]      ; clk        ; 3.870 ; 3.870 ; Rise       ; clk             ;
+;  sum_out[2]      ; clk        ; 3.850 ; 3.850 ; Rise       ; clk             ;
+;  sum_out[3]      ; clk        ; 3.784 ; 3.784 ; Rise       ; clk             ;
+;  sum_out[4]      ; clk        ; 3.810 ; 3.810 ; Rise       ; clk             ;
+;  sum_out[5]      ; clk        ; 3.937 ; 3.937 ; Rise       ; clk             ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; dealer_wins      ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+; done             ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+; hit              ; clk        ; 3.757 ; 3.757 ; Rise       ; clk             ;
+; led_display1[*]  ; clk        ; 3.757 ; 3.757 ; Rise       ; clk             ;
+;  led_display1[0] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+;  led_display1[1] ; clk        ; 3.919 ; 3.919 ; Rise       ; clk             ;
+;  led_display1[2] ; clk        ; 3.779 ; 3.779 ; Rise       ; clk             ;
+;  led_display1[3] ; clk        ; 3.757 ; 3.757 ; Rise       ; clk             ;
+;  led_display1[6] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+; led_display2[*]  ; clk        ; 3.881 ; 3.881 ; Rise       ; clk             ;
+;  led_display2[0] ; clk        ; 4.079 ; 4.079 ; Rise       ; clk             ;
+;  led_display2[5] ; clk        ; 3.881 ; 3.881 ; Rise       ; clk             ;
+; led_display3[*]  ; clk        ; 3.746 ; 3.746 ; Rise       ; clk             ;
+;  led_display3[0] ; clk        ; 3.901 ; 3.901 ; Rise       ; clk             ;
+;  led_display3[1] ; clk        ; 3.779 ; 3.779 ; Rise       ; clk             ;
+;  led_display3[3] ; clk        ; 3.769 ; 3.769 ; Rise       ; clk             ;
+;  led_display3[5] ; clk        ; 3.766 ; 3.766 ; Rise       ; clk             ;
+;  led_display3[6] ; clk        ; 3.746 ; 3.746 ; Rise       ; clk             ;
+; led_display4[*]  ; clk        ; 3.739 ; 3.739 ; Rise       ; clk             ;
+;  led_display4[0] ; clk        ; 3.919 ; 3.919 ; Rise       ; clk             ;
+;  led_display4[1] ; clk        ; 4.069 ; 4.069 ; Rise       ; clk             ;
+;  led_display4[2] ; clk        ; 4.062 ; 4.062 ; Rise       ; clk             ;
+;  led_display4[3] ; clk        ; 4.062 ; 4.062 ; Rise       ; clk             ;
+;  led_display4[6] ; clk        ; 3.739 ; 3.739 ; Rise       ; clk             ;
+; player_wins      ; clk        ; 3.742 ; 3.742 ; Rise       ; clk             ;
+; state_out[*]     ; clk        ; 3.765 ; 3.765 ; Rise       ; clk             ;
+;  state_out[0]    ; clk        ; 3.790 ; 3.790 ; Rise       ; clk             ;
+;  state_out[1]    ; clk        ; 3.765 ; 3.765 ; Rise       ; clk             ;
+; sum_out[*]       ; clk        ; 3.784 ; 3.784 ; Rise       ; clk             ;
+;  sum_out[0]      ; clk        ; 3.786 ; 3.786 ; Rise       ; clk             ;
+;  sum_out[1]      ; clk        ; 3.870 ; 3.870 ; Rise       ; clk             ;
+;  sum_out[2]      ; clk        ; 3.850 ; 3.850 ; Rise       ; clk             ;
+;  sum_out[3]      ; clk        ; 3.784 ; 3.784 ; Rise       ; clk             ;
+;  sum_out[4]      ; clk        ; 3.810 ; 3.810 ; Rise       ; clk             ;
+;  sum_out[5]      ; clk        ; 3.937 ; 3.937 ; Rise       ; clk             ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -4.118  ; 0.215 ; N/A      ; N/A     ; -1.631              ;
+;  clk             ; -4.118  ; 0.215 ; N/A      ; N/A     ; -1.631              ;
+; Design-wide TNS  ; -25.738 ; 0.0   ; 0.0      ; 0.0     ; -22.405             ;
+;  clk             ; -25.738 ; 0.000 ; N/A      ; N/A     ; -22.405             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; player_sum[*]  ; clk        ; 8.247 ; 8.247 ; Rise       ; clk             ;
+;  player_sum[0] ; clk        ; 7.974 ; 7.974 ; Rise       ; clk             ;
+;  player_sum[1] ; clk        ; 8.247 ; 8.247 ; Rise       ; clk             ;
+;  player_sum[2] ; clk        ; 7.565 ; 7.565 ; Rise       ; clk             ;
+;  player_sum[3] ; clk        ; 7.714 ; 7.714 ; Rise       ; clk             ;
+;  player_sum[4] ; clk        ; 7.628 ; 7.628 ; Rise       ; clk             ;
+;  player_sum[5] ; clk        ; 6.924 ; 6.924 ; Rise       ; clk             ;
+; sum[*]         ; clk        ; 6.241 ; 6.241 ; Rise       ; clk             ;
+;  sum[0]        ; clk        ; 6.241 ; 6.241 ; Rise       ; clk             ;
+;  sum[1]        ; clk        ; 6.187 ; 6.187 ; Rise       ; clk             ;
+;  sum[2]        ; clk        ; 6.225 ; 6.225 ; Rise       ; clk             ;
+;  sum[3]        ; clk        ; 5.864 ; 5.864 ; Rise       ; clk             ;
+;  sum[4]        ; clk        ; 5.461 ; 5.461 ; Rise       ; clk             ;
+;  sum[5]        ; clk        ; 5.413 ; 5.413 ; Rise       ; clk             ;
+; turn           ; clk        ; 3.772 ; 3.772 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; player_sum[*]  ; clk        ; -1.764 ; -1.764 ; Rise       ; clk             ;
+;  player_sum[0] ; clk        ; -2.401 ; -2.401 ; Rise       ; clk             ;
+;  player_sum[1] ; clk        ; -2.318 ; -2.318 ; Rise       ; clk             ;
+;  player_sum[2] ; clk        ; -2.237 ; -2.237 ; Rise       ; clk             ;
+;  player_sum[3] ; clk        ; -2.235 ; -2.235 ; Rise       ; clk             ;
+;  player_sum[4] ; clk        ; -2.018 ; -2.018 ; Rise       ; clk             ;
+;  player_sum[5] ; clk        ; -1.764 ; -1.764 ; Rise       ; clk             ;
+; sum[*]         ; clk        ; -1.531 ; -1.531 ; Rise       ; clk             ;
+;  sum[0]        ; clk        ; -1.559 ; -1.559 ; Rise       ; clk             ;
+;  sum[1]        ; clk        ; -1.660 ; -1.660 ; Rise       ; clk             ;
+;  sum[2]        ; clk        ; -1.538 ; -1.538 ; Rise       ; clk             ;
+;  sum[3]        ; clk        ; -1.531 ; -1.531 ; Rise       ; clk             ;
+;  sum[4]        ; clk        ; -1.544 ; -1.544 ; Rise       ; clk             ;
+;  sum[5]        ; clk        ; -1.607 ; -1.607 ; Rise       ; clk             ;
+; turn           ; clk        ; -1.546 ; -1.546 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Clock to Output Times                                                        ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; dealer_wins      ; clk        ; 6.926 ; 6.926 ; Rise       ; clk             ;
+; done             ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
+; hit              ; clk        ; 6.871 ; 6.871 ; Rise       ; clk             ;
+; led_display1[*]  ; clk        ; 7.305 ; 7.305 ; Rise       ; clk             ;
+;  led_display1[0] ; clk        ; 7.275 ; 7.275 ; Rise       ; clk             ;
+;  led_display1[1] ; clk        ; 7.305 ; 7.305 ; Rise       ; clk             ;
+;  led_display1[2] ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
+;  led_display1[3] ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
+;  led_display1[6] ; clk        ; 7.275 ; 7.275 ; Rise       ; clk             ;
+; led_display2[*]  ; clk        ; 7.707 ; 7.707 ; Rise       ; clk             ;
+;  led_display2[0] ; clk        ; 7.707 ; 7.707 ; Rise       ; clk             ;
+;  led_display2[5] ; clk        ; 7.263 ; 7.263 ; Rise       ; clk             ;
+; led_display3[*]  ; clk        ; 7.283 ; 7.283 ; Rise       ; clk             ;
+;  led_display3[0] ; clk        ; 7.283 ; 7.283 ; Rise       ; clk             ;
+;  led_display3[1] ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
+;  led_display3[3] ; clk        ; 6.942 ; 6.942 ; Rise       ; clk             ;
+;  led_display3[5] ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
+;  led_display3[6] ; clk        ; 6.919 ; 6.919 ; Rise       ; clk             ;
+; led_display4[*]  ; clk        ; 7.697 ; 7.697 ; Rise       ; clk             ;
+;  led_display4[0] ; clk        ; 7.305 ; 7.305 ; Rise       ; clk             ;
+;  led_display4[1] ; clk        ; 7.697 ; 7.697 ; Rise       ; clk             ;
+;  led_display4[2] ; clk        ; 7.689 ; 7.689 ; Rise       ; clk             ;
+;  led_display4[3] ; clk        ; 7.689 ; 7.689 ; Rise       ; clk             ;
+;  led_display4[6] ; clk        ; 6.912 ; 6.912 ; Rise       ; clk             ;
+; player_wins      ; clk        ; 6.911 ; 6.911 ; Rise       ; clk             ;
+; state_out[*]     ; clk        ; 6.910 ; 6.910 ; Rise       ; clk             ;
+;  state_out[0]    ; clk        ; 6.910 ; 6.910 ; Rise       ; clk             ;
+;  state_out[1]    ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
+; sum_out[*]       ; clk        ; 7.326 ; 7.326 ; Rise       ; clk             ;
+;  sum_out[0]      ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
+;  sum_out[1]      ; clk        ; 7.170 ; 7.170 ; Rise       ; clk             ;
+;  sum_out[2]      ; clk        ; 7.139 ; 7.139 ; Rise       ; clk             ;
+;  sum_out[3]      ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
+;  sum_out[4]      ; clk        ; 7.145 ; 7.145 ; Rise       ; clk             ;
+;  sum_out[5]      ; clk        ; 7.326 ; 7.326 ; Rise       ; clk             ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; dealer_wins      ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+; done             ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+; hit              ; clk        ; 3.757 ; 3.757 ; Rise       ; clk             ;
+; led_display1[*]  ; clk        ; 3.757 ; 3.757 ; Rise       ; clk             ;
+;  led_display1[0] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+;  led_display1[1] ; clk        ; 3.919 ; 3.919 ; Rise       ; clk             ;
+;  led_display1[2] ; clk        ; 3.779 ; 3.779 ; Rise       ; clk             ;
+;  led_display1[3] ; clk        ; 3.757 ; 3.757 ; Rise       ; clk             ;
+;  led_display1[6] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+; led_display2[*]  ; clk        ; 3.881 ; 3.881 ; Rise       ; clk             ;
+;  led_display2[0] ; clk        ; 4.079 ; 4.079 ; Rise       ; clk             ;
+;  led_display2[5] ; clk        ; 3.881 ; 3.881 ; Rise       ; clk             ;
+; led_display3[*]  ; clk        ; 3.746 ; 3.746 ; Rise       ; clk             ;
+;  led_display3[0] ; clk        ; 3.901 ; 3.901 ; Rise       ; clk             ;
+;  led_display3[1] ; clk        ; 3.779 ; 3.779 ; Rise       ; clk             ;
+;  led_display3[3] ; clk        ; 3.769 ; 3.769 ; Rise       ; clk             ;
+;  led_display3[5] ; clk        ; 3.766 ; 3.766 ; Rise       ; clk             ;
+;  led_display3[6] ; clk        ; 3.746 ; 3.746 ; Rise       ; clk             ;
+; led_display4[*]  ; clk        ; 3.739 ; 3.739 ; Rise       ; clk             ;
+;  led_display4[0] ; clk        ; 3.919 ; 3.919 ; Rise       ; clk             ;
+;  led_display4[1] ; clk        ; 4.069 ; 4.069 ; Rise       ; clk             ;
+;  led_display4[2] ; clk        ; 4.062 ; 4.062 ; Rise       ; clk             ;
+;  led_display4[3] ; clk        ; 4.062 ; 4.062 ; Rise       ; clk             ;
+;  led_display4[6] ; clk        ; 3.739 ; 3.739 ; Rise       ; clk             ;
+; player_wins      ; clk        ; 3.742 ; 3.742 ; Rise       ; clk             ;
+; state_out[*]     ; clk        ; 3.765 ; 3.765 ; Rise       ; clk             ;
+;  state_out[0]    ; clk        ; 3.790 ; 3.790 ; Rise       ; clk             ;
+;  state_out[1]    ; clk        ; 3.765 ; 3.765 ; Rise       ; clk             ;
+; sum_out[*]       ; clk        ; 3.784 ; 3.784 ; Rise       ; clk             ;
+;  sum_out[0]      ; clk        ; 3.786 ; 3.786 ; Rise       ; clk             ;
+;  sum_out[1]      ; clk        ; 3.870 ; 3.870 ; Rise       ; clk             ;
+;  sum_out[2]      ; clk        ; 3.850 ; 3.850 ; Rise       ; clk             ;
+;  sum_out[3]      ; clk        ; 3.784 ; 3.784 ; Rise       ; clk             ;
+;  sum_out[4]      ; clk        ; 3.810 ; 3.810 ; Rise       ; clk             ;
+;  sum_out[5]      ; clk        ; 3.937 ; 3.937 ; Rise       ; clk             ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 456      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 456      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 14    ; 14   ;
+; Unconstrained Input Port Paths  ; 77    ; 77   ;
+; Unconstrained Output Ports      ; 29    ; 29   ;
+; Unconstrained Output Port Paths ; 29    ; 29   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Wed Nov 29 18:54:40 2017
+Info: Command: quartus_sta gA6_lab5 -c gA6_lab5
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'gA6_lab5.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -4.118
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -4.118       -25.738 clk 
+Info (332146): Worst-case hold slack is 0.445
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.445         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.631
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.631       -22.405 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.010
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.010        -5.377 clk 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -18.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 530 megabytes
+    Info: Processing ended: Wed Nov 29 18:54:43 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
