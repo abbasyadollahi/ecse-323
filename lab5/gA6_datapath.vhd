@@ -19,74 +19,117 @@ entity gA6_datapath is
 		new_game			: in std_logic;
 		player_hit		: in std_logic;
 		player_stay		: in std_logic;
-		player_legal	: in std_logic;
+		player_sum		: in std_logic_vector(5 downto 0);
 
-		setup				: out std_logic;
+		d_setup			: out std_logic;
 		player_draw		: out std_logic;
 		computer_turn	: out std_logic;
+		stack_mode		: out std_logic_vector(1 downto 0);
 		p_win_streak	: out std_logic_vector(1 downto 0);
 		d_win_streak	: out std_logic_vector(1 downto 0);
-		game_score		: out std_logic_vector(3 downto 0)
+		game_score		: out std_logic_vector(3 downto 0);
+		p_sum_out		: out std_logic_vector(5 downto 0);
+		state_out		: out std_logic_vector(3 downto 0)
 	);
 end gA6_datapath;
 
 architecture behavior of gA6_datapath is
 	begin
-		computer: process(clk, rst, p_win, d_win, new_game, player_hit, player_stay, player_legal)
+		datapath: process(clk, rst, p_win, d_win, new_game, player_hit, player_stay, player_sum)
 
-		variable state			: std_logic_vector(2 downto 0);
+		variable p_setup		: std_logic;
 		variable p_win_count	: unsigned(1 downto 0);
 		variable d_win_count	: unsigned(1 downto 0);
 		variable game_count	: unsigned(3 downto 0);
+		variable state			: std_logic_vector(3 downto 0);
 
 		begin
 			-- Reset is on
 			if rst = '1' then
-				setup <= '0';
+				d_setup <= '0';
+				stack_mode <= "11";
 				player_draw <= '0';
 				computer_turn <= '0';
+				p_sum_out <= "000000";
 
-				state := "000";
+				state := "0000";
+				p_setup := '0';
+				p_win_count := to_unsigned(0, 2);
+				d_win_count := to_unsigned(0, 2);
+				game_count := to_unsigned(0, 4);
 			elsif rising_edge(clk) then
+				stack_mode <= "10";
+
 				case state is
-					-- State A/000
-					when "000" =>
+					-- State A/0000
+					-- Wait for new game
+					when "0000" =>
+						stack_mode <= "11";
 						player_draw <= '0';
 						computer_turn <= '0';
+						p_sum_out <= "000000";
 
 						if new_game = '1' then
-							setup <= '1';
-
-							state := "001";
+							state := "0001";
 						end if;
 
-					-- State B/001
-					when "001" =>
-						if player_legal = '1' or player_stay = '1' then
-							setup <= '0';
+					-- State B/0001
+					-- Setup player's hand
+					when "0001" =>
+						d_setup <= '0';
+						player_draw <= '1';
+						computer_turn <= '0';
+						p_sum_out <= player_sum;
+
+						if p_setup = '0' then
+							p_setup := '1';
+						else
+							state := "0010";
+						end if;
+
+					-- State C/0010
+					-- Setup computer
+					when "0010" =>
+						d_setup <= '1';
+						player_draw <= '0';
+						computer_turn <= '0';
+						p_sum_out <= player_sum;
+
+						state := "0011";
+
+					-- State D/0011
+					-- Player's turn to hit/stay/bust
+					when "0011" =>
+						d_setup <= '0';
+						p_sum_out <= player_sum;
+
+						if unsigned(player_sum) > 21 or player_stay = '1' then
 							player_draw <= '0';
 							computer_turn <= '1';
 
-							state := "010";
+							state := "0100";
 						elsif player_hit = '1' then
-							setup <= '0';
 							player_draw <= '1';
 							computer_turn <= '0';
 						end if;
 
-					-- State C/010
-					when "010" =>
-						setup <= '0';
+					-- State E/0100
+					-- Computer's turn
+					when "0100" =>
+						d_setup <= '0';
 						player_draw <= '0';
 						computer_turn <= '1';
+						p_sum_out <= player_sum;
 
-						state := "011";
+						state := "0101";
 
-					-- State D/011
-					when "011" =>
-						setup <= '0';
+					-- State F/0101
+					-- Receive winner
+					when "0101" =>
+						d_setup <= '0';
 						player_draw <= '0';
 						computer_turn <= '0';
+						p_sum_out <= player_sum;
 
 						if p_win = '1' or d_win = '1' then
 							if p_win = '1' and d_win = '0' then
@@ -95,52 +138,60 @@ architecture behavior of gA6_datapath is
 								d_win_count := d_win_count + 1;
 							end if;
 
-							state := "100";
+							state := "0110";
 						end if;
 
-					-- State E/100
-					when "100" =>
-						setup <= '0';
+					-- State G/0110
+					-- Update score and prepare for new game
+					when "0110" =>
+						d_setup <= '0';
 						player_draw <= '0';
 						computer_turn <= '0';
+						p_sum_out <= player_sum;
 
 						game_count := game_count + 1;
 						if p_win_count > 2 or d_win_count > 2 then
-							state := "101";
+							state := "0111";
 						else
-							state := "110";
+							state := "1000";
 						end if;
 
-					-- State F/101
-					when "101" =>
-						setup <= '0';
+					-- State H/0111
+					-- Wait for rst (Fresh game)
+					when "0111" =>
+						d_setup <= '0';
 						player_draw <= '0';
 						computer_turn <= '0';
+						p_sum_out <= player_sum;
 
 						if rst = '1' then
-							state := "000";
+							state := "0000";
 							p_win_count := to_unsigned(0, 2);
 							d_win_count := to_unsigned(0, 2);
 							game_count := to_unsigned(0, 4);
 						end if;
 
-					-- State G/110
-					when "110" =>
-						setup <= '0';
+					-- State I/1000
+					-- Wait for new game (New game)
+					when "1000" =>
+						d_setup <= '0';
 						player_draw <= '0';
 						computer_turn <= '0';
+						p_sum_out <= player_sum;
 
 						if new_game = '1' then
-							state := "000";
+							state := "0000";
 						end if;
 
 					-- Random State
 					when others =>
-						setup <= '0';
+						d_setup <= '0';
 						player_draw <= '0';
 						computer_turn <= '0';
+						p_sum_out <= "000000";
 
-						state := "000";
+						state := "0000";
+						p_setup := '0';
 						p_win_count := to_unsigned(0, 2);
 						d_win_count := to_unsigned(0, 2);
 						game_count := to_unsigned(0, 4);
@@ -150,5 +201,6 @@ architecture behavior of gA6_datapath is
 			p_win_streak <= std_logic_vector(p_win_count);
 			d_win_streak <= std_logic_vector(d_win_count);
 			game_score <= std_logic_vector(game_count);
+			state_out <= state;
 		end process;
 end behavior;

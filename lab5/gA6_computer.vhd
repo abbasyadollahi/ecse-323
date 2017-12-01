@@ -21,6 +21,7 @@ entity gA6_computer is
 		hit		: out std_logic;
 		done		: out std_logic;
 		sum_out	: out std_logic_vector(5 downto 0)
+		--state_out: out std_logic_vector(2 downto 0)
 	);
 end gA6_computer;
 
@@ -28,7 +29,7 @@ architecture behavior of gA6_computer is
 	begin
 		computer: process(clk, rst, turn, setup, sum)
 
-		variable state			: std_logic_vector(1 downto 0);
+		variable state			: std_logic_vector(2 downto 0);
 		variable dealer_sum	: std_logic_vector(5 downto 0);
 
 		begin
@@ -38,7 +39,7 @@ architecture behavior of gA6_computer is
 				done <= '0';
 				sum_out <= "000000";
 
-				state := "00";
+				state := "000";
 			elsif rising_edge(clk) then
 				case state is
 					-- State A/000
@@ -99,8 +100,9 @@ architecture behavior of gA6_computer is
 						done <= '0';
 						sum_out <= sum;
 
-						state := "00";
+						state := "000";
 				end case;
 			end if;
+			--state_out <= state;
 		end process;
 end behavior;

@@ -28,7 +28,7 @@ end gA6_winner;
 
 architecture behavior of gA6_winner is
 	begin
-		dealer: process(clk, player_sum, dealer_sum)
+		winner: process(clk, enable, player_sum, dealer_sum)
 
 		variable p_win	: std_logic;
 		variable d_win	: std_logic;
@@ -56,21 +56,28 @@ architecture behavior of gA6_winner is
 				dealer_wins <= d_win;
 
 				if p_win = '1' and d_win = '0' then
-					led_display1 <= "1000011";
-					led_display2 <= "1100001";
-					led_display3 <= "1111001";
-					led_display4 <= "1001000";
+					led_display1 <= "1001000";
+					led_display2 <= "1111001";
+					led_display3 <= "1100001";
+					led_display4 <= "1000011";
 				elsif p_win = '0' and d_win = '1' then
-					led_display1 <= "1000111";
-					led_display2 <= "1000000";
-					led_display3 <= "0010010";
-					led_display4 <= "0000110";
+					led_display1 <= "0000110";
+					led_display2 <= "0010010";
+					led_display3 <= "1000000";
+					led_display4 <= "1000111";
 				elsif p_win = '1' and d_win = '1' then
-					led_display1 <= "0001100";
-					led_display2 <= "1000001";
-					led_display3 <= "0010010";
-					led_display4 <= "0001001";
+					led_display1 <= "0001001";
+					led_display2 <= "0010010";
+					led_display3 <= "1000001";
+					led_display4 <= "0001100";
 				end if;
+			elsif rising_edge(clk) then
+				player_wins <= '0';
+				dealer_wins <= '0';
+				led_display1 <= "0111111";
+				led_display2 <= "0111111";
+				led_display3 <= "0111111";
+				led_display4 <= "0111111";
 			end if;
 		end process;
 end behavior;

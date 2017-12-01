@@ -27,7 +27,7 @@ end gA6_rules;
 
 architecture behavior of gA6_rules is
 	begin
-		sum_cards: process(new_card, hand_sum)
+		sum_cards: process(clk, rst, enable, new_card, hand_sum)
 
 		variable legal			: std_logic;
 		variable new_ace		: std_logic;
@@ -38,7 +38,9 @@ architecture behavior of gA6_rules is
 		begin
 			if rst = '1' then
 				hand_ace := '0';
-			elsif rising_edge(clk) then
+				legal_play <= '0';
+				new_total <= "000000";
+			elsif enable = '1' and rising_edge(clk) then
 				new_ace := '0';
 				if rst = '1' then
 					hand_ace := '0';
