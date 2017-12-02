@@ -75,9 +75,23 @@ applicable agreement for further details.
 	(port
 		(pt 0 144)
 		(input)
+		(text "player_stack" (rect 0 0 51 12)(font "Arial" ))
+		(text "player_stack" (rect 21 139 72 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "dealer_stack" (rect 0 0 50 12)(font "Arial" ))
+		(text "dealer_stack" (rect 21 155 71 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
 		(text "player_sum[5..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "player_sum[5..0]" (rect 21 139 89 151)(font "Arial" ))
-		(line (pt 0 144)(pt 16 144)(line_width 3))
+		(text "player_sum[5..0]" (rect 21 171 89 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
 	)
 	(port
 		(pt 240 32)

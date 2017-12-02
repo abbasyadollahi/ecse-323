@@ -19,6 +19,8 @@ entity gA6_datapath is
 		new_game			: in std_logic;
 		player_hit		: in std_logic;
 		player_stay		: in std_logic;
+		player_stack	: in std_logic;
+		dealer_stack	: in std_logic;
 		player_sum		: in std_logic_vector(5 downto 0);
 
 		d_setup			: out std_logic;
@@ -35,7 +37,7 @@ end gA6_datapath;
 
 architecture behavior of gA6_datapath is
 	begin
-		datapath: process(clk, rst, p_win, d_win, new_game, player_hit, player_stay, player_sum)
+		datapath: process(clk, rst, p_win, d_win, new_game, player_hit, player_stay, player_stack, dealer_stack, player_sum)
 
 		variable p_setup		: std_logic;
 		variable p_win_count	: unsigned(1 downto 0);
@@ -70,6 +72,7 @@ architecture behavior of gA6_datapath is
 						p_sum_out <= "000000";
 
 						if new_game = '1' then
+							player_draw <= '1';
 							state := "0001";
 						end if;
 
@@ -77,30 +80,38 @@ architecture behavior of gA6_datapath is
 					-- Setup player's hand
 					when "0001" =>
 						d_setup <= '0';
-						player_draw <= '1';
+						player_draw <= '0';
 						computer_turn <= '0';
 						p_sum_out <= player_sum;
 
-						if p_setup = '0' then
-							p_setup := '1';
-						else
-							state := "0010";
+						if player_stack = '1' then
+							if p_setup = '0' then
+								player_draw <= '1';
+								p_setup := '1';
+							else
+								d_setup <= '1';
+								state := "0010";
+							end if;
 						end if;
 
 					-- State C/0010
 					-- Setup computer
 					when "0010" =>
-						d_setup <= '1';
+						d_setup <= '0';
 						player_draw <= '0';
 						computer_turn <= '0';
 						p_sum_out <= player_sum;
 
-						state := "0011";
+						if dealer_stack = '1' then
+							state := "0011";
+						end if;
 
 					-- State D/0011
 					-- Player's turn to hit/stay/bust
 					when "0011" =>
 						d_setup <= '0';
+						player_draw <= '0';
+						computer_turn <= '0';
 						p_sum_out <= player_sum;
 
 						if unsigned(player_sum) > 21 or player_stay = '1' then

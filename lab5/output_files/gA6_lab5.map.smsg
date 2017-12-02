@@ -200,3 +200,4 @@ Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the as
 Warning (287013): Variable or input pin "ac" is defined but never used.
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
+Warning (287013): Variable or input pin "aclr" is defined but never used.
