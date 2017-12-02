@@ -14,6 +14,8 @@ entity gA6_winner is
 	port(
 		clk			: in std_logic;
 		enable		: in std_logic;
+		new_game		: in std_logic;
+		winner		: in std_logic_vector(1 downto 0);
 		player_sum	: in std_logic_vector(5 downto 0);
 		dealer_sum	: in std_logic_vector(5 downto 0);
 
@@ -28,10 +30,11 @@ end gA6_winner;
 
 architecture behavior of gA6_winner is
 	begin
-		winner: process(clk, enable, player_sum, dealer_sum)
+		find_winner: process(clk, enable, new_game, player_sum, dealer_sum)
 
-		variable p_win	: std_logic;
-		variable d_win	: std_logic;
+		variable p_win			: std_logic;
+		variable d_win			: std_logic;
+		variable game_start	: std_logic := '0';
 
 		begin
 			if enable = '1' and rising_edge(clk) then
@@ -74,10 +77,13 @@ architecture behavior of gA6_winner is
 			elsif rising_edge(clk) then
 				player_wins <= '0';
 				dealer_wins <= '0';
-				led_display1 <= "0111111";
-				led_display2 <= "0111111";
-				led_display3 <= "0111111";
-				led_display4 <= "0111111";
+				if (new_game = '1' or game_start = '0') and winner = "00" then
+					game_start := '1';
+					led_display1 <= "0111111";
+					led_display2 <= "0111111";
+					led_display3 <= "0111111";
+					led_display4 <= "0111111";
+				end if;
 			end if;
 		end process;
 end behavior;

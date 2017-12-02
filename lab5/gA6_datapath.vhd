@@ -30,8 +30,8 @@ entity gA6_datapath is
 		p_win_streak	: out std_logic_vector(1 downto 0);
 		d_win_streak	: out std_logic_vector(1 downto 0);
 		game_score		: out std_logic_vector(3 downto 0);
-		p_sum_out		: out std_logic_vector(5 downto 0);
-		state_out		: out std_logic_vector(3 downto 0)
+		p_sum_out		: out std_logic_vector(5 downto 0)
+		--state_out		: out std_logic_vector(3 downto 0)
 	);
 end gA6_datapath;
 
@@ -116,12 +116,9 @@ architecture behavior of gA6_datapath is
 
 						if unsigned(player_sum) > 21 or player_stay = '1' then
 							player_draw <= '0';
-							computer_turn <= '1';
-
 							state := "0100";
 						elsif player_hit = '1' then
 							player_draw <= '1';
-							computer_turn <= '0';
 						end if;
 
 					-- State E/0100
@@ -164,7 +161,7 @@ architecture behavior of gA6_datapath is
 						if p_win_count > 2 or d_win_count > 2 then
 							state := "0111";
 						else
-							state := "1000";
+							state := "0000";
 						end if;
 
 					-- State H/0111
@@ -180,18 +177,6 @@ architecture behavior of gA6_datapath is
 							p_win_count := to_unsigned(0, 2);
 							d_win_count := to_unsigned(0, 2);
 							game_count := to_unsigned(0, 4);
-						end if;
-
-					-- State I/1000
-					-- Wait for new game (New game)
-					when "1000" =>
-						d_setup <= '0';
-						player_draw <= '0';
-						computer_turn <= '0';
-						p_sum_out <= player_sum;
-
-						if new_game = '1' then
-							state := "0000";
 						end if;
 
 					-- Random State
@@ -212,6 +197,6 @@ architecture behavior of gA6_datapath is
 			p_win_streak <= std_logic_vector(p_win_count);
 			d_win_streak <= std_logic_vector(d_win_count);
 			game_score <= std_logic_vector(game_count);
-			state_out <= state;
+			--state_out <= state;
 		end process;
 end behavior;

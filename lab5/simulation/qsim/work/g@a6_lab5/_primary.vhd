@@ -10,8 +10,11 @@ entity gA6_lab5 is
         mode            : out    vl_logic_vector(1 downto 0);
         clk             : in     vl_logic;
         rst_en          : in     vl_logic;
+        p_wins          : out    vl_logic;
+        dealer_done     : out    vl_logic;
         computer_turn   : out    vl_logic;
         d_setup         : out    vl_logic;
+        dealer_sum      : out    vl_logic_vector(5 downto 0);
         dealer_stack    : out    vl_logic;
         new_en          : in     vl_logic;
         popped          : out    vl_logic_vector(5 downto 0);
@@ -19,11 +22,11 @@ entity gA6_lab5 is
         player_stack    : out    vl_logic;
         player_turn     : out    vl_logic;
         p_sum           : out    vl_logic_vector(5 downto 0);
+        d_wins          : out    vl_logic;
         hit_en          : in     vl_logic;
         stay_en         : in     vl_logic;
         addr            : out    vl_logic_vector(5 downto 0);
         num             : out    vl_logic_vector(5 downto 0);
-        seed            : out    vl_logic_vector(31 downto 0);
         full            : out    vl_logic;
         led1            : out    vl_logic_vector(6 downto 0);
         led_mode        : in     vl_logic_vector(1 downto 0);

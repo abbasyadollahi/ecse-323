@@ -40,6 +40,7 @@ architecture behavior of gA6_dealer is
 			elsif rising_edge(clk) then
 				case state is
 					-- State A/00
+					-- Low state
 					when "00" =>
 						rand_enable <= '0';
 						stack_enable <= '0';
@@ -49,6 +50,7 @@ architecture behavior of gA6_dealer is
 						end if;
 
 					-- State B/01
+					-- Wait for request
 					when "01" =>
 						rand_enable <= '0';
 						stack_enable <= '0';
@@ -58,6 +60,7 @@ architecture behavior of gA6_dealer is
 						end if;
 
 					-- State C/10
+					-- Wait for legal addr
 					when "10" =>
 						rand_enable <= '1';
 						stack_enable <= '0';
@@ -67,6 +70,7 @@ architecture behavior of gA6_dealer is
 						end if;
 
 					-- State D/11
+					-- Enable stack operation
 					when "11" =>
 						rand_enable <= '0';
 						stack_enable <= '1';

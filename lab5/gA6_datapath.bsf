@@ -149,13 +149,6 @@ applicable agreement for further details.
 		(text "p_sum_out[5..0]" (rect 153 139 219 151)(font "Arial" ))
 		(line (pt 240 144)(pt 224 144)(line_width 3))
 	)
-	(port
-		(pt 240 160)
-		(output)
-		(text "state_out[3..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "state_out[3..0]" (rect 163 155 219 167)(font "Arial" ))
-		(line (pt 240 160)(pt 224 160)(line_width 3))
-	)
 	(drawing
 		(rectangle (rect 16 16 224 192)(line_width 1))
 	)

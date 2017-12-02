@@ -16,6 +16,7 @@ entity gA6_computer is
 		rst		: in std_logic;
 		turn		: in std_logic;
 		setup		: in std_logic;
+		d_stack	: in std_logic;
 		sum		: in std_logic_vector(5 downto 0);
 
 		hit		: out std_logic;
@@ -70,24 +71,38 @@ architecture behavior of gA6_computer is
 						sum_out <= sum;
 
 						if turn = '1' then
+							hit <= '1';
 							state := "011";
 						end if;
 
 					-- State D/011
-					-- Hit until 17/bust
+					-- Get ready for hit
 					when "011" =>
-						hit <= '1';
+						hit <= '0';
+						done <= '0';
+						sum_out <= sum;
+
+						if d_stack = '1' then
+							state := "100";
+						end if;
+
+					-- State E/100
+					-- Hit until 17/bust
+					when "100" =>
+						hit <= '0';
 						done <= '0';
 						sum_out <= sum;
 
 						if unsigned(sum) > 16 then
-							state := "100";
-							hit <= '0';
+							state := "101";
+						else
+							hit <= '1';
+							state := "011";
 						end if;
 
-					-- State E/100
+					-- State D/101
 					-- Set done
-					when "100" =>
+					when "101" =>
 						hit <= '0';
 						done <= '1';
 						sum_out <= sum;

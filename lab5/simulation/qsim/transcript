@@ -31,21 +31,21 @@
 # Loading cycloneii_ver.cycloneii_asynch_io
 # Loading work.gA6_lab5_vlg_sample_tst
 # Loading work.gA6_lab5_vlg_check_tst
-# ** Warning: (vsim-3017) gA6_lab5.vt(1694): [TFMPC] - Too few port connections. Expected 29, found 25.
+# ** Warning: (vsim-3017) gA6_lab5.vt(1311): [TFMPC] - Too few port connections. Expected 32, found 28.
 # 
 #         Region: /gA6_lab5_vlg_vec_tst/i1
-# ** Warning: (vsim-3722) gA6_lab5.vt(1694): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# ** Warning: (vsim-3722) gA6_lab5.vt(1311): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
 # 
-# ** Warning: (vsim-3722) gA6_lab5.vt(1694): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: (vsim-3722) gA6_lab5.vt(1311): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
 # 
-# ** Warning: (vsim-3722) gA6_lab5.vt(1694): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: (vsim-3722) gA6_lab5.vt(1311): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
 # 
-# ** Warning: (vsim-3722) gA6_lab5.vt(1694): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: (vsim-3722) gA6_lab5.vt(1311): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
 # 
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
 # This may because you are loading cell libraries which are not recommended with
 # the ModelSim Altera version. Expect performance to be adversely affected.
 # Simulation passed !
-# ** Note: $finish    : gA6_lab5.vt(1630)
+# ** Note: $finish    : gA6_lab5.vt(1241)
 #    Time: 5 us  Iteration: 0  Instance: /gA6_lab5_vlg_vec_tst/tb_out

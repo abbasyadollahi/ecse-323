@@ -12,14 +12,12 @@ use ieee.numeric_std.all;
 
 entity gA6_rules is
 	port(
-		--ace			: in std_logic;
 		clk			: in std_logic;
 		rst			: in std_logic;
 		enable		: in std_logic;
 		new_card		: in std_logic_vector(5 downto 0);
 		hand_sum		: in std_logic_vector(5 downto 0);
 
-		--ace_out		: out std_logic;
 		legal_play	: out std_logic;
 		new_total	: out std_logic_vector(5 downto 0)
 	);
@@ -44,8 +42,6 @@ architecture behavior of gA6_rules is
 				new_ace := '0';
 				if rst = '1' then
 					hand_ace := '0';
-				--else
-					--hand_ace := ace;
 				end if;
 
 				card_value := unsigned(new_card) mod 13 + 1;
@@ -78,7 +74,6 @@ architecture behavior of gA6_rules is
 					hand_ace := '0';
 				end if;
 
-				--ace_out <= hand_ace;
 				legal_play <= legal;
 				new_total <= std_logic_vector(new_sum);
 			end if;
