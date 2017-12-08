@@ -66,13 +66,6 @@ applicable agreement for further details.
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
-		(pt 0 128)
-		(input)
-		(text "randu[30..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
-		(text "randu[30..0]" (rect 21 123 89 137)(font "Arial" (font_size 8)))
-		(line (pt 0 128)(pt 16 128)(line_width 3))
-	)
-	(port
 		(pt 208 32)
 		(output)
 		(text "empty" (rect 0 0 34 14)(font "Arial" (font_size 8)))

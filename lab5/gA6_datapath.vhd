@@ -74,6 +74,7 @@ architecture behavior of gA6_datapath is
 						if new_game = '1' then
 							player_draw <= '1';
 							state := "0001";
+							p_setup := '0';
 						end if;
 
 					-- State B/0001
